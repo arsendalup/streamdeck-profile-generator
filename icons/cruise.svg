@@ -1,0 +1,86 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cruiseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <filter id="cruiseGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Speedometer arc -->
+  <path d="M30 90 A30 30 0 0 1 114 90" 
+        fill="none" 
+        stroke="url(#cruiseGrad)" 
+        stroke-width="6" 
+        filter="url(#cruiseGlow)"/>
+  
+  <!-- Speed needle -->
+  <path d="M72 72 L95 85" 
+        stroke="#ffff00" 
+        stroke-width="4" 
+        stroke-linecap="round">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;15 72 72;-15 72 72;0 72 72" 
+      dur="4s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Speed markings -->
+  <circle cx="35" cy="85" r="2" fill="#00ffff"/>
+  <circle cx="50" cy="95" r="2" fill="#00ffff"/>
+  <circle cx="72" cy="100" r="2" fill="#ffff00"/>
+  <circle cx="94" cy="95" r="2" fill="#ff8800"/>
+  <circle cx="109" cy="85" r="2" fill="#ff4400"/>
+  
+  <!-- Center hub -->
+  <circle cx="72" cy="72" r="6" fill="url(#cruiseGrad)" filter="url(#cruiseGlow)"/>
+  
+  <!-- Cruise engaged indicator -->
+  <rect x="60" y="50" width="24" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="72" y="56" font-family="monospace" font-size="6" fill="#00ff00" text-anchor="middle">CRUISE</text>
+  
+  <!-- Speed display -->
+  <rect x="60" y="25" width="24" height="12" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="72" y="33" font-family="monospace" font-size="8" fill="#00ffff" text-anchor="middle">125</text>
+  
+  <!-- Consistency waves -->
+  <path d="M25 72 Q35 68 45 72 Q55 76 65 72" 
+        stroke="#88ffff" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M79 72 Q89 68 99 72 Q109 76 119 72" 
+        stroke="#88ffff" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </path>
+  
+  <!-- Auto-pilot symbols -->
+  <circle cx="45" cy="45" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="99" cy="45" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite" begin="0.75s"/>
+  </circle>
+  
+  <!-- Velocity indicator -->
+  <path d="M72 110 L72 125" stroke="#00ffff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M67 120 L72 110 L77 120" stroke="#00ffff" stroke-width="2" fill="none"/>
+</svg>

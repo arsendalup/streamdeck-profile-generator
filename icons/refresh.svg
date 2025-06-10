@@ -1,0 +1,62 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="refreshGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Refresh arrows -->
+  <path d="M72 35 A25 25 0 1 1 50 60" 
+        fill="none" 
+        stroke="url(#refreshGrad)" 
+        stroke-width="6" 
+        stroke-linecap="round">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;360 72 72" 
+      dur="2s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M72 109 A25 25 0 1 1 94 84" 
+        fill="none" 
+        stroke="url(#refreshGrad)" 
+        stroke-width="6" 
+        stroke-linecap="round">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;360 72 72" 
+      dur="2s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Arrow heads -->
+  <path d="M45 55 L55 60 L45 65 Z" fill="url(#refreshGrad)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;360 72 72" 
+      dur="2s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M99 89 L89 84 L99 79 Z" fill="url(#refreshGrad)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;360 72 72" 
+      dur="2s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Center indicator -->
+  <circle cx="72" cy="72" r="8" fill="url(#refreshGrad)">
+    <animate attributeName="r" values="8;12;8" dur="1s" repeatCount="indefinite"/>
+  </circle>
+</svg>

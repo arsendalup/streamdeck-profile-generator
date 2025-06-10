@@ -1,0 +1,79 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="lightbulbGlow" cx="50%" cy="40%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#ffff00;stop-opacity:0.9" />
+      <stop offset="70%" style="stop-color:#ffaa00;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#664400;stop-opacity:0.2" />
+    </radialGradient>
+    <filter id="bulbGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ffaa00" stroke-width="2"/>
+  
+  <!-- Light bulb glass -->
+  <circle cx="72" cy="60" r="25" fill="url(#lightbulbGlow)" filter="url(#bulbGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Filament -->
+  <path d="M60 55 Q72 45 84 55 Q72 65 60 55" stroke="#ff8800" stroke-width="2" fill="none" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M60 65 Q72 55 84 65" stroke="#ff8800" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <!-- Base/socket -->
+  <rect x="65" y="85" width="14" height="12" fill="#606060" rx="2"/>
+  <rect x="67" y="87" width="10" height="2" fill="#404040"/>
+  <rect x="67" y="91" width="10" height="2" fill="#404040"/>
+  <rect x="67" y="95" width="10" height="2" fill="#404040"/>
+  
+  <!-- Light rays -->
+  <path d="M72 25 L72 15" stroke="#ffff00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M95 38 L103 30" stroke="#ffff00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="0.3s"/>
+  </path>
+  
+  <path d="M108 60 L118 60" stroke="#ffff00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="0.6s"/>
+  </path>
+  
+  <path d="M95 82 L103 90" stroke="#ffff00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="0.9s"/>
+  </path>
+  
+  <path d="M49 38 L41 30" stroke="#ffff00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="1.2s"/>
+  </path>
+  
+  <path d="M26 60 L16 60" stroke="#ffff00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+  </path>
+  
+  <path d="M49 82 L41 90" stroke="#ffff00" stroke-width="3" stroke-linecap="round" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite" begin="1.8s"/>
+  </path>
+  
+  <!-- Illumination effect -->
+  <circle cx="72" cy="60" r="35" fill="none" stroke="#ffff00" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="35;45;35" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Power indicator -->
+  <circle cx="72" cy="110" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

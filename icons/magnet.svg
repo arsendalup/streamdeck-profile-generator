@@ -1,0 +1,67 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="magnetNorth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff4444;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#880000;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="magnetSouth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0000ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4444ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000088;stop-opacity:1" />
+    </linearGradient>
+    <filter id="magnetGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff0088" stroke-width="2"/>
+  
+  <!-- Magnet body -->
+  <path d="M45 35 L45 85 Q45 95 55 95 L60 95 L60 85 L60 45 L84 45 L84 85 L84 95 L89 95 Q99 95 99 85 L99 35 L85 35 L85 55 L59 55 L59 35 Z" 
+        fill="url(#magnetNorth)" 
+        filter="url(#magnetGlow)"/>
+  
+  <!-- South pole -->
+  <rect x="45" y="35" width="14" height="60" fill="url(#magnetSouth)" rx="7"/>
+  
+  <!-- North pole -->
+  <rect x="85" y="35" width="14" height="60" fill="url(#magnetNorth)" rx="7"/>
+  
+  <!-- Magnetic field lines -->
+  <path d="M35 50 Q72 40 109 50" stroke="#ff88ff" stroke-width="2" fill="none" opacity="0.6">
+    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M35 60 Q72 50 109 60" stroke="#ff88ff" stroke-width="2" fill="none" opacity="0.4">
+    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <path d="M35 70 Q72 60 109 70" stroke="#ff88ff" stroke-width="2" fill="none" opacity="0.3">
+    <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </path>
+  
+  <!-- Pole labels -->
+  <text x="52" y="50" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">S</text>
+  <text x="92" y="50" font-family="Arial" font-size="12" fill="#ffffff" text-anchor="middle">N</text>
+  
+  <!-- Attraction particles -->
+  <circle cx="25" cy="55" r="2" fill="#ffffff">
+    <animate attributeName="cx" values="25;52;25" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="119" cy="65" r="2" fill="#ffffff">
+    <animate attributeName="cx" values="119;92;119" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1" dur="3s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <!-- Energy field -->
+  <circle cx="72" cy="65" r="25" fill="none" stroke="#ff44ff" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="25;30;25" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

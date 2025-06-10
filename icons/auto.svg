@@ -1,0 +1,114 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="autoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="autoGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="autoFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- AUTO text -->
+  <text x="72" y="55" font-family="Arial" font-size="20" font-weight="bold" fill="url(#autoGrad)" text-anchor="middle" filter="url(#autoFilter)">AUTO</text>
+  
+  <!-- Autopilot core -->
+  <circle cx="72" cy="72" r="20" fill="url(#autoGlow)" filter="url(#autoFilter)">
+    <animate attributeName="r" values="20;25;20" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Central processing unit -->
+  <circle cx="72" cy="72" r="12" fill="#003366" stroke="#00ffff" stroke-width="2"/>
+  <circle cx="72" cy="72" r="6" fill="url(#autoGrad)">
+    <animate attributeName="r" values="6;8;6" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Navigation waypoints -->
+  <circle cx="45" cy="45" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="99" cy="45" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  
+  <circle cx="99" cy="99" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+  
+  <circle cx="45" cy="99" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1s" repeatCount="indefinite" begin="0.9s"/>
+  </circle>
+  
+  <!-- Flight path -->
+  <path d="M45 45 Q72 30 99 45 Q114 72 99 99 Q72 114 45 99 Q30 72 45 45" 
+        stroke="#00ffff" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.6"
+        stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Automation indicators -->
+  <rect x="25" y="25" width="8" height="8" fill="#00ff00" rx="2">
+    <animate attributeName="fill" values="#00ff00;#88ff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="111" y="25" width="8" height="8" fill="#00ff00" rx="2">
+    <animate attributeName="fill" values="#00ff00;#88ff00;#00ff00" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </rect>
+  
+  <rect x="111" y="111" width="8" height="8" fill="#00ff00" rx="2">
+    <animate attributeName="fill" values="#00ff00;#88ff00;#00ff00" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </rect>
+  
+  <rect x="25" y="111" width="8" height="8" fill="#00ff00" rx="2">
+    <animate attributeName="fill" values="#00ff00;#88ff00;#00ff00" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+  </rect>
+  
+  <!-- System status -->
+  <rect x="55" y="100" width="34" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <rect x="57" y="102" width="6" height="4" fill="#00ff00"/>
+  <rect x="65" y="102" width="6" height="4" fill="#00ff00"/>
+  <rect x="73" y="102" width="6" height="4" fill="#00ff00"/>
+  <rect x="81" y="102" width="6" height="4" fill="#ffff00"/>
+  
+  <!-- Autopilot engaged -->
+  <text x="72" y="120" font-family="monospace" font-size="8" fill="#00ff00" text-anchor="middle">ENGAGED</text>
+  
+  <!-- Data streams -->
+  <path d="M55 65 L45 55" stroke="#88ffff" stroke-width="1" opacity="0.7" stroke-dasharray="2 2">
+    <animate attributeName="stroke-dashoffset" values="0;-8;0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M89 65 L99 55" stroke="#88ffff" stroke-width="1" opacity="0.7" stroke-dasharray="2 2">
+    <animate attributeName="stroke-dashoffset" values="0;-8;0" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M89 79 L99 89" stroke="#88ffff" stroke-width="1" opacity="0.7" stroke-dasharray="2 2">
+    <animate attributeName="stroke-dashoffset" values="0;-8;0" dur="1.4s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M55 79 L45 89" stroke="#88ffff" stroke-width="1" opacity="0.7" stroke-dasharray="2 2">
+    <animate attributeName="stroke-dashoffset" values="0;-8;0" dur="1.6s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Processing indicator -->
+  <circle cx="72" cy="72" r="30" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

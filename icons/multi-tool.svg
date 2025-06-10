@@ -1,0 +1,97 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="multiToolGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8800;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff4400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#aa2200;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="toolModule" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="multiToolGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff8800" stroke-width="2"/>
+  
+  <!-- Main tool body -->
+  <ellipse cx="72" cy="70" rx="35" ry="25" fill="url(#multiToolGrad)" filter="url(#multiToolGlow)"/>
+  
+  <!-- Central control unit -->
+  <circle cx="72" cy="70" r="15" fill="#003366" stroke="#00ffff" stroke-width="2"/>
+  <circle cx="72" cy="70" r="8" fill="url(#toolModule)">
+    <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Mining laser module -->
+  <rect x="45" y="50" width="12" height="8" fill="#ff6600" rx="2">
+    <animate attributeName="fill" values="#ff6600;#ffaa00;#ff6600" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  <path d="M45 54 L30 54" stroke="#ffff00" stroke-width="2" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Tractor beam module -->
+  <rect x="87" y="50" width="12" height="8" fill="#0080ff" rx="2">
+    <animate attributeName="fill" values="#0080ff;#00aaff;#0080ff" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  <path d="M99 54 L114 54" stroke="#00ffff" stroke-width="2" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Salvage scraper module -->
+  <rect x="55" y="85" width="12" height="8" fill="#00ff00" rx="2">
+    <animate attributeName="fill" values="#00ff00;#88ff00;#00ff00" dur="1.8s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Repair nanobots module -->
+  <rect x="77" y="85" width="12" height="8" fill="#ff00ff" rx="2">
+    <animate attributeName="fill" values="#ff00ff;#ff88ff;#ff00ff" dur="2.2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Handles -->
+  <rect x="40" y="95" width="12" height="20" fill="url(#multiToolGrad)" rx="6"/>
+  <rect x="92" y="95" width="12" height="20" fill="url(#multiToolGrad)" rx="6"/>
+  
+  <!-- Power conduits -->
+  <path d="M57 70 L72 70 L87 70" stroke="#00ffff" stroke-width="2" opacity="0.7"/>
+  <path d="M72 55 L72 85" stroke="#00ffff" stroke-width="2" opacity="0.7"/>
+  
+  <!-- Mode indicators -->
+  <circle cx="58" cy="62" r="2" fill="#ff6600">
+    <animate attributeName="fill" values="#ff6600;#ffaa00;#ff6600" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="72" cy="58" r="2" fill="#0080ff">
+    <animate attributeName="fill" values="#0080ff;#00aaff;#0080ff" dur="1.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="86" cy="62" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#88ff00;#00ff00" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="72" cy="82" r="2" fill="#ff00ff">
+    <animate attributeName="fill" values="#ff00ff;#ff88ff;#ff00ff" dur="1.6s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Energy field -->
+  <circle cx="72" cy="70" r="40" fill="none" stroke="#ff8800" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="40;45;40" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Tool selection display -->
+  <rect x="65" y="25" width="14" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <rect x="67" y="27" width="2" height="2" fill="#ff6600"/>
+  <rect x="71" y="27" width="2" height="2" fill="#0080ff"/>
+  <rect x="75" y="27" width="2" height="2" fill="#808080"/>
+  
+  <!-- Power level -->
+  <text x="72" y="40" font-family="monospace" font-size="8" fill="#00ffff" text-anchor="middle">PWR</text>
+</svg>

@@ -1,0 +1,52 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="videoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#555555;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#222222;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="recordGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff3333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc0000;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Camera body -->
+  <rect x="8" y="20" width="40" height="32" rx="4" fill="url(#videoGrad)" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Lens -->
+  <circle cx="28" cy="36" r="10" fill="#000000" stroke="#00d4ff" stroke-width="2"/>
+  <circle cx="28" cy="36" r="6" fill="#333333"/>
+  <circle cx="28" cy="36" r="2" fill="#00d4ff">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Record button -->
+  <circle cx="42" cy="28" r="4" fill="url(#recordGrad)" stroke="#ffffff" stroke-width="1">
+    <animate attributeName="fill" values="#ff3333;#ffffff;#ff3333" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Viewfinder -->
+  <rect x="52" y="28" width="16" height="12" rx="2" fill="#000000" stroke="#00d4ff" stroke-width="2"/>
+  <rect x="54" y="30" width="12" height="8" fill="#001122" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Recording indicator lines -->
+  <g opacity="0.7">
+    <line x1="56" y1="32" x2="64" y2="32" stroke="#00ff00" stroke-width="1">
+      <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="56" y1="34" x2="64" y2="34" stroke="#00ff00" stroke-width="1">
+      <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="56" y1="36" x2="64" y2="36" stroke="#00ff00" stroke-width="1">
+      <animate attributeName="opacity" values="0;1;0" dur="0.8s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Handle -->
+  <rect x="12" y="48" width="32" height="8" rx="4" fill="url(#videoGrad)" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Status LED -->
+  <circle cx="64" cy="22" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ff3333;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

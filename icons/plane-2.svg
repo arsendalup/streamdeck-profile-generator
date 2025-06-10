@@ -1,0 +1,97 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="advancedShipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="quantumCore" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#00ffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#0033ff;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="advancedGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#0a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Advanced hull -->
+  <path d="M25 72 Q30 55 50 55 L94 55 Q114 55 119 72 Q114 89 94 89 L50 89 Q30 89 25 72 Z" 
+        fill="url(#advancedShipGrad)" 
+        filter="url(#advancedGlow)"/>
+  
+  <!-- Quantum drive core -->
+  <circle cx="72" cy="72" r="12" fill="url(#quantumCore)">
+    <animate attributeName="r" values="12;16;12" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Advanced wing arrays -->
+  <path d="M50 55 L35 35 L45 30 L55 50 Z" fill="url(#advancedShipGrad)"/>
+  <path d="M50 89 L35 109 L45 114 L55 94 Z" fill="url(#advancedShipGrad)"/>
+  <path d="M94 55 L109 35 L99 30 L89 50 Z" fill="url(#advancedShipGrad)"/>
+  <path d="M94 89 L109 109 L99 114 L89 94 Z" fill="url(#advancedShipGrad)"/>
+  
+  <!-- Quantum thrusters -->
+  <ellipse cx="20" cy="60" rx="8" ry="4" fill="url(#quantumCore)">
+    <animate attributeName="rx" values="8;12;8" dur="1s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="20" cy="84" rx="8" ry="4" fill="url(#quantumCore)">
+    <animate attributeName="rx" values="8;12;8" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+  </ellipse>
+  
+  <!-- Energy trails -->
+  <path d="M12 60 L5 60" stroke="#00ffff" stroke-width="3" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.6s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="3;5;3" dur="0.6s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M12 84 L5 84" stroke="#00ffff" stroke-width="3" opacity="0.9">
+    <animate attributeName="opacity" values="0.9;0.3;0.9" dur="0.6s" repeatCount="indefinite" begin="0.3s"/>
+    <animate attributeName="stroke-width" values="3;5;3" dur="0.6s" repeatCount="indefinite" begin="0.3s"/>
+  </path>
+  
+  <!-- Forward cannons -->
+  <rect x="120" y="68" width="15" height="3" fill="#ff4444" rx="1"/>
+  <rect x="120" y="73" width="15" height="3" fill="#ff4444" rx="1"/>
+  
+  <!-- Shield generators -->
+  <circle cx="55" cy="72" r="4" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.6">
+    <animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="89" cy="72" r="4" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.6">
+    <animate attributeName="r" values="4;8;4" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+    <animate attributeName="stroke-opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+  
+  <!-- Advanced sensors -->
+  <ellipse cx="110" cy="72" rx="6" ry="3" fill="#003366" stroke="#00ffff" stroke-width="1"/>
+  <circle cx="110" cy="72" r="2" fill="#00ffff">
+    <animate attributeName="fill" values="#00ffff;#ffffff;#00ffff" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Weapon hardpoints -->
+  <circle cx="40" cy="40" r="2" fill="#ff6600">
+    <animate attributeName="fill" values="#ff6600;#ffaa00;#ff6600" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="40" cy="104" r="2" fill="#ff6600">
+    <animate attributeName="fill" values="#ff6600;#ffaa00;#ff6600" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <circle cx="104" cy="40" r="2" fill="#ff6600">
+    <animate attributeName="fill" values="#ff6600;#ffaa00;#ff6600" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <circle cx="104" cy="104" r="2" fill="#ff6600">
+    <animate attributeName="fill" values="#ff6600;#ffaa00;#ff6600" dur="2s" repeatCount="indefinite" begin="1.5s"/>
+  </circle>
+</svg>

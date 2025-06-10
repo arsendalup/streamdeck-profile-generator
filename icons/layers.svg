@@ -1,0 +1,78 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="layersGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <filter id="layersGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Bottom layer -->
+  <path d="M35 95 L72 80 L109 95 L72 110 Z" 
+        fill="url(#layersGrad)" 
+        opacity="0.6" 
+        filter="url(#layersGlow)"/>
+  
+  <!-- Middle layer -->
+  <path d="M35 75 L72 60 L109 75 L72 90 Z" 
+        fill="url(#layersGrad)" 
+        opacity="0.8" 
+        filter="url(#layersGlow)">
+    <animate attributeName="fill-opacity" values="0.8;0.4;0.8" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Top layer -->
+  <path d="M35 55 L72 40 L109 55 L72 70 Z" 
+        fill="url(#layersGrad)" 
+        filter="url(#layersGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <!-- Layer separators -->
+  <path d="M35 65 L109 65" stroke="#88ffff" stroke-width="1" opacity="0.4" stroke-dasharray="3 3"/>
+  <path d="M35 85 L109 85" stroke="#88ffff" stroke-width="1" opacity="0.4" stroke-dasharray="3 3"/>
+  
+  <!-- Sub-target indicators -->
+  <circle cx="55" cy="50" r="2" fill="#ffff00">
+    <animate attributeName="fill" values="#ffff00;#ff8800;#ffff00" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="72" cy="45" r="2" fill="#ffff00">
+    <animate attributeName="fill" values="#ffff00;#ff8800;#ffff00" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  
+  <circle cx="89" cy="50" r="2" fill="#ffff00">
+    <animate attributeName="fill" values="#ffff00;#ff8800;#ffff00" dur="1.5s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+  
+  <!-- Depth indicators -->
+  <text x="25" y="60" font-family="monospace" font-size="8" fill="#00ffff">L1</text>
+  <text x="25" y="80" font-family="monospace" font-size="8" fill="#00ffff">L2</text>
+  <text x="25" y="100" font-family="monospace" font-size="8" fill="#00ffff">L3</text>
+  
+  <!-- Layer selection -->
+  <rect x="115" y="45" width="12" height="25" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <rect x="117" y="48" width="8" height="2" fill="#00ff00"/>
+  <rect x="117" y="55" width="8" height="2" fill="#ffff00" opacity="0.6"/>
+  <rect x="117" y="62" width="8" height="2" fill="#404040" opacity="0.4"/>
+  
+  <!-- Scanning effect -->
+  <path d="M35 35 L109 35" stroke="#ffffff" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="3s" repeatCount="indefinite"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;0 80;0 0" 
+      dur="3s" 
+      repeatCount="indefinite"/>
+  </path>
+</svg>

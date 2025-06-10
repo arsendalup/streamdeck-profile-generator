@@ -1,0 +1,68 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="hatGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ffcc00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="brimGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffcc00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff9900;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Hard hat main dome -->
+  <path d="M16 42 Q16 24 36 24 Q56 24 56 42 Q56 48 50 48 L22 48 Q16 48 16 42 Z" 
+        fill="url(#hatGrad)" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Brim -->
+  <ellipse cx="36" cy="48" rx="24" ry="6" fill="url(#brimGrad)" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Front lamp -->
+  <circle cx="36" cy="32" r="4" fill="#333333" stroke="#ffffff" stroke-width="2"/>
+  <circle cx="36" cy="32" r="2" fill="#ffff99">
+    <animate attributeName="fill" values="#ffff99;#ffffff;#ffff99" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Side reflectors -->
+  <ellipse cx="22" cy="38" rx="2" ry="4" fill="#ff3333" stroke="#ffffff" stroke-width="1"/>
+  <ellipse cx="50" cy="38" rx="2" ry="4" fill="#ff3333" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- Suspension system inside -->
+  <g opacity="0.6">
+    <line x1="24" y1="44" x2="28" y2="40" stroke="#333333" stroke-width="1"/>
+    <line x1="36" y1="44" x2="36" y2="38" stroke="#333333" stroke-width="1"/>
+    <line x1="48" y1="44" x2="44" y2="40" stroke="#333333" stroke-width="1"/>
+  </g>
+  
+  <!-- Adjustment knob -->
+  <circle cx="50" cy="44" r="3" fill="#333333" stroke="#ffffff" stroke-width="1"/>
+  <line x1="48" y1="44" x2="52" y2="44" stroke="#ffffff" stroke-width="1"/>
+  <line x1="50" y1="42" x2="50" y2="46" stroke="#ffffff" stroke-width="1"/>
+  
+  <!-- Safety rating sticker -->
+  <rect x="28" y="36" width="8" height="4" rx="1" fill="#ffffff" stroke="#333333" stroke-width="1"/>
+  <text x="32" y="39" text-anchor="middle" font-family="Arial" font-size="6" fill="#333333">CE</text>
+  
+  <!-- Ventilation holes -->
+  <circle cx="26" cy="30" r="1" fill="#ffcc00"/>
+  <circle cx="30" cy="28" r="1" fill="#ffcc00"/>
+  <circle cx="42" cy="28" r="1" fill="#ffcc00"/>
+  <circle cx="46" cy="30" r="1" fill="#ffcc00"/>
+  
+  <!-- Safety glow -->
+  <path d="M16 42 Q16 24 36 24 Q56 24 56 42 Q56 48 50 48 L22 48 Q16 48 16 42 Z" 
+        fill="none" stroke="#ffff00" stroke-width="4" opacity="0.3">
+    <animate attributeName="opacity" values="0.2;0.4;0.2" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Chin strap -->
+  <path d="M20 46 Q18 52 20 56 Q22 58 26 56 Q30 54 32 56" 
+        stroke="#333333" stroke-width="2" fill="none"/>
+  <path d="M40 56 Q42 54 46 56 Q50 58 52 56 Q54 52 52 46" 
+        stroke="#333333" stroke-width="2" fill="none"/>
+  
+  <!-- Warning stripe -->
+  <rect x="32" y="46" width="8" height="2" fill="#ff3333">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

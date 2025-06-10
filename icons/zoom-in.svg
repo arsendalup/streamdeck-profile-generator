@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <defs>
+    <linearGradient id="zoomInGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6600;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff4400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc3300;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lensInGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff2e6;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#ffe5cc;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#ffd9b3;stop-opacity:0.5" />
+    </linearGradient>
+    <filter id="zoomInGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="focusGlow">
+      <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="144" height="144" fill="#0a0a0a" rx="8"/>
+  
+  <!-- Tech border -->
+  <rect x="4" y="4" width="136" height="136" fill="none" stroke="url(#zoomInGrad)" stroke-width="1" rx="6" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Magnifying glass body -->
+  <circle cx="65" cy="65" r="28" fill="none" stroke="url(#zoomInGrad)" stroke-width="3" filter="url(#zoomInGlow)">
+    <animateTransform attributeName="transform" type="scale" values="1;0.9;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Lens -->
+  <circle cx="65" cy="65" r="22" fill="url(#lensInGrad)" opacity="0.3" filter="url(#focusGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Lens reflection -->
+  <ellipse cx="58" cy="58" rx="8" ry="12" fill="#ffffff" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="1.8s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Handle -->
+  <line x1="86" y1="86" x2="105" y2="105" stroke="url(#zoomInGrad)" stroke-width="5" stroke-linecap="round" filter="url(#zoomInGlow)">
+    <animateTransform attributeName="transform" type="rotate" values="0 95.5 95.5;-2 95.5 95.5;0 95.5 95.5" dur="1.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Zoom in plus sign in lens -->
+  <g filter="url(#zoomInGlow)">
+    <line x1="55" y1="65" x2="75" y2="65" stroke="url(#zoomInGrad)" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="65" y1="55" x2="65" y2="75" stroke="url(#zoomInGrad)" stroke-width="3" stroke-linecap="round">
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="1.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Contracting rings to show zoom in -->
+  <g opacity="0.5">
+    <circle cx="65" cy="65" r="35" fill="none" stroke="url(#zoomInGrad)" stroke-width="1">
+      <animateTransform attributeName="transform" type="scale" values="1.3;0.8;1.3" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="65" cy="65" r="42" fill="none" stroke="url(#zoomInGrad)" stroke-width="1">
+      <animateTransform attributeName="transform" type="scale" values="1.4;0.9;1.4" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.5;0" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Focus point indicators -->
+  <g stroke="url(#zoomInGrad)" stroke-width="2" fill="none" opacity="0.7">
+    <line x1="100" y1="35" x2="110" y2="35">
+      <animateTransform attributeName="transform" type="scale" values="1;0.7;1" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="105" y1="30" x2="105" y2="40">
+      <animateTransform attributeName="transform" type="scale" values="1;0.7;1" dur="1.5s" repeatCount="indefinite"/>
+    </line>
+    
+    <line x1="115" y1="100" x2="125" y2="100">
+      <animateTransform attributeName="transform" type="scale" values="1;0.7;1" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="120" y1="95" x2="120" y2="105">
+      <animateTransform attributeName="transform" type="scale" values="1;0.7;1" dur="1.5s" begin="0.5s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Target crosshairs -->
+  <g stroke="url(#zoomInGrad)" stroke-width="1" fill="none" opacity="0.4">
+    <circle cx="65" cy="65" r="15">
+      <animate attributeName="r" values="15;12;15" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="50" y1="65" x2="55" y2="65">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.8s" repeatCount="indefinite"/>
+    </line>
+    <line x1="75" y1="65" x2="80" y2="65">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.8s" begin="0.2s" repeatCount="indefinite"/>
+    </line>
+    <line x1="65" y1="50" x2="65" y2="55">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.8s" begin="0.4s" repeatCount="indefinite"/>
+    </line>
+    <line x1="65" y1="75" x2="65" y2="80">
+      <animate attributeName="opacity" values="0.4;0.9;0.4" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Scan lines effect -->
+  <g opacity="0.3">
+    <line x1="35" y1="0" x2="35" y2="144" stroke="url(#zoomInGrad)" stroke-width="0.5">
+      <animateTransform attributeName="transform" type="translateX" values="0;74;0" dur="2.5s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="65" x2="144" y2="65" stroke="url(#zoomInGrad)" stroke-width="0.5">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Corner accent -->
+  <polygon points="4,4 16,4 4,16" fill="url(#zoomInGrad)" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <!-- Focus indicator -->
+  <text x="115" y="25" font-family="monospace" font-size="8" fill="url(#zoomInGrad)" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    FOCUS
+  </text>
+</svg>

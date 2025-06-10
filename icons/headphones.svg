@@ -1,0 +1,81 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="headphoneGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#333333;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#111111;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="speakerGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#666666;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#222222;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Headband -->
+  <path d="M24 26 Q36 16 48 26" stroke="url(#headphoneGrad)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  <path d="M24 26 Q36 18 48 26" stroke="#00d4ff" stroke-width="2" fill="none" stroke-linecap="round"/>
+  
+  <!-- Padding -->
+  <ellipse cx="36" cy="20" rx="8" ry="3" fill="#444444" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Left ear cup -->
+  <ellipse cx="24" cy="42" rx="8" ry="12" fill="url(#headphoneGrad)" stroke="#00d4ff" stroke-width="2"/>
+  <ellipse cx="24" cy="42" rx="6" ry="10" fill="url(#speakerGrad)" stroke="#666666" stroke-width="1"/>
+  
+  <!-- Right ear cup -->
+  <ellipse cx="48" cy="42" rx="8" ry="12" fill="url(#headphoneGrad)" stroke="#00d4ff" stroke-width="2"/>
+  <ellipse cx="48" cy="42" rx="6" ry="10" fill="url(#speakerGrad)" stroke="#666666" stroke-width="1"/>
+  
+  <!-- Speaker drivers -->
+  <circle cx="24" cy="42" r="4" fill="#000000" stroke="#666666" stroke-width="1"/>
+  <circle cx="48" cy="42" r="4" fill="#000000" stroke="#666666" stroke-width="1"/>
+  
+  <!-- Audio waves (left) -->
+  <g opacity="0.7">
+    <circle cx="24" cy="42" r="6" fill="none" stroke="#00d4ff" stroke-width="1">
+      <animate attributeName="r" values="4;8;4" dur="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="24" cy="42" r="8" fill="none" stroke="#00d4ff" stroke-width="1">
+      <animate attributeName="r" values="6;10;6" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Audio waves (right) -->
+  <g opacity="0.7">
+    <circle cx="48" cy="42" r="6" fill="none" stroke="#00d4ff" stroke-width="1">
+      <animate attributeName="r" values="4;8;4" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.8;0.3;0.8" dur="2s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="48" cy="42" r="8" fill="none" stroke="#00d4ff" stroke-width="1">
+      <animate attributeName="r" values="6;10;6" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Connecting arms -->
+  <line x1="24" y1="26" x2="24" y2="30" stroke="url(#headphoneGrad)" stroke-width="4" stroke-linecap="round"/>
+  <line x1="48" y1="26" x2="48" y2="30" stroke="url(#headphoneGrad)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Adjustment sliders -->
+  <rect x="22" y="28" width="4" height="6" rx="2" fill="#666666" stroke="#00d4ff" stroke-width="1"/>
+  <rect x="46" y="28" width="4" height="6" rx="2" fill="#666666" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Volume indicators -->
+  <rect x="20" y="38" width="2" height="2" fill="#00ff00">
+    <animate attributeName="height" values="2;6;2" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="50" y="38" width="2" height="2" fill="#00ff00">
+    <animate attributeName="height" values="2;6;2" dur="1s" begin="0.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Microphone (gaming headset) -->
+  <line x1="16" y1="42" x2="10" y2="38" stroke="#333333" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="10" cy="38" r="2" fill="#333333" stroke="#00d4ff" stroke-width="1"/>
+  <circle cx="10" cy="38" r="1" fill="#ff3333">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Brand logo placeholder -->
+  <circle cx="36" cy="22" r="2" fill="#00d4ff" opacity="0.8"/>
+</svg>

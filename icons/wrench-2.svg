@@ -1,0 +1,95 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wrench2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="wrench2Glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="wrench2Filter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Advanced wrench head -->
+  <path d="M30 30 L55 30 L55 40 L70 40 L70 50 L55 50 L55 60 L30 60 Z" 
+        fill="url(#wrench2Grad)" 
+        filter="url(#wrench2Filter)"/>
+  
+  <!-- Plasma cutting edge -->
+  <path d="M55 35 L65 35 L65 45 L55 45 Z" fill="url(#wrench2Glow)">
+    <animate attributeName="fill-opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Advanced handle -->
+  <rect x="70" y="40" width="40" height="10" fill="url(#wrench2Grad)" rx="5"/>
+  
+  <!-- Energy conduits -->
+  <rect x="75" y="42" width="2" height="6" fill="#00ffff" opacity="0.8"/>
+  <rect x="80" y="42" width="2" height="6" fill="#00ffff" opacity="0.8"/>
+  <rect x="85" y="42" width="2" height="6" fill="#00ffff" opacity="0.8"/>
+  <rect x="90" y="42" width="2" height="6" fill="#00ffff" opacity="0.8"/>
+  <rect x="95" y="42" width="2" height="6" fill="#00ffff" opacity="0.8"/>
+  <rect x="100" y="42" width="2" height="6" fill="#00ffff" opacity="0.8"/>
+  
+  <!-- Adjustable jaw with servo -->
+  <path d="M30 40 L45 40 L45 50 L30 50 Z" fill="url(#wrench2Grad)">
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;-5 0;0 0" 
+      dur="3s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Power grip -->
+  <rect x="105" y="38" width="8" height="14" fill="url(#wrench2Grad)" rx="4"/>
+  
+  <!-- Holographic display -->
+  <rect x="75" y="55" width="15" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <rect x="77" y="57" width="3" height="1" fill="#00ff00"/>
+  <rect x="82" y="57" width="3" height="1" fill="#ffff00"/>
+  <rect x="87" y="57" width="2" height="1" fill="#ff8800"/>
+  
+  <!-- Salvage beam -->
+  <path d="M30 45 L20 45" stroke="#00ffff" stroke-width="3" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="3;6;3" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Molecular disruptor effect -->
+  <circle cx="15" cy="45" r="4" fill="url(#wrench2Glow)" opacity="0.6">
+    <animate attributeName="r" values="4;8;4" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Status LED -->
+  <circle cx="108" cy="45" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Salvage particles -->
+  <circle cx="25" cy="42" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.6s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  
+  <circle cx="22" cy="48" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.6s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  
+  <!-- Force field -->
+  <circle cx="42" cy="45" r="20" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="20;25;20" dur="2.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.7;0.3" dur="2.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

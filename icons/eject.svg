@@ -1,0 +1,131 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="ejectFlame" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#ff6600;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0.3" />
+    </radialGradient>
+    <linearGradient id="ejectSeat" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#606060;stop-opacity:1" />
+    </linearGradient>
+    <filter id="ejectGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff4444" stroke-width="2"/>
+  
+  <!-- Ejection seat -->
+  <g>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;0 -15;0 -30" 
+      dur="2s" 
+      repeatCount="indefinite"/>
+    
+    <!-- Seat base -->
+    <rect x="55" y="75" width="34" height="25" fill="url(#ejectSeat)" rx="5" filter="url(#ejectGlow)"/>
+    
+    <!-- Seat back -->
+    <rect x="58" y="60" width="28" height="20" fill="url(#ejectSeat)" rx="3"/>
+    
+    <!-- Pilot -->
+    <circle cx="72" cy="55" r="6" fill="#00d4ff"/>
+    <rect x="68" y="61" width="8" height="15" fill="#00d4ff" rx="4"/>
+    
+    <!-- Safety harness -->
+    <path d="M65 65 L79 65" stroke="#ffff00" stroke-width="2"/>
+    <path d="M65 70 L79 70" stroke="#ffff00" stroke-width="2"/>
+  </g>
+  
+  <!-- Rocket boosters -->
+  <ellipse cx="60" cy="105" rx="6" ry="8" fill="url(#ejectFlame)" filter="url(#ejectGlow)">
+    <animate attributeName="ry" values="8;15;8" dur="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="105;110;105" dur="0.5s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="84" cy="105" rx="6" ry="8" fill="url(#ejectFlame)" filter="url(#ejectGlow)">
+    <animate attributeName="ry" values="8;15;8" dur="0.5s" repeatCount="indefinite" begin="0.25s"/>
+    <animate attributeName="cy" values="105;110;105" dur="0.5s" repeatCount="indefinite" begin="0.25s"/>
+  </ellipse>
+  
+  <!-- Exhaust trails -->
+  <path d="M60 115 L60 125" stroke="#ffff00" stroke-width="4" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.4s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M84 115 L84 125" stroke="#ffff00" stroke-width="4" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="0.4s" repeatCount="indefinite" begin="0.2s"/>
+  </path>
+  
+  <!-- Emergency parachute -->
+  <g>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;0 -10;0 -20" 
+      dur="2s" 
+      repeatCount="indefinite" 
+      begin="1s"/>
+    
+    <path d="M72 35 Q60 25 50 35 Q55 45 72 40 Q89 45 94 35 Q84 25 72 35" 
+          fill="#ff4444" 
+          stroke="#ffffff" 
+          stroke-width="1" 
+          opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </path>
+    
+    <path d="M72 40 L72 55" stroke="#ffffff" stroke-width="1" opacity="0">
+      <animate attributeName="opacity" values="0;1;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </path>
+  </g>
+  
+  <!-- Warning indicators -->
+  <circle cx="35" cy="35" r="4" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ffff00;#ff0000" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="109" cy="35" r="4" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ffff00;#ff0000" dur="0.5s" repeatCount="indefinite" begin="0.25s"/>
+  </circle>
+  
+  <!-- Emergency text -->
+  <text x="72" y="125" font-family="Arial" font-size="8" fill="#ff0000" text-anchor="middle">EJECT</text>
+  
+  <!-- Explosion effect -->
+  <circle cx="72" cy="105" r="20" fill="none" stroke="#ffff00" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.3s" repeatCount="indefinite" begin="0s"/>
+    <animate attributeName="r" values="20;35;20" dur="0.3s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  
+  <!-- Debris particles -->
+  <circle cx="45" cy="90" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite" begin="0s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;-20 -30;0 0" 
+      dur="0.8s" 
+      repeatCount="indefinite" 
+      begin="0s"/>
+  </circle>
+  
+  <circle cx="99" cy="90" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.8s" repeatCount="indefinite" begin="0.2s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;25 -35;0 0" 
+      dur="0.8s" 
+      repeatCount="indefinite" 
+      begin="0.2s"/>
+  </circle>
+</svg>

@@ -1,0 +1,91 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="knifeBlade" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="knifeHandle" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#654321;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#4A2C17;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8B4513;stop-opacity:1" />
+    </linearGradient>
+    <filter id="bladeGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#c0c0c0" stroke-width="2"/>
+  
+  <!-- Knife blade -->
+  <path d="M115 72 L70 35 L65 40 L68 72 L65 104 L70 109 Z" 
+        fill="url(#knifeBlade)" 
+        filter="url(#bladeGlow)"/>
+  
+  <!-- Blade edge -->
+  <path d="M115 72 L70 35 L68 40 L70 72 L68 104 L70 109 Z" 
+        fill="#ffffff" 
+        opacity="0.8"/>
+  
+  <!-- Knife handle -->
+  <rect x="35" y="65" width="35" height="14" fill="url(#knifeHandle)" rx="7"/>
+  
+  <!-- Handle grip -->
+  <rect x="38" y="67" width="3" height="10" fill="#2F1B14" opacity="0.8"/>
+  <rect x="43" y="67" width="3" height="10" fill="#2F1B14" opacity="0.8"/>
+  <rect x="48" y="67" width="3" height="10" fill="#2F1B14" opacity="0.8"/>
+  <rect x="53" y="67" width="3" height="10" fill="#2F1B14" opacity="0.8"/>
+  <rect x="58" y="67" width="3" height="10" fill="#2F1B14" opacity="0.8"/>
+  <rect x="63" y="67" width="3" height="10" fill="#2F1B14" opacity="0.8"/>
+  
+  <!-- Guard -->
+  <rect x="68" y="67" width="4" height="10" fill="url(#knifeBlade)" rx="2"/>
+  
+  <!-- Pommel -->
+  <circle cx="37" cy="72" r="4" fill="url(#knifeHandle)"/>
+  
+  <!-- Blade reflection -->
+  <path d="M80 50 L75 55 L85 72 L75 89 L80 94" 
+        stroke="#ffffff" 
+        stroke-width="1" 
+        fill="none" 
+        opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.9;0.6" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Combat ready glow -->
+  <path d="M115 72 L110 67 L110 77 Z" fill="#ff4444" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Tactical features -->
+  <rect x="90" y="69" width="2" height="6" fill="#404040"/>
+  <rect x="95" y="70" width="2" height="4" fill="#404040"/>
+  
+  <!-- Blood groove -->
+  <path d="M105 72 L75 50" stroke="#606060" stroke-width="1" opacity="0.4"/>
+  <path d="M105 72 L75 94" stroke="#606060" stroke-width="1" opacity="0.4"/>
+  
+  <!-- Sharpness indicator -->
+  <circle cx="120" cy="72" r="2" fill="#ffffff">
+    <animate attributeName="r" values="2;4;2" dur="1s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Handle details -->
+  <circle cx="45" cy="72" r="1" fill="#8B4513"/>
+  <circle cx="55" cy="72" r="1" fill="#8B4513"/>
+  
+  <!-- Movement trail -->
+  <path d="M85 45 Q90 40 95 45" stroke="#88ccff" stroke-width="2" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="0.5s" repeatCount="indefinite" begin="0s"/>
+  </path>
+  
+  <path d="M85 99 Q90 104 95 99" stroke="#88ccff" stroke-width="2" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="0.5s" repeatCount="indefinite" begin="0.25s"/>
+  </path>
+</svg>

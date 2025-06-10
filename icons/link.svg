@@ -1,0 +1,52 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="linkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <filter id="linkGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Chain link 1 -->
+  <ellipse cx="50" cy="55" rx="12" ry="18" fill="none" stroke="url(#linkGrad)" stroke-width="6" filter="url(#linkGlow)">
+    <animate attributeName="stroke-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Chain link 2 -->
+  <ellipse cx="72" cy="72" rx="18" ry="12" fill="none" stroke="url(#linkGrad)" stroke-width="6" filter="url(#linkGlow)">
+    <animate attributeName="stroke-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </ellipse>
+  
+  <!-- Chain link 3 -->
+  <ellipse cx="94" cy="89" rx="12" ry="18" fill="none" stroke="url(#linkGrad)" stroke-width="6" filter="url(#linkGlow)">
+    <animate attributeName="stroke-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <!-- Connection energy -->
+  <path d="M58 65 L64 68" stroke="#ffffff" stroke-width="2" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M80 76 L86 79" stroke="#ffffff" stroke-width="2" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <!-- Magnetic field -->
+  <circle cx="72" cy="72" r="30" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Docking port indicator -->
+  <rect x="25" y="25" width="15" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="32" y="30" font-family="monospace" font-size="6" fill="#00ff00" text-anchor="middle">LINK</text>
+</svg>

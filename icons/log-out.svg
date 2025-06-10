@@ -1,0 +1,91 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoutGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8800;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff4400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#aa2200;stop-opacity:1" />
+    </linearGradient>
+    <filter id="logoutGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff8800" stroke-width="2"/>
+  
+  <!-- Exit door frame -->
+  <rect x="35" y="40" width="35" height="65" fill="url(#logoutGrad)" rx="5" filter="url(#logoutGlow)"/>
+  
+  <!-- Door opening -->
+  <rect x="40" y="45" width="25" height="55" fill="#003366" stroke="#00ffff" stroke-width="1" rx="3"/>
+  
+  <!-- Person exiting -->
+  <g>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;20 0;0 0" 
+      dur="3s" 
+      repeatCount="indefinite"/>
+    
+    <!-- Head -->
+    <circle cx="52" cy="60" r="6" fill="url(#logoutGrad)"/>
+    
+    <!-- Body -->
+    <rect x="48" y="66" width="8" height="20" fill="url(#logoutGrad)" rx="4"/>
+    
+    <!-- Arms -->
+    <ellipse cx="42" cy="72" rx="3" ry="8" fill="url(#logoutGrad)"/>
+    <ellipse cx="62" cy="72" rx="3" ry="8" fill="url(#logoutGrad)"/>
+    
+    <!-- Legs -->
+    <ellipse cx="50" cy="92" rx="3" ry="8" fill="url(#logoutGrad)"/>
+    <ellipse cx="54" cy="92" rx="3" ry="8" fill="url(#logoutGrad)"/>
+  </g>
+  
+  <!-- Exit arrow -->
+  <path d="M75 65 L95 65 M90 60 L95 65 L90 70" 
+        stroke="url(#logoutGrad)" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        filter="url(#logoutGlow)">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Motion lines -->
+  <path d="M75 55 L85 55" stroke="#ffaa88" stroke-width="2" opacity="0.6" stroke-dasharray="3 3">
+    <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M75 75 L85 75" stroke="#ffaa88" stroke-width="2" opacity="0.6" stroke-dasharray="3 3">
+    <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Door controls -->
+  <rect x="72" y="48" width="4" height="8" fill="#ff0000" rx="2">
+    <animate attributeName="fill" values="#ff0000;#ffff00;#ff0000" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Exit sign -->
+  <rect x="25" y="25" width="20" height="8" fill="#00ff00" stroke="#008800" stroke-width="1" rx="2"/>
+  <text x="35" y="31" font-family="Arial" font-size="6" fill="#ffffff" text-anchor="middle">EXIT</text>
+  
+  <!-- Emergency lighting -->
+  <circle cx="110" cy="45" r="3" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ff8800;#ff0000" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Airlock seal breaking -->
+  <path d="M35 55 Q30 52 30 60 Q30 68 35 65" stroke="#88ffff" stroke-width="2" fill="none" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Decompression effect -->
+  <circle cx="95" cy="72" r="8" fill="none" stroke="#ffffff" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;0.6;0" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="8;15;8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

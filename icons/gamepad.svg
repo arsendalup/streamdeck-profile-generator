@@ -1,0 +1,75 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gamepadGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#555555;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#222222;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main controller body -->
+  <path d="M24 32 Q16 32 16 40 Q16 48 24 48 L48 48 Q56 48 56 40 Q56 32 48 32 L42 32 Q40 28 32 28 Q24 28 26 32 Z" 
+        fill="url(#gamepadGrad)" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- D-pad -->
+  <g transform="translate(26, 38)">
+    <!-- Vertical bar -->
+    <rect x="-2" y="-6" width="4" height="12" rx="2" fill="#333333" stroke="#00d4ff" stroke-width="1"/>
+    <!-- Horizontal bar -->
+    <rect x="-6" y="-2" width="12" height="4" rx="2" fill="#333333" stroke="#00d4ff" stroke-width="1"/>
+    <!-- Center -->
+    <circle cx="0" cy="0" r="2" fill="#00d4ff">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Action buttons -->
+  <g transform="translate(46, 38)">
+    <!-- Button A -->
+    <circle cx="0" cy="4" r="3" fill="#00ff00" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="r" values="3;3.5;3" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Button B -->
+    <circle cx="4" cy="0" r="3" fill="#ff3333" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="r" values="3;3.5;3" dur="1.5s" begin="0.375s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Button X -->
+    <circle cx="-4" cy="0" r="3" fill="#0099ff" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="r" values="3;3.5;3" dur="1.5s" begin="0.75s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Button Y -->
+    <circle cx="0" cy="-4" r="3" fill="#ffff00" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="r" values="3;3.5;3" dur="1.5s" begin="1.125s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Left shoulder button -->
+  <rect x="20" y="26" width="8" height="4" rx="2" fill="url(#gamepadGrad)" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Right shoulder button -->
+  <rect x="44" y="26" width="8" height="4" rx="2" fill="url(#gamepadGrad)" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Left analog stick -->
+  <circle cx="22" cy="42" r="4" fill="#333333" stroke="#00d4ff" stroke-width="1"/>
+  <circle cx="22" cy="42" r="2" fill="#00d4ff">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 1,1; -1,-1; 0,0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Right analog stick -->
+  <circle cx="50" cy="42" r="4" fill="#333333" stroke="#00d4ff" stroke-width="1"/>
+  <circle cx="50" cy="42" r="2" fill="#00d4ff">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -1,1; 1,-1; 0,0" dur="3.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Center logo -->
+  <circle cx="36" cy="36" r="3" fill="#00d4ff" stroke="#ffffff" stroke-width="1">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Status LEDs -->
+  <circle cx="32" cy="32" r="1" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ff6600;#00ff00" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="40" cy="32" r="1" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ff6600;#00ff00" dur="4s" begin="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

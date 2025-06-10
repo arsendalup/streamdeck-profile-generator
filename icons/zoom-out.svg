@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 144">
+  <defs>
+    <linearGradient id="zoomGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff88;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#00cc66;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#009944;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="lensGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e6f7ff;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#b3e5ff;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#80d4ff;stop-opacity:0.5" />
+    </linearGradient>
+    <filter id="zoomGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="lensGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="144" height="144" fill="#0a0a0a" rx="8"/>
+  
+  <!-- Tech border -->
+  <rect x="4" y="4" width="136" height="136" fill="none" stroke="url(#zoomGrad)" stroke-width="1" rx="6" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="2.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Magnifying glass body -->
+  <circle cx="65" cy="65" r="28" fill="none" stroke="url(#zoomGrad)" stroke-width="3" filter="url(#zoomGlow)">
+    <animateTransform attributeName="transform" type="scale" values="1;1.1;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Lens -->
+  <circle cx="65" cy="65" r="22" fill="url(#lensGrad)" opacity="0.3" filter="url(#lensGlow)">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Lens reflection -->
+  <ellipse cx="58" cy="58" rx="8" ry="12" fill="#ffffff" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="1.8s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Handle -->
+  <line x1="86" y1="86" x2="105" y2="105" stroke="url(#zoomGrad)" stroke-width="5" stroke-linecap="round" filter="url(#zoomGlow)">
+    <animateTransform attributeName="transform" type="rotate" values="0 95.5 95.5;2 95.5 95.5;0 95.5 95.5" dur="1.5s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Zoom out minus sign in lens -->
+  <line x1="55" y1="65" x2="75" y2="65" stroke="url(#zoomGrad)" stroke-width="3" stroke-linecap="round" filter="url(#zoomGlow)">
+    <animate attributeName="opacity" values="0.8;1;0.8" dur="1.2s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Expanding rings to show zoom out -->
+  <g opacity="0.5">
+    <circle cx="65" cy="65" r="35" fill="none" stroke="url(#zoomGrad)" stroke-width="1">
+      <animateTransform attributeName="transform" type="scale" values="0.8;1.3;0.8" dur="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0;0.7" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="65" cy="65" r="42" fill="none" stroke="url(#zoomGrad)" stroke-width="1">
+      <animateTransform attributeName="transform" type="scale" values="0.9;1.4;0.9" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.5;0;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Field of view indicators -->
+  <g stroke="url(#zoomGrad)" stroke-width="1" fill="none" opacity="0.6">
+    <path d="M 25 25 L 35 35">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="1.8s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 119 25 L 109 35">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="1.8s" begin="0.3s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 25 119 L 35 109">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 119 119 L 109 109">
+      <animate attributeName="opacity" values="0.6;0.9;0.6" dur="1.8s" begin="0.9s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Scan lines effect -->
+  <g opacity="0.2">
+    <line x1="0" y1="30" x2="144" y2="30" stroke="url(#zoomGrad)" stroke-width="0.5">
+      <animateTransform attributeName="transform" type="translateY" values="0;114;0" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <line x1="0" y1="45" x2="144" y2="45" stroke="url(#zoomGrad)" stroke-width="0.5">
+      <animateTransform attributeName="transform" type="translateY" values="0;99;0" dur="3.2s" repeatCount="indefinite"/>
+    </line>
+  </g>
+  
+  <!-- Corner accent -->
+  <polygon points="4,4 16,4 4,16" fill="url(#zoomGrad)" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.7;0.4" dur="3s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <!-- Angle indicator -->
+  <text x="120" y="25" font-family="monospace" font-size="8" fill="url(#zoomGrad)" opacity="0.7">
+    <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    WIDE
+  </text>
+</svg>

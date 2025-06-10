@@ -1,0 +1,105 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gunMetal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#606060;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="muzzleFlash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6600;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0.3" />
+    </linearGradient>
+    <filter id="gunGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#808080" stroke-width="2"/>
+  
+  <!-- Gun barrel -->
+  <rect x="30" y="68" width="75" height="8" fill="url(#gunMetal)" rx="4" filter="url(#gunGlow)"/>
+  
+  <!-- Barrel end -->
+  <rect x="105" y="70" width="8" height="4" fill="url(#gunMetal)" rx="2"/>
+  
+  <!-- Gun body/receiver -->
+  <rect x="60" y="62" width="35" height="20" fill="url(#gunMetal)" rx="4"/>
+  
+  <!-- Trigger guard -->
+  <path d="M70 82 Q75 90 80 82" stroke="url(#gunMetal)" stroke-width="4" fill="none"/>
+  
+  <!-- Stock -->
+  <rect x="30" y="65" width="30" height="14" fill="url(#gunMetal)" rx="7"/>
+  
+  <!-- Sight rail -->
+  <rect x="65" y="58" width="25" height="4" fill="url(#gunMetal)" rx="2"/>
+  
+  <!-- Iron sights -->
+  <rect x="68" y="55" width="3" height="3" fill="#00ffff" rx="1"/>
+  <rect x="85" y="55" width="3" height="3" fill="#00ffff" rx="1"/>
+  
+  <!-- Muzzle flash -->
+  <path d="M113 72 L125 68 L130 72 L125 76 L113 72" fill="url(#muzzleFlash)" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.2s" repeatCount="indefinite" begin="0s"/>
+  </path>
+  
+  <!-- Projectile trail -->
+  <rect x="118" y="71" width="15" height="2" fill="#ffff00" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.1s" repeatCount="indefinite" begin="0.1s"/>
+  </rect>
+  
+  <!-- Magazine -->
+  <rect x="75" y="82" width="8" height="15" fill="url(#gunMetal)" rx="2"/>
+  
+  <!-- Tech enhancements -->
+  <rect x="70" y="65" width="3" height="3" fill="#00ff00" rx="1">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="76" y="65" width="3" height="3" fill="#00ff00" rx="1">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </rect>
+  
+  <!-- Ammo counter -->
+  <rect x="82" y="62" width="8" height="4" fill="#003366" stroke="#00ffff" stroke-width="0.5" rx="1"/>
+  <rect x="83" y="63" width="1" height="1" fill="#00ff00"/>
+  <rect x="85" y="63" width="1" height="1" fill="#00ff00"/>
+  <rect x="87" y="63" width="1" height="1" fill="#ffff00"/>
+  <rect x="89" y="63" width="1" height="1" fill="#ff8800"/>
+  
+  <!-- Laser sight -->
+  <path d="M113 72 L135 72" stroke="#ff0000" stroke-width="1" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Ejection port -->
+  <rect x="85" y="60" width="4" height="2" fill="#1a1a1a" rx="1"/>
+  
+  <!-- Shell casing -->
+  <ellipse cx="88" cy="55" rx="2" ry="1" fill="#ffaa00" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.15s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;5 -10;0 0" 
+      dur="0.5s" 
+      repeatCount="indefinite" 
+      begin="0.15s"/>
+  </ellipse>
+  
+  <!-- Recoil effect -->
+  <g>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;-2 0;0 0" 
+      dur="0.2s" 
+      repeatCount="indefinite" 
+      begin="0s"/>
+  </g>
+</svg>

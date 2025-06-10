@@ -1,0 +1,130 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="gearGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="settingsGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Main gear -->
+  <g transform="translate(72,72)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 0 0;360 0 0" 
+      dur="8s" 
+      repeatCount="indefinite"/>
+    
+    <!-- Gear teeth -->
+    <path d="M-35,0 L-40,-5 L-40,5 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    <path d="M0,-35 L-5,-40 L5,-40 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    <path d="M35,0 L40,-5 L40,5 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    <path d="M0,35 L-5,40 L5,40 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    
+    <path d="M-25,-25 L-30,-30 L-20,-30 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    <path d="M25,-25 L30,-30 L20,-30 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    <path d="M25,25 L30,30 L20,30 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    <path d="M-25,25 L-30,30 L-20,30 Z" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    
+    <!-- Gear body -->
+    <circle cx="0" cy="0" r="30" fill="url(#gearGrad)" filter="url(#settingsGlow)"/>
+    
+    <!-- Inner circle -->
+    <circle cx="0" cy="0" r="18" fill="#003366" stroke="#00ffff" stroke-width="2"/>
+    
+    <!-- Center core -->
+    <circle cx="0" cy="0" r="10" fill="url(#centerGlow)">
+      <animate attributeName="r" values="10;14;10" dur="2s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Secondary gear -->
+  <g transform="translate(105,45)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 0 0;-360 0 0" 
+      dur="6s" 
+      repeatCount="indefinite"/>
+    
+    <!-- Small gear teeth -->
+    <path d="M-15,0 L-18,-3 L-18,3 Z" fill="url(#gearGrad)"/>
+    <path d="M0,-15 L-3,-18 L3,-18 Z" fill="url(#gearGrad)"/>
+    <path d="M15,0 L18,-3 L18,3 Z" fill="url(#gearGrad)"/>
+    <path d="M0,15 L-3,18 L3,18 Z" fill="url(#gearGrad)"/>
+    
+    <path d="M-11,-11 L-14,-14 L-8,-14 Z" fill="url(#gearGrad)"/>
+    <path d="M11,-11 L14,-14 L8,-14 Z" fill="url(#gearGrad)"/>
+    <path d="M11,11 L14,14 L8,14 Z" fill="url(#gearGrad)"/>
+    <path d="M-11,11 L-14,14 L-8,14 Z" fill="url(#gearGrad)"/>
+    
+    <!-- Small gear body -->
+    <circle cx="0" cy="0" r="12" fill="url(#gearGrad)"/>
+    <circle cx="0" cy="0" r="6" fill="#003366" stroke="#00ffff" stroke-width="1"/>
+  </g>
+  
+  <!-- Third gear -->
+  <g transform="translate(39,99)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 0 0;360 0 0" 
+      dur="10s" 
+      repeatCount="indefinite"/>
+    
+    <!-- Tiny gear teeth -->
+    <path d="M-10,0 L-12,-2 L-12,2 Z" fill="url(#gearGrad)"/>
+    <path d="M0,-10 L-2,-12 L2,-12 Z" fill="url(#gearGrad)"/>
+    <path d="M10,0 L12,-2 L12,2 Z" fill="url(#gearGrad)"/>
+    <path d="M0,10 L-2,12 L2,12 Z" fill="url(#gearGrad)"/>
+    
+    <!-- Tiny gear body -->
+    <circle cx="0" cy="0" r="8" fill="url(#gearGrad)"/>
+    <circle cx="0" cy="0" r="4" fill="#003366"/>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M102 72 L90 58" stroke="#00ffff" stroke-width="1" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M42 72 L54 86" stroke="#00ffff" stroke-width="1" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="1.5s"/>
+  </path>
+  
+  <!-- Status indicators -->
+  <circle cx="25" cy="35" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="119" cy="119" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <!-- Configuration panels -->
+  <rect x="20" y="20" width="15" height="3" fill="#003366" stroke="#00ffff" stroke-width="0.5" rx="1"/>
+  <rect x="21" y="21" width="3" height="1" fill="#00ff00"/>
+  <rect x="26" y="21" width="3" height="1" fill="#ffff00"/>
+  <rect x="31" y="21" width="3" height="1" fill="#ff8800"/>
+  
+  <!-- System load bars -->
+  <rect x="110" y="20" width="2" height="8" fill="#00ff00" rx="1"/>
+  <rect x="113" y="22" width="2" height="6" fill="#88ff00" rx="1"/>
+  <rect x="116" y="24" width="2" height="4" fill="#ffff00" rx="1"/>
+  <rect x="119" y="26" width="2" height="2" fill="#ff8800" rx="1"/>
+</svg>

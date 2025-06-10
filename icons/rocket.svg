@@ -1,0 +1,66 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rocketGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#silver;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#404040;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="thrusterFlame" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#ff6600;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="rocketGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#0a1a2e" stroke="#silver" stroke-width="2"/>
+  
+  <!-- Rocket body -->
+  <ellipse cx="72" cy="60" rx="15" ry="35" fill="url(#rocketGrad)" filter="url(#rocketGlow)"/>
+  
+  <!-- Nose cone -->
+  <path d="M72 25 L82 40 L62 40 Z" fill="url(#rocketGrad)"/>
+  
+  <!-- Fins -->
+  <path d="M57 80 L50 90 L62 85 Z" fill="url(#rocketGrad)"/>
+  <path d="M87 80 L94 90 L82 85 Z" fill="url(#rocketGrad)"/>
+  
+  <!-- Main thruster -->
+  <ellipse cx="72" cy="105" rx="12" ry="8" fill="url(#thrusterFlame)" filter="url(#rocketGlow)">
+    <animate attributeName="ry" values="8;15;8" dur="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="105;110;105" dur="0.5s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Side thrusters -->
+  <ellipse cx="55" cy="95" rx="4" ry="6" fill="url(#thrusterFlame)">
+    <animate attributeName="ry" values="6;10;6" dur="0.7s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="89" cy="95" rx="4" ry="6" fill="url(#thrusterFlame)">
+    <animate attributeName="ry" values="6;10;6" dur="0.7s" repeatCount="indefinite" begin="0.2s"/>
+  </ellipse>
+  
+  <!-- Cockpit window -->
+  <ellipse cx="72" cy="45" rx="8" ry="5" fill="#003366" stroke="#00ffff" stroke-width="1"/>
+  
+  <!-- Navigation lights -->
+  <circle cx="65" cy="35" r="2" fill="#ff0000">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="79" cy="35" r="2" fill="#00ff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite" begin="0.75s"/>
+  </circle>
+  
+  <!-- Exhaust particles -->
+  <circle cx="72" cy="115" r="2" fill="#ffffff" opacity="0.8">
+    <animate attributeName="cy" values="115;125;115" dur="0.3s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0;0.8" dur="0.3s" repeatCount="indefinite"/>
+  </circle>
+</svg>

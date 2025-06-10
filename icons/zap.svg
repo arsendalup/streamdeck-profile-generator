@@ -1,0 +1,61 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="zapGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ffaa00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+    </linearGradient>
+    <filter id="zapGlow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ffff00" stroke-width="2"/>
+  
+  <!-- Lightning bolt -->
+  <path d="M72 25 L85 55 L78 55 L90 85 L72 72 L82 72 L70 105 L57 75 L64 75 L52 45 L70 58 L60 58 Z" 
+        fill="url(#zapGrad)" 
+        filter="url(#zapGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="0.3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Energy arcs -->
+  <path d="M45 50 Q50 45 55 50" stroke="#ffffff" stroke-width="2" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.1s" repeatCount="indefinite" begin="0s"/>
+  </path>
+  
+  <path d="M89 70 Q94 65 99 70" stroke="#ffffff" stroke-width="2" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.1s" repeatCount="indefinite" begin="0.1s"/>
+  </path>
+  
+  <path d="M50 90 Q55 85 60 90" stroke="#ffffff" stroke-width="2" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.1s" repeatCount="indefinite" begin="0.2s"/>
+  </path>
+  
+  <!-- Electric field -->
+  <circle cx="72" cy="72" r="35" fill="none" stroke="#ffff00" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="35;40;35" dur="0.5s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="0.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Sparks -->
+  <circle cx="40" cy="40" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.2s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  
+  <circle cx="104" cy="104" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.2s" repeatCount="indefinite" begin="0.1s"/>
+  </circle>
+  
+  <circle cx="104" cy="40" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.2s" repeatCount="indefinite" begin="0.15s"/>
+  </circle>
+  
+  <circle cx="40" cy="104" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.2s" repeatCount="indefinite" begin="0.05s"/>
+  </circle>
+</svg>

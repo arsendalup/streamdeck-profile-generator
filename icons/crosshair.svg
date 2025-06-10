@@ -1,0 +1,62 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="crosshairGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ff4444;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#330000;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="crossGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff0000" stroke-width="2"/>
+  
+  <!-- Outer ring -->
+  <circle cx="72" cy="72" r="45" fill="none" stroke="#ff4444" stroke-width="2" opacity="0.6">
+    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Inner ring -->
+  <circle cx="72" cy="72" r="30" fill="none" stroke="#ff6666" stroke-width="2" opacity="0.8">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;360 72 72" 
+      dur="4s" 
+      repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main crosshair -->
+  <path d="M72 25 L72 45 M72 99 L72 119 M25 72 L45 72 M99 72 L119 72" 
+        stroke="#ff0000" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        filter="url(#crossGlow)">
+    <animate attributeName="stroke-opacity" values="1;0.7;1" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Center dot -->
+  <circle cx="72" cy="72" r="4" fill="#ff0000" filter="url(#crossGlow)">
+    <animate attributeName="r" values="4;6;4" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Corner markers -->
+  <path d="M50 50 L55 50 L55 55 M89 50 L94 50 L94 55 M50 94 L55 94 L55 89 M89 94 L94 94 L94 89" 
+        stroke="#ff8888" 
+        stroke-width="2" 
+        fill="none"/>
+  
+  <!-- Scanning lines -->
+  <path d="M57 72 L87 72" stroke="#ffff00" stroke-width="1" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M72 57 L72 87" stroke="#ffff00" stroke-width="1" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite" begin="0.75s"/>
+  </path>
+</svg>

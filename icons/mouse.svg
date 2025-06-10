@@ -1,0 +1,104 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="mouseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#c0c0c0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#404040;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="sensorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ff4444;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#660000;stop-opacity:0.2" />
+    </radialGradient>
+    <filter id="mouseGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#c0c0c0" stroke-width="2"/>
+  
+  <!-- Mouse body -->
+  <path d="M72 45 Q95 45 95 70 Q95 95 72 100 Q49 95 49 70 Q49 45 72 45 Z" 
+        fill="url(#mouseGrad)" 
+        filter="url(#mouseGlow)"/>
+  
+  <!-- Left click button -->
+  <path d="M49 55 Q49 45 72 45 L72 65 Q60 60 49 55 Z" 
+        fill="#999999" 
+        stroke="#666666" 
+        stroke-width="1">
+    <animate attributeName="fill" values="#999999;#bbbbbb;#999999" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Right click button -->
+  <path d="M95 55 Q95 45 72 45 L72 65 Q84 60 95 55 Z" 
+        fill="#999999" 
+        stroke="#666666" 
+        stroke-width="1">
+    <animate attributeName="fill" values="#999999;#bbbbbb;#999999" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </path>
+  
+  <!-- Scroll wheel -->
+  <rect x="69" y="50" width="6" height="15" fill="#606060" stroke="#404040" stroke-width="1" rx="3"/>
+  <rect x="70" y="52" width="4" height="2" fill="#404040"/>
+  <rect x="70" y="55" width="4" height="2" fill="#404040"/>
+  <rect x="70" y="58" width="4" height="2" fill="#404040"/>
+  <rect x="70" y="61" width="4" height="2" fill="#404040"/>
+  
+  <!-- Optical sensor -->
+  <circle cx="72" cy="85" r="4" fill="url(#sensorGlow)" filter="url(#mouseGlow)">
+    <animate attributeName="fill-opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Mouse cursor on screen -->
+  <g transform="translate(25,25)">
+    <!-- Screen -->
+    <rect x="0" y="0" width="40" height="25" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+    
+    <!-- Cursor -->
+    <path d="M15 8 L15 20 L20 15 L25 20 L27 18 L22 13 L27 8 Z" 
+          fill="#ffffff" 
+          stroke="#000000" 
+          stroke-width="0.5">
+      <animateTransform 
+        attributeName="transform" 
+        type="translate" 
+        values="0 0;10 5;-5 8;0 0" 
+        dur="4s" 
+        repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Movement tracking -->
+  <path d="M72 105 Q85 110 95 105" stroke="#88ccff" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="3 3">
+    <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M72 105 Q59 110 49 105" stroke="#88ccff" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="3 3">
+    <animate attributeName="stroke-dashoffset" values="0;12;0" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Mouse mode indicator -->
+  <rect x="95" y="25" width="25" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="107" y="30" font-family="monospace" font-size="6" fill="#00ff00" text-anchor="middle">MOUSE</text>
+  
+  <!-- DPI indicator -->
+  <rect x="85" y="115" width="20" height="6" fill="#003366" stroke="#c0c0c0" stroke-width="1" rx="2"/>
+  <text x="95" y="120" font-family="monospace" font-size="6" fill="#c0c0c0" text-anchor="middle">800DPI</text>
+  
+  <!-- Click indicators -->
+  <circle cx="60" cy="52" r="3" fill="none" stroke="#00ff00" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  
+  <circle cx="84" cy="52" r="3" fill="none" stroke="#ff8800" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="2s"/>
+  </circle>
+  
+  <!-- Precision crosshair -->
+  <path d="M67 72 L77 72 M72 67 L72 77" stroke="#ffff00" stroke-width="1" opacity="0.6"/>
+</svg>

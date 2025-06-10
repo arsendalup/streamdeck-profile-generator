@@ -1,0 +1,92 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cameraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#606060;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="lensGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="cameraGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#808080" stroke-width="2"/>
+  
+  <!-- Camera body -->
+  <rect x="35" y="55" width="74" height="45" fill="url(#cameraGrad)" rx="8" filter="url(#cameraGlow)"/>
+  
+  <!-- Main lens -->
+  <circle cx="85" cy="77" r="18" fill="url(#lensGlow)" filter="url(#cameraGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Lens rings -->
+  <circle cx="85" cy="77" r="15" fill="none" stroke="#00ffff" stroke-width="1"/>
+  <circle cx="85" cy="77" r="10" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Viewfinder -->
+  <rect x="40" y="50" width="25" height="10" fill="url(#cameraGrad)" rx="2"/>
+  <rect x="42" y="52" width="21" height="6" fill="#003366" stroke="#00ffff" stroke-width="0.5" rx="1"/>
+  
+  <!-- Flash -->
+  <rect x="70" y="50" width="8" height="8" fill="#ffff00" rx="2">
+    <animate attributeName="fill" values="#ffff00;#ffffff;#ffff00" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Camera controls -->
+  <circle cx="50" cy="70" r="4" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ff8800;#ff0000" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <rect x="55" y="68" width="6" height="4" fill="#00ff00" rx="2"/>
+  
+  <!-- Lens cap/cover -->
+  <circle cx="85" cy="77" r="20" fill="none" stroke="#606060" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Recording indicator -->
+  <circle cx="100" cy="60" r="3" fill="#ff0000">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Focus assist -->
+  <rect x="75" y="67" width="20" height="20" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Zoom indicators -->
+  <text x="45" y="90" font-family="monospace" font-size="8" fill="#00ffff">1x</text>
+  <text x="95" y="90" font-family="monospace" font-size="8" fill="#00ffff">10x</text>
+  
+  <!-- Camera mount -->
+  <rect x="68" y="100" width="8" height="12" fill="url(#cameraGrad)" rx="2"/>
+  
+  <!-- Stabilization indicator -->
+  <rect x="25" y="25" width="20" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="35" y="30" font-family="monospace" font-size="6" fill="#00ff00" text-anchor="middle">STAB</text>
+  
+  <!-- Camera field of view -->
+  <path d="M67 77 L30 50 L30 104 Z" stroke="#88ffff" stroke-width="1" fill="none" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.6;0.3" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Aperture simulation -->
+  <g transform="translate(85,77)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 0 0;360 0 0" 
+      dur="8s" 
+      repeatCount="indefinite"/>
+    
+    <path d="M-5,0 L0,-5 L5,0 L0,5 Z" fill="#004488" opacity="0.6"/>
+  </g>
+</svg>

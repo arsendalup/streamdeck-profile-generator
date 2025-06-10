@@ -1,0 +1,85 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="skullGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#cccccc;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#888888;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ff4444;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#660000;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="skullGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff0000" stroke-width="2"/>
+  
+  <!-- Skull dome -->
+  <ellipse cx="72" cy="60" rx="30" ry="25" fill="url(#skullGrad)" filter="url(#skullGlow)"/>
+  
+  <!-- Eye sockets -->
+  <ellipse cx="60" cy="55" rx="8" ry="10" fill="#000000"/>
+  <ellipse cx="84" cy="55" rx="8" ry="10" fill="#000000"/>
+  
+  <!-- Glowing eyes -->
+  <circle cx="60" cy="55" r="4" fill="url(#eyeGlow)">
+    <animate attributeName="fill-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="84" cy="55" r="4" fill="url(#eyeGlow)">
+    <animate attributeName="fill-opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <!-- Nasal cavity -->
+  <path d="M72 65 L75 75 L72 85 L69 75 Z" fill="#000000"/>
+  
+  <!-- Jaw -->
+  <path d="M55 80 Q72 90 89 80 Q89 95 72 100 Q55 95 55 80 Z" fill="url(#skullGrad)"/>
+  
+  <!-- Teeth -->
+  <rect x="62" y="85" width="3" height="8" fill="#ffffff" rx="1"/>
+  <rect x="67" y="85" width="3" height="10" fill="#ffffff" rx="1"/>
+  <rect x="72" y="85" width="3" height="10" fill="#ffffff" rx="1"/>
+  <rect x="77" y="85" width="3" height="10" fill="#ffffff" rx="1"/>
+  <rect x="82" y="85" width="3" height="8" fill="#ffffff" rx="1"/>
+  
+  <!-- Cracks -->
+  <path d="M85 45 Q88 50 85 55" stroke="#666666" stroke-width="1" fill="none"/>
+  <path d="M59 45 Q56 50 59 55" stroke="#666666" stroke-width="1" fill="none"/>
+  
+  <!-- Hostile indicator -->
+  <rect x="25" y="25" width="25" height="6" fill="#330000" stroke="#ff0000" stroke-width="1" rx="2"/>
+  <text x="37" y="30" font-family="Arial" font-size="6" fill="#ff0000" text-anchor="middle">HOSTILE</text>
+  
+  <!-- Threat level -->
+  <circle cx="115" cy="35" r="8" fill="#ff0000" stroke="#ffffff" stroke-width="2">
+    <animate attributeName="fill" values="#ff0000;#ff8800;#ff0000" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="115" y="39" font-family="Arial" font-size="8" fill="#ffffff" text-anchor="middle">!</text>
+  
+  <!-- Death aura -->
+  <circle cx="72" cy="72" r="35" fill="none" stroke="#ff0000" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="35;45;35" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Danger sparks -->
+  <circle cx="45" cy="45" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  
+  <circle cx="99" cy="99" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  
+  <circle cx="99" cy="45" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+</svg>

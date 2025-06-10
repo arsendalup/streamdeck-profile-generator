@@ -1,0 +1,46 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8800;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff4400;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#882200;stop-opacity:1" />
+    </linearGradient>
+    <filter id="arrowGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff8800" stroke-width="2"/>
+  
+  <!-- Arrow shaft -->
+  <rect x="65" y="54" width="14" height="40" fill="url(#arrowGrad)" filter="url(#arrowGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Arrow head -->
+  <path d="M72 109 L90 89 L78 89 L72 94 L66 89 L54 89 Z" 
+        fill="url(#arrowGrad)" 
+        filter="url(#arrowGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Movement trail -->
+  <path d="M72 74 L72 59 L72 44" 
+        stroke="#ffaa88" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.5"
+        stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" values="0;-10;0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Energy particles -->
+  <circle cx="72" cy="99" r="2" fill="#ffffff">
+    <animate attributeName="cy" values="99;119;99" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="1;0;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+</svg>

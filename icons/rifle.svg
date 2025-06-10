@@ -1,0 +1,73 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="rifleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#606060;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="muzzleFlash" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffff00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff6600;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ff0000;stop-opacity:0.3" />
+    </linearGradient>
+    <filter id="weaponGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#808080" stroke-width="2"/>
+  
+  <!-- Rifle barrel -->
+  <rect x="25" y="65" width="70" height="8" fill="url(#rifleGrad)" rx="4"/>
+  
+  <!-- Barrel tip -->
+  <rect x="95" y="67" width="8" height="4" fill="url(#rifleGrad)" rx="2"/>
+  
+  <!-- Rifle body -->
+  <rect x="55" y="60" width="30" height="18" fill="url(#rifleGrad)" rx="3"/>
+  
+  <!-- Stock -->
+  <rect x="25" y="62" width="30" height="12" fill="url(#rifleGrad)" rx="6"/>
+  
+  <!-- Trigger guard -->
+  <path d="M65 78 Q70 85 75 78" stroke="url(#rifleGrad)" stroke-width="3" fill="none"/>
+  
+  <!-- Scope -->
+  <rect x="60" y="55" width="20" height="5" fill="url(#rifleGrad)" rx="2.5"/>
+  <circle cx="65" cy="57.5" r="2" fill="#003366" stroke="#00ffff" stroke-width="0.5"/>
+  <circle cx="75" cy="57.5" r="2" fill="#003366" stroke="#00ffff" stroke-width="0.5"/>
+  
+  <!-- Muzzle flash -->
+  <path d="M103 69 L115 65 L120 69 L115 73 L103 69" fill="url(#muzzleFlash)" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.2s" repeatCount="indefinite" begin="0s"/>
+  </path>
+  
+  <!-- Projectile trail -->
+  <rect x="108" y="68" width="15" height="2" fill="#ffff00" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.1s" repeatCount="indefinite" begin="0.1s"/>
+  </rect>
+  
+  <!-- Tech enhancements -->
+  <rect x="70" y="63" width="2" height="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="74" y="63" width="2" height="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </rect>
+  
+  <!-- Ammo counter -->
+  <rect x="78" y="60" width="6" height="3" fill="#003366" stroke="#00ffff" stroke-width="0.5"/>
+  <rect x="79" y="61" width="1" height="1" fill="#00ff00"/>
+  <rect x="81" y="61" width="1" height="1" fill="#00ff00"/>
+  <rect x="83" y="61" width="1" height="1" fill="#ffff00"/>
+  
+  <!-- Laser sight -->
+  <path d="M103 69 L130 69" stroke="#ff0000" stroke-width="1" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.3;0.8" dur="1s" repeatCount="indefinite"/>
+  </path>
+</svg>

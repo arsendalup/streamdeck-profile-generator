@@ -1,0 +1,62 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="shieldGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#0080ff;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="energy-glow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#0a1a2e" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Shield outline -->
+  <path d="M72 30 Q55 35 45 50 Q45 80 72 105 Q99 80 99 50 Q89 35 72 30 Z" 
+        fill="url(#shieldGlow)" 
+        filter="url(#energy-glow)" 
+        stroke="#00ffff" 
+        stroke-width="2">
+    <animate attributeName="fill-opacity" values="0.6;0.9;0.6" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Shield energy layers -->
+  <path d="M72 40 Q60 43 54 55 Q54 75 72 90 Q90 75 90 55 Q84 43 72 40 Z" 
+        fill="none" 
+        stroke="#88ffff" 
+        stroke-width="1" 
+        opacity="0.8">
+    <animate attributeName="stroke-opacity" values="0.8;0.3;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M72 50 Q65 52 62 60 Q62 70 72 78 Q82 70 82 60 Q79 52 72 50 Z" 
+        fill="none" 
+        stroke="#aaffff" 
+        stroke-width="1" 
+        opacity="0.6">
+    <animate attributeName="stroke-opacity" values="0.6;1;0.6" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Shield core -->
+  <circle cx="72" cy="65" r="8" fill="#00ffff" opacity="0.7">
+    <animate attributeName="r" values="8;12;8" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Energy sparks -->
+  <circle cx="65" cy="55" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  
+  <circle cx="79" cy="70" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.2s"/>
+  </circle>
+  
+  <circle cx="68" cy="78" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+</svg>

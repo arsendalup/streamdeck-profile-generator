@@ -1,0 +1,59 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="targetGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff4444;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ff0000;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#330000;stop-opacity:0" />
+    </radialGradient>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff4444" stroke-width="2"/>
+  
+  <!-- Outer targeting ring -->
+  <circle cx="72" cy="72" r="50" fill="none" stroke="#ff4444" stroke-width="2">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;360 72 72" 
+      dur="4s" 
+      repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Middle ring -->
+  <circle cx="72" cy="72" r="35" fill="none" stroke="#ff6666" stroke-width="2">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;-360 72 72" 
+      dur="3s" 
+      repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Inner ring -->
+  <circle cx="72" cy="72" r="20" fill="none" stroke="#ff8888" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.3;1" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Center crosshair -->
+  <path d="M72 50 L72 62 M72 82 L72 94 M50 72 L62 72 M82 72 L94 72" 
+        stroke="#ff0000" 
+        stroke-width="3" 
+        stroke-linecap="round">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Corner brackets -->
+  <path d="M45 45 L55 45 L55 55 M89 45 L99 45 L99 55 M45 99 L55 99 L55 89 M89 99 L99 99 L99 89" 
+        stroke="#ff4444" 
+        stroke-width="2" 
+        fill="none"/>
+  
+  <!-- Lock indicators -->
+  <circle cx="72" cy="30" r="3" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ffff00;#ff0000" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="72" cy="114" r="3" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ffff00;#ff0000" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+</svg>

@@ -1,0 +1,119 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="heliGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#606060;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="rotorGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#0080ff;stop-opacity:0.5" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.1" />
+    </radialGradient>
+    <filter id="heliGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#0a1a2e" stroke="#606060" stroke-width="2"/>
+  
+  <!-- Main rotor disc -->
+  <circle cx="72" cy="50" r="35" fill="url(#rotorGlow)" opacity="0.6">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 50;360 72 50" 
+      dur="0.1s" 
+      repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main rotor blades (blurred when spinning) -->
+  <rect x="37" y="48" width="70" height="4" fill="url(#heliGrad)" rx="2" opacity="0.3">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 50;360 72 50" 
+      dur="0.1s" 
+      repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Helicopter fuselage -->
+  <ellipse cx="72" cy="85" rx="30" ry="15" fill="url(#heliGrad)" filter="url(#heliGlow)"/>
+  
+  <!-- Cockpit -->
+  <ellipse cx="72" cy="78" rx="20" ry="8" fill="#003366" stroke="#00ffff" stroke-width="1"/>
+  
+  <!-- Tail boom -->
+  <rect x="102" y="82" width="25" height="6" fill="url(#heliGrad)" rx="3"/>
+  
+  <!-- Tail rotor -->
+  <circle cx="127" cy="85" r="8" fill="url(#rotorGlow)" opacity="0.5">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 127 85;-360 127 85" 
+      dur="0.08s" 
+      repeatCount="indefinite"/>
+  </circle>
+  
+  <rect x="119" y="83" width="16" height="4" fill="url(#heliGrad)" rx="2" opacity="0.3">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 127 85;-360 127 85" 
+      dur="0.08s" 
+      repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Landing skids -->
+  <rect x="55" y="98" width="34" height="3" fill="url(#heliGrad)" rx="1"/>
+  <rect x="50" y="100" width="8" height="5" fill="url(#heliGrad)" rx="2"/>
+  <rect x="86" y="100" width="8" height="5" fill="url(#heliGrad)" rx="2"/>
+  
+  <!-- Rotor hub -->
+  <circle cx="72" cy="50" r="4" fill="url(#heliGrad)"/>
+  
+  <!-- Engine exhaust -->
+  <ellipse cx="85" cy="88" rx="4" ry="2" fill="#ff6600" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="0.5s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Navigation lights -->
+  <circle cx="102" cy="78" r="2" fill="#ff0000">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="102" cy="92" r="2" fill="#00ff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <!-- Downwash effect -->
+  <circle cx="72" cy="110" r="25" fill="none" stroke="#88ffff" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="25;35;25" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0.1;0.4" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- VTOL mode indicator -->
+  <rect x="25" y="25" width="20" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="35" y="30" font-family="monospace" font-size="6" fill="#00ffff" text-anchor="middle">VTOL</text>
+  
+  <!-- Altitude hold -->
+  <circle cx="115" cy="35" r="3" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Rotor mast -->
+  <rect x="70" y="50" width="4" height="15" fill="url(#heliGrad)"/>
+  
+  <!-- Engine intakes -->
+  <ellipse cx="78" cy="75" rx="3" ry="6" fill="#1a1a1a"/>
+  <ellipse cx="66" cy="75" rx="3" ry="6" fill="#1a1a1a"/>
+  
+  <!-- Stabilizer fins -->
+  <path d="M125 80 L130 75 L130 85 Z" fill="url(#heliGrad)"/>
+  <path d="M125 90 L130 95 L130 85 Z" fill="url(#heliGrad)"/>
+</svg>

@@ -1,0 +1,107 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="eyeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#00ffff;stop-opacity:0.9" />
+      <stop offset="70%" style="stop-color:#0080ff;stop-opacity:0.7" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.3" />
+    </radialGradient>
+    <linearGradient id="irisGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <filter id="eyeFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Eye shape -->
+  <path d="M30 72 Q72 40 114 72 Q72 104 30 72 Z" 
+        fill="url(#eyeGlow)" 
+        filter="url(#eyeFilter)"/>
+  
+  <!-- Iris -->
+  <circle cx="72" cy="72" r="20" fill="url(#irisGrad)" filter="url(#eyeFilter)">
+    <animate attributeName="r" values="20;18;20" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Pupil -->
+  <circle cx="72" cy="72" r="8" fill="#000000">
+    <animate attributeName="r" values="8;6;8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Eye reflection -->
+  <ellipse cx="68" cy="68" rx="3" ry="5" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Scanning lines -->
+  <path d="M40 60 L104 60" stroke="#00ffff" stroke-width="1" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="2s" repeatCount="indefinite"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;0 24;0 0" 
+      dur="2s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- HUD elements -->
+  <rect x="45" y="55" width="8" height="2" fill="#00ff00" opacity="0.8"/>
+  <rect x="91" y="55" width="8" height="2" fill="#00ff00" opacity="0.8"/>
+  <rect x="45" y="87" width="8" height="2" fill="#00ff00" opacity="0.8"/>
+  <rect x="91" y="87" width="8" height="2" fill="#00ff00" opacity="0.8"/>
+  
+  <!-- Targeting reticle -->
+  <circle cx="72" cy="72" r="30" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.4">
+    <animate attributeName="r" values="30;35;30" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.4;0.8;0.4" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Crosshairs -->
+  <path d="M72 50 L72 58 M72 86 L72 94 M50 72 L58 72 M86 72 L94 72" 
+        stroke="#ffff00" 
+        stroke-width="1" 
+        opacity="0.7"/>
+  
+  <!-- Blink animation -->
+  <path d="M30 72 Q72 72 114 72" 
+        stroke="#1a1a2e" 
+        stroke-width="8" 
+        opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.2s" repeatCount="indefinite" begin="4s"/>
+  </path>
+  
+  <!-- Eye movement tracking -->
+  <circle cx="72" cy="72" r="2" fill="#ff0000" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="1s" repeatCount="indefinite" begin="1s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;10 -5;-10 5;0 0" 
+      dur="4s" 
+      repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Digital enhancement -->
+  <rect x="25" y="25" width="15" height="4" fill="#003366" stroke="#00ffff" stroke-width="0.5" rx="1"/>
+  <rect x="26" y="26" width="3" height="1" fill="#00ff00"/>
+  <rect x="31" y="26" width="3" height="1" fill="#ffff00"/>
+  <rect x="36" y="26" width="3" height="1" fill="#ff8800"/>
+  
+  <!-- Vision mode indicator -->
+  <text x="32" y="20" font-family="monospace" font-size="6" fill="#00ffff">VIS</text>
+  
+  <!-- Eyelashes/details -->
+  <path d="M35 65 Q30 62 32 68" stroke="#888888" stroke-width="1" opacity="0.6"/>
+  <path d="M109 65 Q114 62 112 68" stroke="#888888" stroke-width="1" opacity="0.6"/>
+  <path d="M35 79 Q30 82 32 76" stroke="#888888" stroke-width="1" opacity="0.6"/>
+  <path d="M109 79 Q114 82 112 76" stroke="#888888" stroke-width="1" opacity="0.6"/>
+</svg>

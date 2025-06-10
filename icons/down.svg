@@ -1,0 +1,35 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="downGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6600;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#cc4400;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main down arrow -->
+  <path d="M36 18 L36 48 M22 34 L36 48 L50 34" fill="none" stroke="url(#downGrad)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,3; 0,0" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Secondary arrow for depth -->
+  <path d="M36 12 L36 42 M26 28 L36 38 L46 28" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,3; 0,0" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Base indicator -->
+  <line x1="24" y1="58" x2="48" y2="58" stroke="url(#downGrad)" stroke-width="3" stroke-linecap="round">
+    <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Motion trail -->
+  <g opacity="0.4">
+    <path d="M36 8 L36 24 M28 20 L36 28 L44 20" fill="none" stroke="#ff6600" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <animate attributeName="opacity" values="0;0.4;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Glow effect -->
+  <path d="M36 18 L36 48 M22 34 L36 48 L50 34" fill="none" stroke="#ff6600" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.2">
+    <animate attributeName="opacity" values="0.1;0.3;0.1" dur="2s" repeatCount="indefinite"/>
+  </path>
+</svg>

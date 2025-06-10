@@ -1,0 +1,83 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trashGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#880000;stop-opacity:1" />
+    </linearGradient>
+    <filter id="trashGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff4444" stroke-width="2"/>
+  
+  <!-- Trash can body -->
+  <rect x="50" y="60" width="44" height="55" fill="url(#trashGrad)" rx="4" filter="url(#trashGlow)"/>
+  
+  <!-- Trash can lid -->
+  <rect x="45" y="50" width="54" height="8" fill="url(#trashGrad)" rx="4"/>
+  
+  <!-- Handle -->
+  <path d="M65 45 Q65 40 72 40 Q79 40 79 45" 
+        stroke="url(#trashGrad)" 
+        stroke-width="4" 
+        fill="none" 
+        stroke-linecap="round"/>
+  
+  <!-- Vertical lines -->
+  <rect x="62" y="70" width="3" height="35" fill="#aa0000" rx="1"/>
+  <rect x="71" y="70" width="3" height="35" fill="#aa0000" rx="1"/>
+  <rect x="80" y="70" width="3" height="35" fill="#aa0000" rx="1"/>
+  
+  <!-- Deletion effect -->
+  <circle cx="72" cy="87" r="15" fill="none" stroke="#ff4444" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="15;25;15" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Disintegration particles -->
+  <circle cx="60" cy="75" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;-10 -20;0 0" 
+      dur="0.5s" 
+      repeatCount="indefinite" 
+      begin="0s"/>
+  </circle>
+  
+  <circle cx="84" cy="85" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.2s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;15 -25;0 0" 
+      dur="0.5s" 
+      repeatCount="indefinite" 
+      begin="0.2s"/>
+  </circle>
+  
+  <circle cx="72" cy="95" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.4s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;0 -30;0 0" 
+      dur="0.5s" 
+      repeatCount="indefinite" 
+      begin="0.4s"/>
+  </circle>
+  
+  <!-- Warning symbol -->
+  <path d="M72 25 L78 35 L66 35 Z" fill="#ffff00" stroke="#ff4444" stroke-width="1">
+    <animate attributeName="fill" values="#ffff00;#ff8800;#ffff00" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <circle cx="72" cy="31" r="1" fill="#ff4444"/>
+</svg>

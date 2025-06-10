@@ -1,0 +1,122 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="unlockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#88ff00;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#44aa00;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="unlockGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#00ff00;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#003300;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="unlockFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ff00" stroke-width="2"/>
+  
+  <!-- Open shackle -->
+  <path d="M52 45 Q52 30 72 30 Q92 30 92 45 L92 55" 
+        stroke="url(#unlockGrad)" 
+        stroke-width="6" 
+        fill="none" 
+        stroke-linecap="round"
+        filter="url(#unlockFilter)">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 92 45;15 92 45;0 92 45" 
+      dur="3s" 
+      repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Lock body -->
+  <rect x="50" y="60" width="44" height="50" fill="url(#unlockGrad)" rx="8" filter="url(#unlockFilter)"/>
+  
+  <!-- Open keyhole -->
+  <circle cx="72" cy="80" r="6" fill="#003366" stroke="#00ffff" stroke-width="2"/>
+  <rect x="69" y="80" width="6" height="15" fill="#00ffff" rx="3">
+    <animate attributeName="fill" values="#00ffff;#ffffff;#00ffff" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Unlocked mechanism -->
+  <circle cx="72" cy="80" r="3" fill="url(#unlockGlow)">
+    <animate attributeName="r" values="3;6;3" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Status indicators (all green) -->
+  <circle cx="60" cy="70" r="2" fill="#00ff00">
+    <animate attributeName="r" values="2;3;2" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="84" cy="70" r="2" fill="#00ff00">
+    <animate attributeName="r" values="2;3;2" dur="1s" repeatCount="indefinite" begin="0.25s"/>
+  </circle>
+  
+  <circle cx="60" cy="95" r="2" fill="#00ff00">
+    <animate attributeName="r" values="2;3;2" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <circle cx="84" cy="95" r="2" fill="#00ff00">
+    <animate attributeName="r" values="2;3;2" dur="1s" repeatCount="indefinite" begin="0.75s"/>
+  </circle>
+  
+  <!-- Digital unlock display -->
+  <rect x="65" y="100" width="14" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <rect x="67" y="102" width="2" height="2" fill="#00ff00"/>
+  <rect x="71" y="102" width="2" height="2" fill="#00ff00"/>
+  <rect x="75" y="102" width="2" height="2" fill="#00ff00"/>
+  
+  <!-- Freedom particles -->
+  <circle cx="95" cy="50" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" begin="0s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;15 -20;0 0" 
+      dur="1s" 
+      repeatCount="indefinite" 
+      begin="0s"/>
+  </circle>
+  
+  <circle cx="98" cy="55" r="1" fill="#ffffff">
+    <animate attributeName="opacity" values="0;1;0" dur="1s" repeatCount="indefinite" begin="0.3s"/>
+    <animateTransform 
+      attributeName="transform" 
+      type="translate" 
+      values="0 0;20 -15;0 0" 
+      dur="1s" 
+      repeatCount="indefinite" 
+      begin="0.3s"/>
+  </circle>
+  
+  <!-- Security field (deactivated) -->
+  <circle cx="72" cy="80" r="30" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.2">
+    <animate attributeName="r" values="30;40;30" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.2;0.6;0.2" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Access granted -->
+  <text x="72" y="25" font-family="Arial" font-size="8" fill="#00ff00" text-anchor="middle">ACCESS</text>
+  
+  <!-- Unlock animation -->
+  <path d="M105 45 L115 35 M115 45 L105 35" 
+        stroke="#00ff00" 
+        stroke-width="3" 
+        stroke-linecap="round" 
+        opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="2s"/>
+  </path>
+  
+  <!-- Energy release -->
+  <circle cx="92" cy="45" r="5" fill="none" stroke="#00ff00" stroke-width="2" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="5;15;5" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+</svg>

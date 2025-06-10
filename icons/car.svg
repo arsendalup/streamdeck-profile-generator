@@ -1,0 +1,100 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="carBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#606060;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#808080;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="headlight" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="70%" style="stop-color:#ffff00;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#ffaa00;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="carGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#606060" stroke-width="2"/>
+  
+  <!-- Car body -->
+  <rect x="35" y="65" width="74" height="35" fill="url(#carBody)" rx="8" filter="url(#carGlow)"/>
+  
+  <!-- Car roof/cabin -->
+  <rect x="45" y="50" width="54" height="25" fill="url(#carBody)" rx="12"/>
+  
+  <!-- Windshield -->
+  <rect x="48" y="52" width="48" height="15" fill="#003366" stroke="#00ffff" stroke-width="1" rx="8"/>
+  
+  <!-- Side windows -->
+  <rect x="48" y="70" width="15" height="8" fill="#003366" stroke="#00ffff" stroke-width="0.5" rx="2"/>
+  <rect x="81" y="70" width="15" height="8" fill="#003366" stroke="#00ffff" stroke-width="0.5" rx="2"/>
+  
+  <!-- Wheels -->
+  <circle cx="50" cy="105" r="8" fill="#202020" stroke="#606060" stroke-width="2"/>
+  <circle cx="50" cy="105" r="4" fill="#808080"/>
+  
+  <circle cx="94" cy="105" r="8" fill="#202020" stroke="#606060" stroke-width="2"/>
+  <circle cx="94" cy="105" r="4" fill="#808080"/>
+  
+  <!-- Headlights -->
+  <ellipse cx="115" cy="75" rx="6" ry="4" fill="url(#headlight)" filter="url(#carGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <ellipse cx="115" cy="85" rx="6" ry="4" fill="url(#headlight)" filter="url(#carGlow)">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </ellipse>
+  
+  <!-- Taillights -->
+  <ellipse cx="29" cy="75" rx="4" ry="3" fill="#ff0000"/>
+  <ellipse cx="29" cy="85" rx="4" ry="3" fill="#ff0000"/>
+  
+  <!-- Grille -->
+  <rect x="105" y="70" width="8" height="20" fill="#202020" rx="2"/>
+  <rect x="107" y="72" width="1" height="16" fill="#606060"/>
+  <rect x="109" y="72" width="1" height="16" fill="#606060"/>
+  <rect x="111" y="72" width="1" height="16" fill="#606060"/>
+  
+  <!-- Hover effect -->
+  <ellipse cx="72" cy="115" rx="30" ry="6" fill="#00ffff" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="ry" values="6;10;6" dur="3s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Side details -->
+  <rect x="40" y="78" width="64" height="2" fill="#808080" opacity="0.6"/>
+  <rect x="50" y="82" width="44" height="1" fill="#404040" opacity="0.8"/>
+  
+  <!-- Door handles -->
+  <rect x="58" y="75" width="3" height="2" fill="#c0c0c0" rx="1"/>
+  <rect x="83" y="75" width="3" height="2" fill="#c0c0c0" rx="1"/>
+  
+  <!-- Antenna -->
+  <rect x="70" y="45" width="1" height="8" fill="#808080"/>
+  <circle cx="70" cy="45" r="2" fill="#ff0000">
+    <animate attributeName="fill" values="#ff0000;#ffff00;#ff0000" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- License plate -->
+  <rect x="25" y="88" width="8" height="4" fill="#ffffff" stroke="#000000" stroke-width="0.5" rx="1"/>
+  
+  <!-- Speed trails -->
+  <path d="M25 80 L15 80" stroke="#88ffff" stroke-width="2" opacity="0.6" stroke-dasharray="3 3">
+    <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M25 85 L15 85" stroke="#88ffff" stroke-width="2" opacity="0.4" stroke-dasharray="3 3">
+    <animate attributeName="stroke-dashoffset" values="0;-12;0" dur="1.2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Tech enhancement -->
+  <rect x="65" y="55" width="14" height="3" fill="#003366" stroke="#00ffff" stroke-width="0.5" rx="1"/>
+  <rect x="67" y="56" width="2" height="1" fill="#00ff00"/>
+  <rect x="71" y="56" width="2" height="1" fill="#ffff00"/>
+  <rect x="75" y="56" width="2" height="1" fill="#ff8800"/>
+</svg>

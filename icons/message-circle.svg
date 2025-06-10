@@ -1,0 +1,89 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="messageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="commGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.8" />
+      <stop offset="40%" style="stop-color:#00ffff;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.2" />
+    </radialGradient>
+    <filter id="messageFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Message bubble -->
+  <circle cx="72" cy="65" r="35" fill="url(#messageGrad)" filter="url(#messageFilter)"/>
+  
+  <!-- Message tail -->
+  <path d="M55 85 L45 105 L65 95 Z" fill="url(#messageGrad)"/>
+  
+  <!-- Message content lines -->
+  <rect x="55" y="50" width="34" height="3" fill="#ffffff" rx="1" opacity="0.8"/>
+  <rect x="55" y="57" width="28" height="3" fill="#ffffff" rx="1" opacity="0.6"/>
+  <rect x="55" y="64" width="30" height="3" fill="#ffffff" rx="1" opacity="0.8"/>
+  <rect x="55" y="71" width="25" height="3" fill="#ffffff" rx="1" opacity="0.6"/>
+  <rect x="55" y="78" width="32" height="3" fill="#ffffff" rx="1" opacity="0.8"/>
+  
+  <!-- Communication waves -->
+  <circle cx="72" cy="65" r="40" fill="none" stroke="#00ffff" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="40;50;40" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="72" cy="65" r="45" fill="none" stroke="#00ffff" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;0.6;0" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    <animate attributeName="r" values="45;55;45" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <!-- CommLink indicator -->
+  <rect x="25" y="25" width="30" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="40" y="30" font-family="monospace" font-size="6" fill="#00ffff" text-anchor="middle">COMMLINK</text>
+  
+  <!-- New message indicator -->
+  <circle cx="95" cy="40" r="6" fill="#ff0000" stroke="#ffffff" stroke-width="1">
+    <animate attributeName="fill" values="#ff0000;#ff8800;#ff0000" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  <text x="95" y="44" font-family="Arial" font-size="8" fill="#ffffff" text-anchor="middle">3</text>
+  
+  <!-- Signal strength -->
+  <path d="M110 75 Q115 70 120 75" stroke="#00ff00" stroke-width="2" fill="none"/>
+  <path d="M110 75 Q118 65 125 75" stroke="#88ff00" stroke-width="2" fill="none" opacity="0.8"/>
+  <path d="M110 75 Q121 60 130 75" stroke="#ffff00" stroke-width="2" fill="none" opacity="0.6"/>
+  
+  <!-- Message status -->
+  <circle cx="85" cy="78" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#88ff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Typing indicator -->
+  <circle cx="58" cy="85" r="1" fill="#ffff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.8s" repeatCount="indefinite" begin="0s"/>
+  </circle>
+  
+  <circle cx="62" cy="85" r="1" fill="#ffff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.8s" repeatCount="indefinite" begin="0.3s"/>
+  </circle>
+  
+  <circle cx="66" cy="85" r="1" fill="#ffff00">
+    <animate attributeName="opacity" values="1;0.3;1" dur="0.8s" repeatCount="indefinite" begin="0.6s"/>
+  </circle>
+  
+  <!-- Encryption indicator -->
+  <path d="M42 35 L45 32 L48 35 M45 32 L45 38" stroke="#00ff00" stroke-width="1" fill="none"/>
+  
+  <!-- Contact list indicator -->
+  <rect x="100" y="110" width="20" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <circle cx="105" cy="114" r="1" fill="#88ff88"/>
+  <circle cx="110" cy="114" r="1" fill="#ffff88"/>
+  <circle cx="115" cy="114" r="1" fill="#ff8888"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dockGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#666666;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="shipGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Docking station -->
+  <rect x="8" y="40" width="56" height="24" rx="4" fill="url(#dockGrad)" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Docking bays -->
+  <rect x="12" y="44" width="12" height="16" rx="2" fill="#000000" stroke="#00d4ff" stroke-width="1"/>
+  <rect x="30" y="44" width="12" height="16" rx="2" fill="#000000" stroke="#00d4ff" stroke-width="1"/>
+  <rect x="48" y="44" width="12" height="16" rx="2" fill="#000000" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Ship approaching -->
+  <g>
+    <polygon points="36,8 28,20 44,20" fill="url(#shipGrad)" stroke="#ffffff" stroke-width="1">
+      <animateTransform attributeName="transform" type="translate" values="0,-8; 0,0; 0,-8" dur="3s" repeatCount="indefinite"/>
+    </polygon>
+    <!-- Ship engines -->
+    <circle cx="32" cy="18" r="2" fill="#ff6600">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="18" r="2" fill="#ff6600">
+      <animate attributeName="opacity" values="0.3;1;0.3" dur="0.5s" begin="0.25s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Docking alignment beams -->
+  <line x1="18" y1="40" x2="18" y2="32" stroke="#00ff00" stroke-width="2" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite"/>
+  </line>
+  <line x1="36" y1="40" x2="36" y2="32" stroke="#00ff00" stroke-width="2" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" begin="0.3s" repeatCount="indefinite"/>
+  </line>
+  <line x1="54" y1="40" x2="54" y2="32" stroke="#00ff00" stroke-width="2" opacity="0.8">
+    <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" begin="0.6s" repeatCount="indefinite"/>
+  </line>
+  
+  <!-- Status indicators -->
+  <circle cx="16" cy="36" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ff6600;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="56" cy="36" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ff6600;#00ff00" dur="2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Docking clamps -->
+  <rect x="6" y="48" width="4" height="8" rx="2" fill="#555555" stroke="#00d4ff" stroke-width="1"/>
+  <rect x="62" y="48" width="4" height="8" rx="2" fill="#555555" stroke="#00d4ff" stroke-width="1"/>
+</svg>

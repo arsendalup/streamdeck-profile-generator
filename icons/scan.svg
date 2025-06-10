@@ -1,0 +1,153 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="scanGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:0" />
+      <stop offset="50%" style="stop-color:#00ff00;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#00ff00;stop-opacity:0" />
+    </linearGradient>
+    <radialGradient id="targetGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff6600;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Scanner frame -->
+  <rect x="8" y="12" width="56" height="48" rx="4" fill="#001122" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Scanner screen -->
+  <rect x="12" y="16" width="48" height="40" rx="2" fill="#000011" stroke="#00aa88" stroke-width="1"/>
+  
+  <!-- Grid pattern -->
+  <g stroke="#00aa88" stroke-width="0.5" opacity="0.5">
+    <line x1="12" y1="24" x2="60" y2="24"/>
+    <line x1="12" y1="32" x2="60" y2="32"/>
+    <line x1="12" y1="40" x2="60" y2="40"/>
+    <line x1="12" y1="48" x2="60" y2="48"/>
+    <line x1="20" y1="16" x2="20" y2="56"/>
+    <line x1="28" y1="16" x2="28" y2="56"/>
+    <line x1="36" y1="16" x2="36" y2="56"/>
+    <line x1="44" y1="16" x2="44" y2="56"/>
+    <line x1="52" y1="16" x2="52" y2="56"/>
+  </g>
+  
+  <!-- Scan line -->
+  <rect x="12" y="16" width="4" height="40" fill="url(#scanGrad)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 44,0; 0,0" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Detected objects -->
+  <g>
+    <!-- Target 1 -->
+    <circle cx="24" cy="28" r="3" fill="url(#targetGrad)" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="24" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#ff6600">T1</text>
+    
+    <!-- Target 2 -->
+    <circle cx="44" cy="36" r="2" fill="#ff3333" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="44" y="32" text-anchor="middle" font-family="monospace" font-size="4" fill="#ff3333">H</text>
+    
+    <!-- Target 3 -->
+    <circle cx="32" cy="48" r="2" fill="#00aaff" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="32" y="44" text-anchor="middle" font-family="monospace" font-size="4" fill="#00aaff">F</text>
+    
+    <!-- Unknown contacts -->
+    <circle cx="48" cy="24" r="1" fill="#ffff00" opacity="0.7"/>
+    <circle cx="20" cy="44" r="1" fill="#ffff00" opacity="0.7"/>
+    <circle cx="56" cy="52" r="1" fill="#ffff00" opacity="0.7"/>
+  </g>
+  
+  <!-- Range circles -->
+  <g fill="none" stroke="#00aa88" stroke-width="1" opacity="0.3">
+    <circle cx="36" cy="36" r="8"/>
+    <circle cx="36" cy="36" r="16"/>
+    <circle cx="36" cy="36" r="24"/>
+  </g>
+  
+  <!-- Scanner beam -->
+  <path d="M36 36 L36 16 A20 20 0 0 1 50 28 Z" fill="#00ff00" opacity="0.2">
+    <animateTransform attributeName="transform" type="rotate" values="0 36 36;360 36 36" dur="4s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Scanner indicators -->
+  <g transform="translate(8, 64)" opacity="0.8">
+    <rect width="56" height="6" rx="2" fill="#000000" stroke="#00d4ff" stroke-width="1"/>
+    <text x="28" y="4" text-anchor="middle" font-family="monospace" font-size="4" fill="#00ff00">
+      SCANNING... CONTACTS: 6
+      <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Power indicator -->
+  <circle cx="60" cy="20" r="2" fill="#00ff00" stroke="#ffffff" stroke-width="1">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Signal strength -->
+  <g transform="translate(52, 60)" opacity="0.7">
+    <rect x="0" y="0" width="2" height="2" fill="#00ff00">
+      <animate attributeName="height" values="2;6;2" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="0;-4;0" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="3" y="0" width="2" height="2" fill="#00ff00">
+      <animate attributeName="height" values="2;8;2" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="0;-6;0" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="6" y="0" width="2" height="2" fill="#00ff00">
+      <animate attributeName="height" values="2;10;2" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="0;-8;0" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Scan mode selector -->
+  <g transform="translate(8, 4)">
+    <rect width="16" height="6" rx="2" fill="#001122" stroke="#00d4ff" stroke-width="1"/>
+    <text x="8" y="4" text-anchor="middle" font-family="monospace" font-size="4" fill="#00d4ff">ACTIVE</text>
+  </g>
+  
+  <!-- Range display -->
+  <g transform="translate(48, 4)">
+    <rect width="16" height="6" rx="2" fill="#001122" stroke="#ffff00" stroke-width="1"/>
+    <text x="8" y="4" text-anchor="middle" font-family="monospace" font-size="4" fill="#ffff00">25.7km</text>
+  </g>
+  
+  <!-- Scan pattern -->
+  <g opacity="0.4">
+    <path d="M12 16 L60 16 L60 20 L12 20 Z" fill="#00ff00">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,36; 0,0" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.2;0.6" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Data readout -->
+  <g transform="translate(64, 36)" opacity="0.6">
+    <rect x="0" y="0" width="6" height="20" rx="1" fill="#000000" stroke="#00aa88" stroke-width="1"/>
+    <rect x="1" y="18" width="4" height="1" fill="#00ff00"/>
+    <rect x="1" y="16" width="3" height="1" fill="#ffff00"/>
+    <rect x="1" y="14" width="4" height="1" fill="#00ff00"/>
+    <rect x="1" y="12" width="2" height="1" fill="#ff6600"/>
+    <rect x="1" y="10" width="4" height="1" fill="#00ff00"/>
+    <rect x="1" y="8" width="1" height="1" fill="#ff3333"/>
+    <rect x="1" y="6" width="3" height="1" fill="#00aaff"/>
+    <rect x="1" y="4" width="2" height="1" fill="#ffff00"/>
+    <rect x="1" y="2" width="4" height="1" fill="#00ff00"/>
+  </g>
+  
+  <!-- Sweep angle indicator -->
+  <g transform="translate(20, 8)" opacity="0.7">
+    <path d="M0 0 Q4 -2 8 0" stroke="#ffffff" stroke-width="1" fill="none"/>
+    <text x="4" y="6" text-anchor="middle" font-family="Arial" font-size="4" fill="#ffffff">120°</text>
+  </g>
+  
+  <!-- Warning alerts -->
+  <g transform="translate(68, 8)" opacity="0.8">
+    <polygon points="0,0 4,6 -4,6" fill="#ff3333" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.6;1;0.6" dur="1s" repeatCount="indefinite"/>
+    </polygon>
+    <text x="0" y="4" text-anchor="middle" font-family="Arial" font-size="3" font-weight="bold" fill="#ffffff">!</text>
+  </g>
+</svg>

@@ -1,0 +1,94 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="figureGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Head -->
+  <circle cx="36" cy="20" r="6" fill="url(#figureGrad)" stroke="#ffffff" stroke-width="2">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Body -->
+  <rect x="32" y="24" width="8" height="16" rx="4" fill="url(#figureGrad)" stroke="#ffffff" stroke-width="2">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="1.5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Left arm (raised) -->
+  <rect x="24" y="26" width="8" height="4" rx="2" fill="url(#figureGrad)" stroke="#ffffff" stroke-width="2" transform="rotate(-30 28 28)">
+    <animateTransform attributeName="transform" type="rotate" values="-30 28 28;-45 28 28;-30 28 28" dur="1.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="1.5s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  
+  <!-- Right arm (raised) -->
+  <rect x="40" y="26" width="8" height="4" rx="2" fill="url(#figureGrad)" stroke="#ffffff" stroke-width="2" transform="rotate(30 44 28)">
+    <animateTransform attributeName="transform" type="rotate" values="30 44 28;45 44 28;30 44 28" dur="1.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="1.5s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  
+  <!-- Left leg (bent) -->
+  <rect x="30" y="38" width="4" height="12" rx="2" fill="url(#figureGrad)" stroke="#ffffff" stroke-width="2" transform="rotate(-20 32 44)">
+    <animateTransform attributeName="transform" type="rotate" values="-20 32 44;-30 32 44;-20 32 44" dur="1.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="1.5s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  
+  <!-- Right leg (bent) -->
+  <rect x="38" y="38" width="4" height="12" rx="2" fill="url(#figureGrad)" stroke="#ffffff" stroke-width="2" transform="rotate(20 40 44)">
+    <animateTransform attributeName="transform" type="rotate" values="20 40 44;30 40 44;20 40 44" dur="1.5s" repeatCount="indefinite"/>
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="1.5s" repeatCount="indefinite" additive="sum"/>
+  </rect>
+  
+  <!-- Ground line -->
+  <line x1="12" y1="58" x2="60" y2="58" stroke="#666666" stroke-width="3" stroke-linecap="round"/>
+  
+  <!-- Motion trails -->
+  <g opacity="0.5">
+    <!-- Head trail -->
+    <circle cx="36" cy="22" r="5" fill="#00d4ff" opacity="0.3">
+      <animate attributeName="opacity" values="0;0.3;0" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <!-- Body trail -->
+    <rect x="32.5" y="26" width="7" height="14" rx="3" fill="#00d4ff" opacity="0.3">
+      <animate attributeName="opacity" values="0;0.3;0" dur="1.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Jump force indicators -->
+  <g opacity="0.7">
+    <path d="M28 54 L32 48 L36 54" stroke="#ff6600" stroke-width="2" fill="none">
+      <animate attributeName="opacity" values="0;0.8;0" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+    <path d="M36 54 L40 48 L44 54" stroke="#ff6600" stroke-width="2" fill="none">
+      <animate attributeName="opacity" values="0;0.8;0" dur="1.5s" begin="0.2s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Energy burst -->
+  <circle cx="36" cy="50" r="8" fill="none" stroke="#ffff00" stroke-width="2" opacity="0.6">
+    <animate attributeName="r" values="4;12;4" dur="1.5s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.2;0.8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Dust clouds -->
+  <g opacity="0.4">
+    <ellipse cx="24" cy="56" rx="6" ry="2" fill="#cccccc">
+      <animate attributeName="rx" values="4;8;4" dur="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="1.5s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse cx="48" cy="56" rx="6" ry="2" fill="#cccccc">
+      <animate attributeName="rx" values="4;8;4" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="1.5s" begin="0.3s" repeatCount="indefinite"/>
+    </ellipse>
+  </g>
+  
+  <!-- Height indicators -->
+  <g stroke="#00ff00" stroke-width="1" fill="none" opacity="0.6">
+    <line x1="8" y1="20" x2="12" y2="20"/>
+    <line x1="8" y1="58" x2="12" y2="58"/>
+    <line x1="10" y1="20" x2="10" y2="58"/>
+    <!-- Height measurement -->
+    <text x="6" y="40" font-family="Arial" font-size="8" fill="#00ff00" transform="rotate(-90 6 40)">H</text>
+  </g>
+</svg>

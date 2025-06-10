@@ -1,0 +1,90 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="usersGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <filter id="usersGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- User 1 -->
+  <g>
+    <circle cx="45" cy="50" r="8" fill="url(#usersGrad)" filter="url(#usersGlow)">
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <rect x="37" y="58" width="16" height="20" fill="url(#usersGrad)" rx="8"/>
+    
+    <!-- Status indicator -->
+    <circle cx="52" cy="45" r="2" fill="#00ff00">
+      <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- User 2 -->
+  <g>
+    <circle cx="72" cy="45" r="10" fill="url(#usersGrad)" filter="url(#usersGlow)">
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+    <rect x="62" y="55" width="20" height="25" fill="url(#usersGrad)" rx="10"/>
+    
+    <!-- Status indicator -->
+    <circle cx="81" cy="40" r="2" fill="#00ff00">
+      <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+    </circle>
+  </g>
+  
+  <!-- User 3 -->
+  <g>
+    <circle cx="99" cy="50" r="8" fill="url(#usersGrad)" filter="url(#usersGlow)">
+      <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+    <rect x="91" y="58" width="16" height="20" fill="url(#usersGrad)" rx="8"/>
+    
+    <!-- Status indicator -->
+    <circle cx="92" cy="45" r="2" fill="#00ff00">
+      <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+  
+  <!-- Connection lines -->
+  <path d="M53 60 Q62 55 62 65" stroke="#88ffff" stroke-width="1" opacity="0.6"/>
+  <path d="M82 65 Q91 60 91 68" stroke="#88ffff" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Group indicator -->
+  <circle cx="72" cy="90" r="25" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="25;30;25" dur="3s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Cycle indicator -->
+  <path d="M30 85 Q40 80 50 85 Q60 90 70 85 Q80 80 90 85 Q100 90 110 85" 
+        stroke="#88ffff" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.6"
+        stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Team count -->
+  <rect x="25" y="25" width="20" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="35" y="31" font-family="monospace" font-size="8" fill="#00ff00" text-anchor="middle">ALL</text>
+  
+  <!-- Communication waves -->
+  <circle cx="72" cy="60" r="15" fill="none" stroke="#66ccff" stroke-width="1" opacity="0">
+    <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="r" values="15;35;15" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Target selection -->
+  <path d="M65 105 L79 105 M72 98 L72 112" stroke="#ffff00" stroke-width="2" opacity="0.8"/>
+</svg>

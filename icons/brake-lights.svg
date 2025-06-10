@@ -1,0 +1,93 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="brakeGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ff0000;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#ff4444;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#880000;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="brakeFilter">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#ff0000" stroke-width="2"/>
+  
+  <!-- Left brake light -->
+  <ellipse cx="45" cy="80" rx="12" ry="8" fill="url(#brakeGlow)" filter="url(#brakeFilter)">
+    <animate attributeName="fill-opacity" values="1;0.3;1" dur="0.8s" repeatCount="indefinite"/>
+  </ellipse>
+  
+  <!-- Right brake light -->
+  <ellipse cx="99" cy="80" rx="12" ry="8" fill="url(#brakeGlow)" filter="url(#brakeFilter)">
+    <animate attributeName="fill-opacity" values="1;0.3;1" dur="0.8s" repeatCount="indefinite" begin="0.4s"/>
+  </ellipse>
+  
+  <!-- Center high-mount brake light -->
+  <rect x="67" y="65" width="10" height="6" fill="url(#brakeGlow)" rx="3" filter="url(#brakeFilter)">
+    <animate attributeName="fill-opacity" values="1;0.3;1" dur="0.6s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Vehicle outline -->
+  <rect x="35" y="75" width="74" height="25" fill="none" stroke="#606060" stroke-width="2" rx="8"/>
+  
+  <!-- Brake disc indicators -->
+  <circle cx="45" cy="105" r="8" fill="none" stroke="#ff4444" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="99" cy="105" r="8" fill="none" stroke="#ff4444" stroke-width="2">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <!-- Heat lines from brakes -->
+  <path d="M45 115 L45 125" stroke="#ff8800" stroke-width="1" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M48 115 L48 125" stroke="#ff8800" stroke-width="1" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.5s" repeatCount="indefinite" begin="0.3s"/>
+  </path>
+  
+  <path d="M99 115 L99 125" stroke="#ff8800" stroke-width="1" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;0.2;0.6" dur="1.5s" repeatCount="indefinite" begin="0.7s"/>
+  </path>
+  
+  <path d="M102 115 L102 125" stroke="#ff8800" stroke-width="1" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+  </path>
+  
+  <!-- BRAKE text -->
+  <text x="72" y="45" font-family="Arial" font-size="14" font-weight="bold" fill="#ff0000" text-anchor="middle" filter="url(#brakeFilter)">BRAKE</text>
+  
+  <!-- Deceleration arrows -->
+  <path d="M25 72 L35 72 M30 67 L25 72 L30 77" 
+        stroke="#ff4444" 
+        stroke-width="3" 
+        stroke-linecap="round">
+    <animate attributeName="stroke-opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M119 72 L109 72 M114 67 L119 72 L114 77" 
+        stroke="#ff4444" 
+        stroke-width="3" 
+        stroke-linecap="round">
+    <animate attributeName="stroke-opacity" values="1;0.3;1" dur="1s" repeatCount="indefinite" begin="0.5s"/>
+  </path>
+  
+  <!-- Brake force indicator -->
+  <rect x="60" y="25" width="24" height="8" fill="#003366" stroke="#ff0000" stroke-width="1" rx="2"/>
+  <rect x="62" y="27" width="20" height="4" fill="#ff0000" rx="1">
+    <animate attributeName="width" values="20;8;20" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Emergency brake warning -->
+  <path d="M72 15 L78 25 L66 25 Z" fill="#ffff00" stroke="#ff0000" stroke-width="1">
+    <animate attributeName="fill" values="#ffff00;#ff8800;#ffff00" dur="0.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <circle cx="72" cy="21" r="1" fill="#ff0000"/>
+</svg>

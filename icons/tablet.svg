@@ -1,0 +1,100 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tabletGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#606060;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:0.8" />
+      <stop offset="70%" style="stop-color:#0080ff;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.1" />
+    </radialGradient>
+    <filter id="tabletFilter">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Tablet frame -->
+  <rect x="35" y="25" width="74" height="94" fill="url(#tabletGrad)" rx="8" filter="url(#tabletFilter)"/>
+  
+  <!-- Screen -->
+  <rect x="40" y="30" width="64" height="84" fill="#003366" stroke="#00ffff" stroke-width="1" rx="4"/>
+  
+  <!-- Screen glow -->
+  <rect x="40" y="30" width="64" height="84" fill="url(#screenGlow)" rx="4" opacity="0.6">
+    <animate attributeName="fill-opacity" values="0.6;0.3;0.6" dur="3s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Mobiglass interface elements -->
+  <!-- Top bar -->
+  <rect x="42" y="32" width="60" height="6" fill="#00ffff" opacity="0.8"/>
+  
+  <!-- App icons -->
+  <rect x="45" y="42" width="8" height="8" fill="#ff8800" rx="2"/>
+  <rect x="57" y="42" width="8" height="8" fill="#00ff00" rx="2"/>
+  <rect x="69" y="42" width="8" height="8" fill="#ff4444" rx="2"/>
+  <rect x="81" y="42" width="8" height="8" fill="#8844ff" rx="2"/>
+  <rect x="93" y="42" width="8" height="8" fill="#ffff00" rx="2"/>
+  
+  <!-- Central display area -->
+  <rect x="45" y="55" width="54" height="35" fill="#001122" stroke="#00ffff" stroke-width="1" rx="2"/>
+  
+  <!-- Data streams -->
+  <path d="M48 58 L96 58" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+  <path d="M48 62 L96 62" stroke="#00ffff" stroke-width="1" opacity="0.4"/>
+  <path d="M48 66 L96 66" stroke="#00ffff" stroke-width="1" opacity="0.6"/>
+  <path d="M48 70 L96 70" stroke="#00ffff" stroke-width="1" opacity="0.3"/>
+  
+  <!-- Holographic elements -->
+  <circle cx="72" cy="75" r="8" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.8">
+    <animate attributeName="r" values="8;12;8" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.8;0.3;0.8" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Navigation buttons -->
+  <rect x="45" y="95" width="12" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="51" y="100" font-family="monospace" font-size="5" fill="#00ffff" text-anchor="middle">NAV</text>
+  
+  <rect x="60" y="95" width="12" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="66" y="100" font-family="monospace" font-size="5" fill="#00ffff" text-anchor="middle">MAP</text>
+  
+  <rect x="75" y="95" width="12" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="81" y="100" font-family="monospace" font-size="5" fill="#00ffff" text-anchor="middle">COM</text>
+  
+  <rect x="90" y="95" width="12" height="8" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="96" y="100" font-family="monospace" font-size="5" fill="#00ffff" text-anchor="middle">INV</text>
+  
+  <!-- Status indicators -->
+  <circle cx="95" cy="35" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="90" cy="35" r="2" fill="#0088ff">
+    <animate attributeName="fill" values="#0088ff;#00aaff;#0088ff" dur="2s" repeatCount="indefinite" begin="0.7s"/>
+  </circle>
+  
+  <!-- Power indicator -->
+  <rect x="85" y="107" width="12" height="4" fill="#003366" stroke="#00ff00" stroke-width="1" rx="1"/>
+  <rect x="86" y="108" width="8" height="2" fill="#00ff00" rx="1"/>
+  
+  <!-- Holographic projection -->
+  <path d="M72 25 L75 20 L69 20 Z" fill="#00ffff" opacity="0.6">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="1.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Data connection -->
+  <path d="M25 72 Q30 67 35 72" stroke="#88ffff" stroke-width="1" fill="none" opacity="0.6" stroke-dasharray="2 2">
+    <animate attributeName="stroke-dashoffset" values="0;-8;0" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Mobiglass label -->
+  <rect x="25" y="120" width="35" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="42" y="125" font-family="monospace" font-size="6" fill="#00ffff" text-anchor="middle">MOBIGLAS</text>
+</svg>

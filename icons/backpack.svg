@@ -1,0 +1,82 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="backpackGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#808080;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#404040;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#606060;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="techGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0080ff;stop-opacity:1" />
+    </linearGradient>
+    <filter id="packGlow">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#808080" stroke-width="2"/>
+  
+  <!-- Main backpack body -->
+  <rect x="45" y="35" width="54" height="70" fill="url(#backpackGrad)" rx="10" filter="url(#packGlow)"/>
+  
+  <!-- Shoulder straps -->
+  <path d="M45 40 Q35 35 35 50 Q35 65 45 60" stroke="url(#backpackGrad)" stroke-width="6" fill="none"/>
+  <path d="M99 40 Q109 35 109 50 Q109 65 99 60" stroke="url(#backpackGrad)" stroke-width="6" fill="none"/>
+  
+  <!-- Main compartment -->
+  <rect x="50" y="45" width="44" height="50" fill="#2a2a3e" stroke="#00ffff" stroke-width="1" rx="5"/>
+  
+  <!-- Front pocket -->
+  <rect x="55" y="50" width="34" height="20" fill="#1a1a2e" stroke="#00ffff" stroke-width="1" rx="3"/>
+  
+  <!-- Side pockets -->
+  <ellipse cx="42" cy="70" rx="5" ry="12" fill="url(#backpackGrad)"/>
+  <ellipse cx="102" cy="70" rx="5" ry="12" fill="url(#backpackGrad)"/>
+  
+  <!-- Tech panels -->
+  <rect x="58" y="75" width="8" height="15" fill="url(#techGrad)" rx="2">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+  
+  <rect x="78" y="75" width="8" height="15" fill="url(#techGrad)" rx="2">
+    <animate attributeName="fill-opacity" values="1;0.6;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </rect>
+  
+  <!-- Status indicators -->
+  <circle cx="60" cy="55" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="67" cy="55" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  
+  <circle cx="74" cy="55" r="2" fill="#00ff00">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#00ff00" dur="1.5s" repeatCount="indefinite" begin="1s"/>
+  </circle>
+  
+  <circle cx="81" cy="55" r="2" fill="#ffff00">
+    <animate attributeName="fill" values="#ffff00;#ff8800;#ffff00" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Utility attachments -->
+  <rect x="52" y="95" width="4" height="8" fill="#ff6600" rx="2"/>
+  <rect x="58" y="95" width="4" height="8" fill="#00ff00" rx="2"/>
+  <rect x="64" y="95" width="4" height="8" fill="#0080ff" rx="2"/>
+  <rect x="70" y="95" width="4" height="8" fill="#ffff00" rx="2"/>
+  <rect x="76" y="95" width="4" height="8" fill="#ff0088" rx="2"/>
+  <rect x="82" y="95" width="4" height="8" fill="#88ff00" rx="2"/>
+  <rect x="88" y="95" width="4" height="8" fill="#ff4400" rx="2"/>
+  
+  <!-- Buckles -->
+  <rect x="50" y="65" width="3" height="3" fill="silver" rx="1"/>
+  <rect x="91" y="65" width="3" height="3" fill="silver" rx="1"/>
+  
+  <!-- Carabiner -->
+  <circle cx="93" cy="45" r="3" fill="none" stroke="silver" stroke-width="1"/>
+  <rect x="93" y="42" width="2" height="1" fill="silver"/>
+</svg>

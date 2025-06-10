@@ -1,0 +1,48 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flashlightGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#666666;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#333333;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="beamGrad" cx="0%" cy="50%" r="100%">
+      <stop offset="0%" style="stop-color:#ffff99;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#ffff66;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#ffff33;stop-opacity:0.1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Flashlight body -->
+  <rect x="16" y="32" width="24" height="8" rx="4" fill="url(#flashlightGrad)" stroke="#00d4ff" stroke-width="2"/>
+  
+  <!-- Handle -->
+  <rect x="12" y="30" width="8" height="12" rx="4" fill="url(#flashlightGrad)" stroke="#00d4ff" stroke-width="1"/>
+  
+  <!-- Head -->
+  <circle cx="44" cy="36" r="6" fill="url(#flashlightGrad)" stroke="#00d4ff" stroke-width="2"/>
+  <circle cx="44" cy="36" r="3" fill="#333333" stroke="#ffff99" stroke-width="1"/>
+  
+  <!-- Light beam -->
+  <polygon points="50,36 68,24 68,48" fill="url(#beamGrad)" opacity="0.7">
+    <animate attributeName="opacity" values="0.5;0.9;0.5" dur="2s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <!-- Bright center beam -->
+  <polygon points="50,36 64,30 64,42" fill="#ffff99" opacity="0.6">
+    <animate attributeName="opacity" values="0.4;0.8;0.4" dur="1s" repeatCount="indefinite"/>
+  </polygon>
+  
+  <!-- Power button -->
+  <circle cx="28" cy="36" r="2" fill="#ff3333" stroke="#ffffff" stroke-width="1">
+    <animate attributeName="fill" values="#ff3333;#ffff99;#ff3333" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Battery indicator -->
+  <rect x="20" y="34" width="4" height="4" rx="1" fill="#00ff00" stroke="#ffffff" stroke-width="0.5">
+    <animate attributeName="fill" values="#00ff00;#ffff00;#ff3333;#ffff00;#00ff00" dur="5s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Light reflection -->
+  <ellipse cx="45" cy="34" rx="1" ry="2" fill="#ffffff" opacity="0.8">
+    <animate attributeName="opacity" values="0.6;1;0.6" dur="2s" repeatCount="indefinite"/>
+  </ellipse>
+</svg>

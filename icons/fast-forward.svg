@@ -1,0 +1,100 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="fastForwardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="quantumGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="30%" style="stop-color:#00ffff;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#003366;stop-opacity:0.3" />
+    </radialGradient>
+    <filter id="fastGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- First arrow -->
+  <path d="M35 50 L60 72 L35 94 Z" 
+        fill="url(#fastForwardGrad)" 
+        filter="url(#fastGlow)">
+    <animate attributeName="fill-opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Second arrow -->
+  <path d="M65 50 L90 72 L65 94 Z" 
+        fill="url(#fastForwardGrad)" 
+        filter="url(#fastGlow)">
+    <animate attributeName="fill-opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite" begin="0.3s"/>
+  </path>
+  
+  <!-- Third arrow -->
+  <path d="M95 50 L120 72 L95 94 Z" 
+        fill="url(#fastForwardGrad)" 
+        filter="url(#fastGlow)">
+    <animate attributeName="fill-opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite" begin="0.6s"/>
+  </path>
+  
+  <!-- Quantum tunnel effect -->
+  <circle cx="72" cy="72" r="35" fill="none" stroke="#00ffff" stroke-width="1" opacity="0.3">
+    <animate attributeName="r" values="35;45;35" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Speed streaks -->
+  <path d="M25 65 L50 65" stroke="#88ffff" stroke-width="2" opacity="0.6" stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="0.5s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M25 72 L55 72" stroke="#88ffff" stroke-width="2" opacity="0.5" stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="0.6s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M25 79 L50 79" stroke="#88ffff" stroke-width="2" opacity="0.4" stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="0.7s" repeatCount="indefinite"/>
+  </path>
+  
+  <!-- Quantum core -->
+  <circle cx="72" cy="72" r="8" fill="url(#quantumGlow)" filter="url(#fastGlow)">
+    <animate attributeName="r" values="8;12;8" dur="1.5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Warp indicators -->
+  <circle cx="72" cy="40" r="2" fill="#00ffff">
+    <animate attributeName="fill" values="#00ffff;#ffffff;#00ffff" dur="0.8s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="72" cy="104" r="2" fill="#00ffff">
+    <animate attributeName="fill" values="#00ffff;#ffffff;#00ffff" dur="0.8s" repeatCount="indefinite" begin="0.4s"/>
+  </circle>
+  
+  <!-- Quantum mode indicator -->
+  <rect x="25" y="25" width="25" height="6" fill="#003366" stroke="#00ffff" stroke-width="1" rx="2"/>
+  <text x="37" y="30" font-family="monospace" font-size="6" fill="#00ffff" text-anchor="middle">QUANTUM</text>
+  
+  <!-- Energy buildup -->
+  <path d="M30 30 Q40 25 50 30" stroke="#ffffff" stroke-width="1" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0s"/>
+  </path>
+  
+  <path d="M94 114 Q104 109 114 114" stroke="#ffffff" stroke-width="1" fill="none" opacity="0">
+    <animate attributeName="opacity" values="0;1;0" dur="0.5s" repeatCount="indefinite" begin="0.2s"/>
+  </path>
+  
+  <!-- Spacetime distortion -->
+  <ellipse cx="72" cy="72" rx="25" ry="15" fill="none" stroke="#66ccff" stroke-width="1" opacity="0.4">
+    <animateTransform 
+      attributeName="transform" 
+      type="rotate" 
+      values="0 72 72;360 72 72" 
+      dur="3s" 
+      repeatCount="indefinite"/>
+  </ellipse>
+</svg>

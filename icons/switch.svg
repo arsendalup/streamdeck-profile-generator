@@ -1,0 +1,49 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="switchGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00ffff;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0088ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#004488;stop-opacity:1" />
+    </linearGradient>
+    <filter id="switchGlow">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <rect x="15" y="15" width="114" height="114" rx="15" fill="#1a1a2e" stroke="#00ffff" stroke-width="2"/>
+  
+  <!-- Switch arrows -->
+  <path d="M30 50 L65 50 L60 45 M65 50 L60 55" 
+        stroke="url(#switchGrad)" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        filter="url(#switchGlow)">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+  </path>
+  
+  <path d="M114 94 L79 94 L84 89 M79 94 L84 99" 
+        stroke="url(#switchGrad)" 
+        stroke-width="4" 
+        stroke-linecap="round"
+        filter="url(#switchGlow)">
+    <animate attributeName="stroke-opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite" begin="1s"/>
+  </path>
+  
+  <!-- Switch nodes -->
+  <circle cx="25" cy="50" r="6" fill="url(#switchGrad)" filter="url(#switchGlow)"/>
+  <circle cx="119" cy="94" r="6" fill="url(#switchGrad)" filter="url(#switchGlow)"/>
+  
+  <!-- Connection lines -->
+  <path d="M72 35 Q85 50 72 65 Q59 80 72 95" 
+        stroke="#00ffff" 
+        stroke-width="2" 
+        fill="none" 
+        opacity="0.6"
+        stroke-dasharray="5 5">
+    <animate attributeName="stroke-dashoffset" values="0;-20;0" dur="3s" repeatCount="indefinite"/>
+  </path>
+</svg>

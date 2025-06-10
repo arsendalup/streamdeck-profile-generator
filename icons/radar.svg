@@ -1,0 +1,142 @@
+<svg width="72" height="72" viewBox="0 0 72 72" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="radarGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:0.8" />
+      <stop offset="50%" style="stop-color:#00aa00;stop-opacity:0.4" />
+      <stop offset="100%" style="stop-color:#006600;stop-opacity:0.1" />
+    </radialGradient>
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00ff00;stop-opacity:0" />
+      <stop offset="70%" style="stop-color:#00ff00;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#00ff00;stop-opacity:0.9" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Radar screen background -->
+  <circle cx="36" cy="36" r="28" fill="#001100" stroke="#00ff00" stroke-width="2"/>
+  
+  <!-- Range circles -->
+  <circle cx="36" cy="36" r="20" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.5"/>
+  <circle cx="36" cy="36" r="14" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.5"/>
+  <circle cx="36" cy="36" r="8" fill="none" stroke="#00ff00" stroke-width="1" opacity="0.5"/>
+  
+  <!-- Crosshairs -->
+  <line x1="8" y1="36" x2="64" y2="36" stroke="#00ff00" stroke-width="1" opacity="0.6"/>
+  <line x1="36" y1="8" x2="36" y2="64" stroke="#00ff00" stroke-width="1" opacity="0.6"/>
+  
+  <!-- Sweep arm -->
+  <g>
+    <line x1="36" y1="36" x2="36" y2="12" stroke="#00ff00" stroke-width="2" opacity="0.8">
+      <animateTransform attributeName="transform" type="rotate" values="0 36 36;360 36 36" dur="3s" repeatCount="indefinite"/>
+    </line>
+    <!-- Sweep trail -->
+    <path d="M36 36 L36 12 A24 24 0 0 1 50 22 Z" fill="url(#sweepGrad)" opacity="0.6">
+      <animateTransform attributeName="transform" type="rotate" values="0 36 36;360 36 36" dur="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Detected objects -->
+  <g>
+    <!-- Target 1 -->
+    <circle cx="48" cy="24" r="2" fill="#ff6600" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="48" y="20" text-anchor="middle" font-family="monospace" font-size="4" fill="#ff6600">TGT1</text>
+    
+    <!-- Target 2 -->
+    <circle cx="24" cy="48" r="2" fill="#ff3333" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="24" y="44" text-anchor="middle" font-family="monospace" font-size="4" fill="#ff3333">HST</text>
+    
+    <!-- Friendly -->
+    <circle cx="52" cy="44" r="2" fill="#00aaff" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <text x="52" y="40" text-anchor="middle" font-family="monospace" font-size="4" fill="#00aaff">FRD</text>
+    
+    <!-- Unknown -->
+    <circle cx="28" cy="28" r="2" fill="#ffff00" stroke="#ffffff" stroke-width="1">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="28" y="24" text-anchor="middle" font-family="monospace" font-size="4" fill="#ffff00">UNK</text>
+    
+    <!-- Asteroid/debris -->
+    <g>
+      <circle cx="44" cy="52" r="1" fill="#cccccc" opacity="0.7"/>
+      <circle cx="20" cy="20" r="1" fill="#cccccc" opacity="0.7"/>
+      <circle cx="54" cy="28" r="1" fill="#cccccc" opacity="0.7"/>
+    </g>
+  </g>
+  
+  <!-- Radar dish/antenna -->
+  <g transform="translate(36, 66)">
+    <ellipse cx="0" cy="0" rx="8" ry="3" fill="#666666" stroke="#00ff00" stroke-width="1"/>
+    <rect x="-1" y="-6" width="2" height="6" fill="#888888" stroke="#00ff00" stroke-width="1"/>
+    <circle cx="0" cy="-6" r="2" fill="#333333" stroke="#00ff00" stroke-width="1"/>
+  </g>
+  
+  <!-- Range indicators -->
+  <g font-family="monospace" font-size="6" fill="#00ff00" opacity="0.7">
+    <text x="18" y="38">10</text>
+    <text x="24" y="38">20</text>
+    <text x="30" y="38">30</text>
+    <text x="58" y="38">km</text>
+  </g>
+  
+  <!-- Bearing indicators -->
+  <g font-family="monospace" font-size="6" fill="#00ff00" opacity="0.7">
+    <text x="34" y="14">N</text>
+    <text x="62" y="38">E</text>
+    <text x="34" y="62">S</text>
+    <text x="12" y="38">W</text>
+  </g>
+  
+  <!-- Signal strength bars -->
+  <g transform="translate(8, 8)">
+    <rect x="0" y="4" width="2" height="2" fill="#00ff00">
+      <animate attributeName="height" values="2;6;2" dur="1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="4;2;4" dur="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="3" y="3" width="2" height="3" fill="#00ff00">
+      <animate attributeName="height" values="3;7;3" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="3;1;3" dur="1s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="6" y="2" width="2" height="4" fill="#00ff00">
+      <animate attributeName="height" values="4;8;4" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="2;0;2" dur="1s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Scan mode indicator -->
+  <g transform="translate(58, 8)">
+    <rect width="12" height="6" rx="1" fill="#001100" stroke="#00ff00" stroke-width="1"/>
+    <text x="6" y="4" text-anchor="middle" font-family="monospace" font-size="4" fill="#00ff00">SCAN</text>
+  </g>
+  
+  <!-- Distance readout -->
+  <g transform="translate(8, 60)">
+    <rect width="20" height="8" rx="1" fill="#001100" stroke="#00ff00" stroke-width="1"/>
+    <text x="10" y="5" text-anchor="middle" font-family="monospace" font-size="4" fill="#00ff00">
+      RNG: 15.7km
+      <animate attributeName="opacity" values="0.8;1;0.8" dur="2s" repeatCount="indefinite"/>
+    </text>
+  </g>
+  
+  <!-- Interference pattern -->
+  <g opacity="0.3">
+    <circle cx="36" cy="36" r="12" fill="none" stroke="#00ff00" stroke-width="0.5" stroke-dasharray="1,2">
+      <animateTransform attributeName="transform" type="rotate" values="0 36 36;-360 36 36" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="36" cy="36" r="18" fill="none" stroke="#00ff00" stroke-width="0.5" stroke-dasharray="2,3">
+      <animateTransform attributeName="transform" type="rotate" values="0 36 36;360 36 36" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+  
+  <!-- Active tracking -->
+  <g opacity="0.6">
+    <path d="M46 26 L50 22 L54 26 L50 30 Z" fill="none" stroke="#ff6600" stroke-width="2">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="1s" repeatCount="indefinite"/>
+    </path>
+  </g>
+</svg>
