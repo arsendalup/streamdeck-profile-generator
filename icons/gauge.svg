@@ -1,11 +1,11 @@
 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="72" height="72" fill="transparent"/>
   <g transform="translate(12, 12)">
-    <\!-- Gauge circle -->
+    <!-- Gauge circle -->
     <circle cx="24" cy="24" r="20" fill="#2d4a5a" stroke="#ffffff" stroke-width="3"/>
     <circle cx="24" cy="24" r="16" fill="none" stroke="#4a9eff" stroke-width="2"/>
     
-    <\!-- Gauge marks -->
+    <!-- Gauge marks -->
     <g stroke="#ffffff" stroke-width="2">
       <line x1="24" y1="8" x2="24" y2="12"/>
       <line x1="35" y1="13" x2="33" y2="15"/>
@@ -17,11 +17,11 @@
       <line x1="13" y1="13" x2="15" y2="15"/>
     </g>
     
-    <\!-- Needle pointing to speed -->
+    <!-- Needle pointing to speed -->
     <path d="M24 24 L32 16" stroke="#ff4444" stroke-width="3" stroke-linecap="round"/>
     <circle cx="24" cy="24" r="3" fill="#ff4444"/>
     
-    <\!-- Speed indicator -->
+    <!-- Speed indicator -->
     <text x="24" y="32" text-anchor="middle" fill="#ffffff" font-size="6" font-weight="bold">SPD</text>
   </g>
 </svg>
