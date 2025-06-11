@@ -1,22 +1,22 @@
 <svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
   <rect width="72" height="72" fill="transparent"/>
   <g transform="translate(12, 6)">
-    <\!-- Shield outline -->
+    <!-- Shield outline -->
     <path d="M24 4 C16 4, 8 8, 8 16 L8 32 C8 48, 16 56, 24 60 C32 56, 40 48, 40 32 L40 16 C40 8, 32 4, 24 4 Z" 
           fill="#4a9eff" stroke="#ffffff" stroke-width="2"/>
     
-    <\!-- Safety check mark -->
+    <!-- Safety check mark -->
     <path d="M16 28 L22 34 L32 20" 
           stroke="#ffffff" stroke-width="3" 
           fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     
-    <\!-- G-Force indicator -->
+    <!-- G-Force indicator -->
     <g transform="translate(24, 42)">
       <circle cx="0" cy="0" r="8" fill="#2d4a5a" stroke="#ffffff" stroke-width="2"/>
       <text x="0" y="3" text-anchor="middle" fill="#ffffff" font-size="8" font-weight="bold">G</text>
     </g>
     
-    <\!-- Safety indicators -->
+    <!-- Safety indicators -->
     <circle cx="12" cy="12" r="2" fill="#44ff44"/>
     <circle cx="36" cy="12" r="2" fill="#44ff44"/>
   </g>

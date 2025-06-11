@@ -1,0 +1,22 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(20, 16)">
+    <\!-- Pointing hand -->
+    <path d="M4 20 C2 18, 2 14, 4 12 C6 10, 10 10, 12 12 L20 12 C26 12, 30 16, 30 20 C30 24, 26 28, 20 28 L12 28 C10 30, 6 30, 4 28 C2 26, 2 22, 4 20 Z" 
+          fill="#4a9eff" stroke="#ffffff" stroke-width="2"/>
+    
+    <\!-- Extended pointing finger -->
+    <path d="M20 12 L32 8 C34 7, 36 9, 35 11 L33 15 C32 17, 30 17, 28 16 L20 20" 
+          fill="#4a9eff" stroke="#ffffff" stroke-width="2"/>
+    
+    <\!-- Pointer emphasis lines -->
+    <g stroke="#ffffff" stroke-width="2" opacity="0.8">
+      <path d="M32 8 L36 4"/>
+      <path d="M34 10 L38 6"/>
+      <path d="M33 12 L37 8"/>
+    </g>
+    
+    <\!-- Direction indicator -->
+    <circle cx="38" cy="6" r="2" fill="#ff4444" opacity="0.8"/>
+  </g>
+</svg>
