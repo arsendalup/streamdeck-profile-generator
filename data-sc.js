@@ -379,13 +379,13 @@ const weaponsProfile = profile({
   actions: [
     [
       back(),
-      scHotkey('Missile\nMode', 123, false, false, false, 'crosshair'), // F12 - 123
-      scHotkey('Launch\nMissiles', 112, false, false, false, 'rocket'), // F1 - 112
+      scHotkey('Missile\nOperator', 4, false, false, false, 'target'), // Middle Mouse - 4
+      scHotkey('Fire Weapon\nGroup 1', 1, false, false, false, 'crosshair'), // Left Mouse - 1
       scHotkey('Dumbfire\nMissile', 8, false, false, false, 'target'), // Backspace - 8
       scHotkey('Cycle Missile\nType', 124, false, false, false, 'refresh') // F13 - 124
     ],
     [
-      scHotkey('Fire\nWeapons', 125, false, false, false, 'crosshair'), // F14 - 125
+      scHotkey('Fire Weapon\nGroup 2', 2, false, false, false, 'crosshair'), // Right Mouse - 2
       scHotkey('Reset\nArmed', 71, false, true, false, 'refresh'), // Alt + G - 71
       scHotkey('Toggle Impact\nPoint', 66, false, true, false, 'target'), // Alt + B - 66
       scHotkey('Next\nWeapon', 126, false, false, false, 'chevron-down'), // F15 - 126
@@ -435,17 +435,17 @@ const powerWeaponsProfile = profile({
       scHotkey('Power Weapons\nMax', 116, false, false, true, 'gun'), // Shift + F5 - 116
       scHotkey('Power Weapons\n-', 116, false, true, false, 'gun'), // Alt + F5 - 116
       scHotkey('Power Weapons\nMin', 116, true, false, false, 'gun'), // Ctrl + F5 - 116
-      scHotkey('Weapons\nToggle', 80, false, true, false, 'gun') // Alt + P - 80
+      scHotkey('Weapons\nToggle', 80, false, false, false, 'gun') // P - 80
     ],
     [
-      scHotkey('Power Weapons\n+', 116, false, false, false, 'gun'), // F5 - 116
+      scHotkey('Power Engines\n+', 116, false, false, false, 'engine'), // F5 - 116
       scHotkey('Power Engines\nMax', 117, false, false, true, 'engine'), // Shift + F6 - 117
       scHotkey('Power Engines\n-', 117, false, true, false, 'engine'), // Alt + F6 - 117
       scHotkey('Power Engines\nMin', 117, true, false, false, 'engine'), // Ctrl + F6 - 117
-      scHotkey('Thrusters\nToggle', 73, false, true, false, 'engine') // Alt + I - 73
+      scHotkey('Thrusters\nToggle', 73, false, false, false, 'engine') // I - 73
     ],
     [
-      scHotkey('Power Engines\n+', 117, false, false, false, 'engine'), // F6 - 117
+      scHotkey('Power Shields\n+', 117, false, false, false, 'shield'), // F6 - 117
       null,
       null,
       null,
@@ -464,14 +464,14 @@ const powerShieldsProfile = profile({
       scHotkey('Power Shields\nMax', 118, false, false, true, 'shield'), // Shift + F7 - 118
       scHotkey('Power Shields\n-', 118, false, true, false, 'shield'), // Alt + F7 - 118
       scHotkey('Power Shields\nMin', 118, true, false, false, 'shield'), // Ctrl + F7 - 118
-      scHotkey('Shield\nToggle', 79, false, true, false, 'shield') // Alt + O - 79
+      scHotkey('Shield\nToggle', 79, false, false, false, 'shield') // O - 79
     ],
     [
-      scHotkey('Power Shields\n+', 118, false, false, false, 'shield'), // F7 - 118
-      scHotkey('Reset\nAssignments', 119, false, true, false, 'refresh'), // Alt + F8 - 119
+      scHotkey('Power Weapons\n+', 118, false, false, false, 'gun'), // F7 - 118
+      scHotkey('Power\nReset', 119, false, false, false, 'refresh'), // F8 - 119
       scHotkey('Decrease\nThrottle', 120, false, true, false, 'minus'), // Alt + F9 - 120
       scHotkey('Increase\nThrottle', 121, false, true, false, 'plus'), // Alt + F10 - 121
-      scHotkey('Power Toggle\nAll', 85, false, true, false, 'power') // Alt + U - 85
+      scHotkey('Power Toggle\nAll', 85, false, false, false, 'power') // U - 85
     ]
   ]
 });
@@ -736,9 +736,23 @@ const mfdProfile = profile({
   actions: [
     [
       back(),
-      scHotkey('Cycle\nBack', 81, true, false, false, 'chevron-left'), // Ctrl + Q - 81
-      scHotkey('Cycle\nForward', 69, true, false, false, 'chevron-right'), // Ctrl + E - 69
-      null,
+      scHotkey('MFD Page\nBack', 81, false, true, false, 'chevron-left'), // Alt + Q - 81
+      scHotkey('MFD Page\nForward', 69, false, true, false, 'chevron-right'), // Alt + E - 69
+      scHotkey('MFD 1\nPower', 49, false, true, false, 'monitor'), // Alt + 1 - 49
+      scHotkey('MFD 2\nPower', 50, false, true, false, 'monitor') // Alt + 2 - 50
+    ],
+    [
+      scHotkey('MFD 3\nPower', 51, false, true, false, 'monitor'), // Alt + 3 - 51
+      scHotkey('MFD 4\nPower', 52, false, true, false, 'monitor'), // Alt + 4 - 52
+      scHotkey('Interact\nMode', 70, false, true, false, 'hand'), // Alt + F - 70
+      scHotkey('Cast\nMFD', 67, false, true, false, 'cast'), // Alt + C - 67
+      scHotkey('Set\nMFD', 83, false, true, false, 'settings') // Alt + S - 83
+    ],
+    [
+      scHotkey('Comms\nMFD', 84, false, true, false, 'message-circle'), // Alt + T - 84
+      scHotkey('Target\nMFD', 89, false, true, false, 'target'), // Alt + Y - 89
+      scHotkey('Power\nMFD', 85, false, true, false, 'battery'), // Alt + U - 85
+      scHotkey('Weapons\nMFD', 87, false, true, false, 'sword'), // Alt + W - 87
       null
     ]
   ]
