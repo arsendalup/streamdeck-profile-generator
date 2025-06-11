@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="50" cy="50" r="30" fill="none" stroke="#4169E1" stroke-width="3"/>
+  <circle cx="50" cy="50" r="20" fill="none" stroke="#87CEEB" stroke-width="2" stroke-dasharray="3,3"/>
+  <circle cx="50" cy="50" r="10" fill="none" stroke="#4169E1" stroke-width="2" stroke-dasharray="3,3"/>
+  <path d="M40 50 L60 50" stroke="#DC143C" stroke-width="4"/>
+  <text x="50" y="85" text-anchor="middle" font-size="10" fill="#4169E1">DOF-</text>
+</svg>

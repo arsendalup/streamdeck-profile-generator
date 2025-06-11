@@ -1,0 +1,5 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M50 20 C45 20 40 25 40 30 L40 45 L35 45 C30 45 25 50 25 55 L25 70 C25 80 33 88 43 88 L57 88 C67 88 75 80 75 70 L75 30 C75 25 70 20 65 20 L60 20 L60 15 C60 10 55 5 50 5 C45 5 40 10 40 15 L40 20 Z" fill="#FDBCB4" stroke="#CD853F" stroke-width="2"/>
+  <rect x="30" y="40" width="40" height="30" fill="#DC143C" opacity="0.8"/>
+  <text x="50" y="60" text-anchor="middle" font-size="16" font-weight="bold" fill="white">STOP</text>
+</svg>

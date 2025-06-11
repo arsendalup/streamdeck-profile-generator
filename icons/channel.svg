@@ -1,0 +1,7 @@
+<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <rect x="20" y="30" width="60" height="40" rx="10" fill="#4169E1" stroke="#191970" stroke-width="3"/>
+  <circle cx="35" cy="50" r="8" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <circle cx="50" cy="50" r="8" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <circle cx="65" cy="50" r="8" fill="#87CEEB" stroke="#4682B4" stroke-width="2"/>
+  <text x="50" y="85" text-anchor="middle" font-size="10" fill="#4169E1">CHANNEL</text>
+</svg>
