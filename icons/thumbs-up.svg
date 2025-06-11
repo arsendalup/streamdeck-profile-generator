@@ -1,0 +1,14 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(20, 20)">
+    <\!-- Thumbs up gesture -->
+    <path d="M16 8 C18 6, 22 6, 24 8 L24 16 C24 20, 20 24, 16 24 L8 24 C4 24, 0 20, 0 16 L0 12 C0 8, 4 4, 8 4 L12 4 C14 4, 16 6, 16 8 Z" 
+          fill="#4a9eff" stroke="#ffffff" stroke-width="2"/>
+    <\!-- Thumb -->
+    <path d="M16 8 C14 4, 18 0, 22 4 C24 6, 22 10, 20 12 L16 8" 
+          fill="#4a9eff" stroke="#ffffff" stroke-width="2"/>
+    <\!-- Approval symbol -->
+    <circle cx="26" cy="2" r="4" fill="#44ff44" stroke="#ffffff" stroke-width="1"/>
+    <path d="M24 2 L26 4 L28 0" stroke="#ffffff" stroke-width="1" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>

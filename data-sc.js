@@ -216,10 +216,10 @@ const cockpitProfile = profile({
       scHotkey('Look\nBehind', 188, false, false, false, 'eye') // Comma - 188
     ],
     [
-      scHotkey('Flight\nReady', 82, false, true, false, 'power'), // Alt + R - 82
+      scHotkey('Flight\nReady', 82, false, false, false, 'power'), // R - 82
       scHotkey('Autoland', 78, false, false, false, 'auto'), // N - 78
       scHotkey('Request\nLanding', 78, false, true, false, 'radio'), // Left Alt + N - 78
-      scHotkey('VTOL\nMode', 75, false, false, false, 'helicopter'), // K - 75
+      scHotkey('Break\nSystem', 86, false, false, false, 'brake-lights'), // V - 86
       scHotkey('Request\nDocking', 100, false, false, false, 'dock') // Num4 - 100
     ],
     [
@@ -274,15 +274,15 @@ const flightAdvancedProfile = profile({
       scHotkey('Eject', 89, false, true, false, 'eject') // Alt + Y - 89
     ],
     [
-      scHotkey('Next Operator\nMode', 113, false, false, false, 'refresh'), // F2 - 113
+      scHotkey('G-Force\nSafety', 113, false, false, false, 'shield'), // F2 - 113
       scHotkey('Speed Lim\nDown', 189, false, false, false, 'minus'), // Minus - 189
-      scHotkey('Accel Limiter\nUp', 37, false, false, false, 'arrow-up'), // Left Arrow - 37
-      scHotkey('Accel Limiter\nDown', 38, false, false, false, 'arrow-down'), // Up Arrow - 38
+      scHotkey('ESP\nToggle', 114, false, false, false, 'target'), // F3 - 114
+      scHotkey('Precision\nMode', 115, false, false, false, 'crosshair'), // F4 - 115
       scHotkey('Hail\nTarget', 57, false, false, false, 'radio') // 9 - 57
     ],
     [
       scHotkey('Speed Lim\nUp', 187, false, false, false, 'plus'), // Equals - 187
-      scHotkey('Mining\nMode', 40, false, false, false, 'pickaxe'), // Down Arrow - 40
+      scHotkey('VTOL\nMode', 75, false, false, false, 'helicopter'), // K - 75
       scHotkey('Cycle\nConfig', 75, false, true, false, 'settings'), // Alt + K - 75
       scHotkey('Scan\nMode', 86, false, false, false, 'search'), // V - 86
       null
@@ -394,9 +394,9 @@ const weaponsProfile = profile({
     [
       scHotkey('Increase\nArmed', 71, false, false, false, 'plus'), // G - 71
       scHotkey('Cycle\nGimbal', 56, false, false, false, 'refresh'), // 8 - 56
-      null,
-      null,
-      null
+      scHotkey('Missile\nCamera', 125, false, false, false, 'camera'), // F14 - 125
+      scHotkey('Bomb\nCamera', 126, false, false, false, 'video'), // F15 - 126
+      scHotkey('Follow\nMissile', 127, false, false, false, 'eye') // F16 - 127
     ]
   ]
 });
@@ -773,8 +773,37 @@ const combatEmotesProfile = profile({
     [
       scHotkey('Left', 97, true, false, false, 'arrow-left'), // Ctrl + Num1 - 97
       scHotkey('No', 102, true, false, false, 'x'), // Ctrl + Num6 - 102
-      null,
-      null,
+      scHotkey('Accept', 121, false, false, false, 'check'), // F10 - 121
+      scHotkey('Decline', 122, false, false, false, 'x-circle'), // F11 - 122
+      scHotkey('Agree', 100, false, false, false, 'thumbs-up') // Num4 - 100
+    ]
+  ]
+});
+
+// SOCIAL ACTIONS & EMOTES - CODES UNIQUES
+const socialActionsProfile = profile({
+  name: 'Social\nActions',
+  icon: 'users',
+  actions: [
+    [
+      back(),
+      scHotkey('Salute', 123, false, false, false, 'salute'), // F12 - 123
+      scHotkey('Wave', 112, false, false, false, 'hand-wave'), // F1 - 112
+      scHotkey('Greet', 113, false, false, false, 'smile'), // F2 - 113
+      scHotkey('Attention', 114, false, false, false, 'user-check') // F3 - 114
+    ],
+    [
+      scHotkey('Bow', 115, false, false, false, 'bow'), // F4 - 115
+      scHotkey('Point', 116, false, false, false, 'hand-pointer'), // F5 - 116
+      scHotkey('Come Here', 117, false, false, false, 'hand-call'), // F6 - 117
+      scHotkey('Sit', 118, false, false, false, 'chair'), // F7 - 118
+      scHotkey('Dance', 119, false, false, false, 'music') // F8 - 119
+    ],
+    [
+      scHotkey('Clap', 120, false, false, false, 'clap'), // F9 - 120
+      scHotkey('Chat /emote', 191, false, false, false, 'type'), // Slash - 191
+      scHotkey('Open Chat', 13, false, false, false, 'message-square'), // Enter - 13
+      scHotkey('Voice Chat', 84, false, true, false, 'microphone'), // Alt + T - 84
       null
     ]
   ]
@@ -824,6 +853,35 @@ const arenaProfile = profile({
   ]
 });
 
+// FLIGHT ASSISTS & SAFETY - CODES UNIQUES
+const flightAssistsProfile = profile({
+  name: 'Flight\nAssists',
+  icon: 'shield-check',
+  actions: [
+    [
+      back(),
+      scHotkey('Match Target\nVelocity', 77, false, false, false, 'target'), // M - 77
+      scHotkey('Lock Pitch\n& Yaw', 16, false, false, false, 'lock'), // Right Shift - 16
+      scHotkey('Comstab\nToggle', 67, false, true, false, 'compass'), // Alt + C - 67
+      scHotkey('Proximity\nAssist', 80, false, true, false, 'radar') // Alt + P - 80
+    ],
+    [
+      scHotkey('Auto Gimbal\nLock', 71, false, true, false, 'crosshair'), // Alt + G - 71
+      scHotkey('Landing\nSystem', 78, false, false, false, 'landing-pad'), // N - 78
+      scHotkey('Couple\nMode', 67, false, false, false, 'link'), // C - 67
+      scHotkey('Missile\nOperator', 77, false, true, false, 'rocket'), // Alt + M - 77
+      scHotkey('Look\nAhead', 76, false, true, false, 'eye') // Alt + L - 76
+    ],
+    [
+      scHotkey('Afterburner\nToggle', 16, false, false, true, 'zap'), // Shift - 16
+      scHotkey('Speed\nLimiter', 189, false, false, false, 'gauge'), // Minus - 189
+      scHotkey('Accel\nLimiter', 187, false, false, false, 'speedometer'), // Equals - 187
+      scHotkey('Mouse\nMode', 77, false, true, false, 'mouse'), // Alt + M - 77
+      null
+    ]
+  ]
+});
+
 // ===== MAIN PROFILE WITH PAGINATION =====
 
 // MAIN PROFILE PAGE 1
@@ -835,8 +893,8 @@ const mainProfile = profile({
       folder(cockpitProfile),
       folder(flightMovementProfile),
       folder(flightAdvancedProfile),
-      folder(targetingBasicProfile),
-      folder(targetingAdvancedProfile)
+      folder(flightAssistsProfile),
+      folder(targetingBasicProfile)
     ],
     [
       folder(turretProfile),
@@ -877,9 +935,9 @@ const mainProfilePage2 = profile({
     [
       folder(mfdProfile),
       folder(combatEmotesProfile),
+      folder(socialActionsProfile),
       folder(starmapProfile),
-      folder(arenaProfile),
-      null
+      folder(arenaProfile)
     ]
   ]
 });
@@ -891,6 +949,7 @@ module.exports = () => ({
     cockpitProfile,
     flightMovementProfile,
     flightAdvancedProfile,
+    flightAssistsProfile,
     targetingBasicProfile,
     targetingAdvancedProfile,
     turretProfile,
@@ -913,6 +972,7 @@ module.exports = () => ({
     scanningProfile,
     mfdProfile,
     combatEmotesProfile,
+    socialActionsProfile,
     starmapProfile,
     arenaProfile
   ]
