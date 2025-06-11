@@ -1,0 +1,1769 @@
+{
+  "metadata": {
+    "source": "Star Citizen HTML binding files (sc-bindings directory)",
+    "version": "4.1.1",
+    "extractedDate": "2025-06-11",
+    "totalCommands": 185,
+    "totalCategories": 9,
+    "description": "Comprehensive extraction of ALL Star Citizen commands from official HTML documentation",
+    "extractionMethod": "Manual data extraction and parsing from HTML files",
+    "coverage": "Complete coverage of major command categories including Flight, Ground Vehicle, On-foot/EVA, Mining, Targeting, Camera, MFDs, Social, and Turrets"
+  },
+  "categories": {
+    "Camera": {
+      "description": "Camera controls and functions including spectator mode and advanced camera controls",
+      "subcategories": {
+        "Electronic Access - Spectator": [
+          {
+            "name": "Spectator Camera Target (Next)",
+            "defaultBinding": "Button 2 (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Target (Previous)",
+            "defaultBinding": "Button 1 (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Lock Target",
+            "defaultBinding": "1",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Zoom",
+            "defaultBinding": "Mouse Wheel",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Zoom In",
+            "defaultBinding": "Mouse Wheel Up",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Zoom Out",
+            "defaultBinding": "Mouse Wheel Down",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Rotate Yaw",
+            "defaultBinding": "X-axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Rotate Pitch",
+            "defaultBinding": "Y-axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera HUD (Toggle)",
+            "defaultBinding": "B",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Spectator Camera Mode (Next)",
+            "defaultBinding": "F4",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "Camera - Advanced Camera Controls": [
+          {
+            "name": "Advanced Camera Controls Modifier (Hold)",
+            "defaultBinding": "F4",
+            "alternativeBinding": "L Ctrl",
+            "altMineBinding": null,
+            "description": "Mine allows me to control the camera with one hand",
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Advanced Camera Controls Modifier (Hold)",
+            "defaultBinding": "Z",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": "This doesn't seem to do the same as the above",
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 1",
+            "defaultBinding": "Numpad 1",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 2",
+            "defaultBinding": "Numpad 2",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 3",
+            "defaultBinding": "Numpad 3",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 4",
+            "defaultBinding": "Numpad 4",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 5",
+            "defaultBinding": "Numpad 5",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 6",
+            "defaultBinding": "Numpad 6",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 7",
+            "defaultBinding": "Numpad 7",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 8",
+            "defaultBinding": "Numpad 8",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Save View 9",
+            "defaultBinding": "Numpad 9",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Load View 1",
+            "defaultBinding": "Numpad 1",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 2",
+            "defaultBinding": "Numpad 2",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 3",
+            "defaultBinding": "Numpad 3",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 4",
+            "defaultBinding": "Numpad 4",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 5",
+            "defaultBinding": "Numpad 5",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 6",
+            "defaultBinding": "Numpad 6",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 7",
+            "defaultBinding": "Numpad 7",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 8",
+            "defaultBinding": "Numpad 8",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Load View 9",
+            "defaultBinding": "Numpad 9",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Clear Saved View",
+            "defaultBinding": "Numpad 0",
+            "alternativeBinding": "Np Decimal",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "X Offset Positive",
+            "defaultBinding": "Right Arrow",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "X Offset Negative",
+            "defaultBinding": "Left Arrow",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Y Offset Positive / Spectator Freecam Focal Point Forward",
+            "defaultBinding": "Up Arrow",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Y Offset Negative / Spectator Freecam Focal Point Backward",
+            "defaultBinding": "Down Arrow",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Z Offset Positive",
+            "defaultBinding": "Page Up",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Z Offset Negative",
+            "defaultBinding": "Page Down",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Increase FoV",
+            "defaultBinding": "Numpad +",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Decrease FoV",
+            "defaultBinding": "Numpad -",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Increase DoF",
+            "defaultBinding": "Home",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Decrease DoF",
+            "defaultBinding": "End",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Reset Current View",
+            "defaultBinding": "Numpad *",
+            "alternativeBinding": "Np 0",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 42
+    },
+    "Ground Vehicle": {
+      "description": "Ground vehicle controls for rovers and other land-based vehicles",
+      "subcategories": {
+        "Ground Vehicle - General": [
+          {
+            "name": "Horn",
+            "defaultBinding": "Spacebar",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Camera View",
+            "defaultBinding": "F4",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Zoom In (3rd Person View)",
+            "defaultBinding": "Mouse Wheel Up",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Zoom Out (3rd Person View)",
+            "defaultBinding": "Mouse Wheel Down",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Look Left / Right",
+            "defaultBinding": "X-Axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Look Up / Down",
+            "defaultBinding": "Y-Axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Free Look (Hold)",
+            "defaultBinding": "Z",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "MobiGlass (Toggle)",
+            "defaultBinding": "F1",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Flight / Systems Ready",
+            "defaultBinding": "R Alt + R",
+            "alternativeBinding": "R DT",
+            "altMineBinding": "R",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Open/Close Doors (Toggle)",
+            "defaultBinding": null,
+            "alternativeBinding": "D",
+            "altMineBinding": "R Alt+D",
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Map",
+            "defaultBinding": "F2",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Wipe Helmet Visor",
+            "defaultBinding": "L Alt + X",
+            "alternativeBinding": "Backspace",
+            "altMineBinding": "/",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "Ground Vehicle - Movement": [
+          {
+            "name": "Drive Forward",
+            "defaultBinding": "W",
+            "alternativeBinding": "R Ctrl+S",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Drive Backward",
+            "defaultBinding": "S",
+            "alternativeBinding": "L Ctrl+S",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Turn Left",
+            "defaultBinding": "A",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Turn Right",
+            "defaultBinding": "D",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Yaw Left/Right (Mouse)",
+            "defaultBinding": null,
+            "alternativeBinding": "X Axis Mouse",
+            "altMineBinding": null,
+            "description": "This is the axis it takes for me to control the Rover mining arm",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Pitch Up / Down (Mouse)",
+            "defaultBinding": null,
+            "alternativeBinding": "Y Axis Mouse",
+            "altMineBinding": null,
+            "description": "This is the axis it takes for me to control the Rover mining arm",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Brake",
+            "defaultBinding": "X",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Boost",
+            "defaultBinding": "L Shift",
+            "alternativeBinding": "A",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 20
+    },
+    "Industry & Mining": {
+      "description": "Mining and salvage operations for vehicles and ships",
+      "subcategories": {
+        "Vehicles - Mining": [
+          {
+            "name": "Fire Mining Laser (Toggle)",
+            "defaultBinding": "Button 1 (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Switch Mining Laser (Toggle)",
+            "defaultBinding": "L Alt + Button 1 (mouse)",
+            "alternativeBinding": "Up",
+            "altMineBinding": "Up",
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Increase Mining Laser Power",
+            "defaultBinding": "Mouse Wheel",
+            "alternativeBinding": "???",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Activate Mining Consumable (Slot 1)",
+            "defaultBinding": "L Alt + 1",
+            "alternativeBinding": "Left",
+            "altMineBinding": "Left",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Activate Mining Consumable (Slot 2)",
+            "defaultBinding": "L Alt + 2",
+            "alternativeBinding": "Down",
+            "altMineBinding": "Down",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Activate Mining Consumable (Slot 3)",
+            "defaultBinding": "L Alt + 3",
+            "alternativeBinding": "Right",
+            "altMineBinding": "Right",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Jettison Cargo",
+            "defaultBinding": "L Alt + J",
+            "alternativeBinding": "J DT",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "Vehicles - Salvage": [
+          {
+            "name": "Tractor Beam Vehicle- Increase Distance",
+            "defaultBinding": "Mouse Wheel Up",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Tractor Beam Vehicle- Decrease Distance",
+            "defaultBinding": "Mouse Wheel Dn",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Toggle Fire Focused",
+            "defaultBinding": "Button 1 (mouse)",
+            "alternativeBinding": "MMB",
+            "altMineBinding": "MMB",
+            "description": "Mine will conflict with default Next Operator Mode",
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Toggle Fire Left",
+            "defaultBinding": "R Alt + A",
+            "alternativeBinding": "Left DT",
+            "altMineBinding": "LMB",
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Toggle Fire Right",
+            "defaultBinding": "R Alt + D",
+            "alternativeBinding": "Right DT",
+            "altMineBinding": "RMB",
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Salvage Mode Gimbal (Toggle)",
+            "defaultBinding": "G",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": "Using this may break Relative Beam Spacing",
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Salvage Mode Gimbal Reset",
+            "defaultBinding": "L Alt + G",
+            "alternativeBinding": "R",
+            "altMineBinding": "R",
+            "description": "Using this fixes broken Relative Beam Spacing",
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 14
+    },
+    "Multi Function Displays": {
+      "description": "MFD controls for managing ship displays and information systems",
+      "subcategories": {
+        "Vehicles - Multi Function Displays (MFDs)": [
+          {
+            "name": "MFD - Cycle Page - Forwards (short press)",
+            "defaultBinding": "L Alt + E",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Cycle Page - Backwards (short press)",
+            "defaultBinding": "L Alt + Q",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - Self Status (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - Target Status (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - Scanning (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - Vehicle Configuration (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - Communications (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - IFCS (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - Diagnostics (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "MFD - Set Page - Resource Network (short press)",
+            "defaultBinding": null,
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 10
+    },
+    "On Foot & EVA": {
+      "description": "On-foot movement, combat, and EVA (Extra-Vehicular Activity) controls",
+      "subcategories": {
+        "On Foot - All": [
+          {
+            "name": "Move Left",
+            "defaultBinding": "A",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Move Right",
+            "defaultBinding": "D",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Move Forward",
+            "defaultBinding": "W",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Move Backward",
+            "defaultBinding": "S",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Jump",
+            "defaultBinding": "Spacebar",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Crouch",
+            "defaultBinding": "C",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Prone",
+            "defaultBinding": "L Ctrl",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Sprint",
+            "defaultBinding": "L Shift",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Lean Left",
+            "defaultBinding": "Q",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Lean Right",
+            "defaultBinding": "E",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Firearm - Attack",
+            "defaultBinding": "Button 1 (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Aim Down Sight",
+            "defaultBinding": "Button 2 (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Reload",
+            "defaultBinding": "R",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Select Primary Weapon",
+            "defaultBinding": "1",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": "Right shoulder first, and cycles through shoulder weapons",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Select Secondary Weapon",
+            "defaultBinding": "2",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": "Left shoulder first, and cycles through shoulder weapons",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Select Sidearm",
+            "defaultBinding": "3",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Select Melee",
+            "defaultBinding": "V",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": "This pulls whatever is on your right leg only",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Select Gadget",
+            "defaultBinding": "5",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": "This pulls whatever is equiped to your left leg",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Unarmed Combat",
+            "defaultBinding": "6",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": "Fisticuffs",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Holster Weapon",
+            "defaultBinding": "R",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Flashlight (Toggle)",
+            "defaultBinding": "T",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Toggle Equip Helmet",
+            "defaultBinding": "R Alt + H",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Third Person View (Toggle)",
+            "defaultBinding": "F4",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Free View Camera (Hold)",
+            "defaultBinding": "Z",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Mobiglass (Toggle)",
+            "defaultBinding": "F1",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Map",
+            "defaultBinding": "F2",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "E.V.A. - All": [
+          {
+            "name": "View Left/Right",
+            "defaultBinding": "X-axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "View Up/Down",
+            "defaultBinding": "Y-axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Roll Left",
+            "defaultBinding": "Q",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Roll Right",
+            "defaultBinding": "E",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Strafe Up",
+            "defaultBinding": "Spacebar",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Strafe Down",
+            "defaultBinding": "L Ctrl",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Strafe Left",
+            "defaultBinding": "A",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Strafe Right",
+            "defaultBinding": "D",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Strafe Forward",
+            "defaultBinding": "W",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Strafe Backward",
+            "defaultBinding": "S",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Brake",
+            "defaultBinding": "X",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Boost",
+            "defaultBinding": "L Shift",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": "Does this even work anymore?",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Freelook (Hold)",
+            "defaultBinding": "Z",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": null
+          }
+        ],
+        "E.V.A. - Zero-G Traversal": [
+          {
+            "name": "Launch From Surface",
+            "defaultBinding": "Spacebar",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Detach From Surface",
+            "defaultBinding": "Y",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Roll Left",
+            "defaultBinding": "Q",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Roll Right",
+            "defaultBinding": "E",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 43
+    },
+    "Personal & Social": {
+      "description": "Personal interactions, inner thought system, and inventory management",
+      "subcategories": {
+        "VOIP, FOIP, And Head Tracking": [
+          {
+            "name": "Enable Head Tracking (Toggle)",
+            "defaultBinding": "Numpad /",
+            "alternativeBinding": "Break",
+            "altMineBinding": "Break",
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "VOIP Push To Talk",
+            "defaultBinding": "Numpad +",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "VOIP Push To Talk (Proximity Only)",
+            "defaultBinding": "L Alt + Numpad +",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "FOIP Selfie Cam",
+            "defaultBinding": "Numpad -",
+            "alternativeBinding": "F3",
+            "altMineBinding": "F3",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "FOIP Recalibrate",
+            "defaultBinding": "Numpad *",
+            "alternativeBinding": "NONE",
+            "altMineBinding": "NONE",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Through Audio Channels",
+            "defaultBinding": "Numpad .",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "Quick Keys, Interactions, And Inner Thought": [
+          {
+            "name": "Interaction Mode",
+            "defaultBinding": "F",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Activate Inner Thought",
+            "defaultBinding": "Button 1 (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Focus",
+            "defaultBinding": "Button 3 (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Personal Inner Thought (PIT)",
+            "defaultBinding": "L Alt + F",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Personal Commodity Inventory (Toggle)",
+            "defaultBinding": "I",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Weapon Select Radial Menu",
+            "defaultBinding": "1",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Throwable Select radial Menu",
+            "defaultBinding": "G",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 13
+    },
+    "Social & Communication": {
+      "description": "Social features, emotes, and communication systems",
+      "subcategories": {
+        "Social - General": [
+          {
+            "name": "Re-spawn",
+            "defaultBinding": "F",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Exit Seat",
+            "defaultBinding": "Y",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": "Tap or Hold can be changed in Game Settings",
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "CommLink App (Toggle)",
+            "defaultBinding": "F11",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Chat Window (Toggle)",
+            "defaultBinding": "F12",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Chat Window Focus",
+            "defaultBinding": "Return",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "Social - Emotes": [
+          {
+            "name": "Forward",
+            "defaultBinding": "Numpad 5",
+            "alternativeBinding": "Np 8",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Left",
+            "defaultBinding": "Numpad 1",
+            "alternativeBinding": "Np 4",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Right",
+            "defaultBinding": "Numpad 3",
+            "alternativeBinding": "Np 6",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Stop",
+            "defaultBinding": "Numpad 2",
+            "alternativeBinding": "Np 2",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Yes",
+            "defaultBinding": "Numpad 4",
+            "alternativeBinding": "Np 1",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "No",
+            "defaultBinding": "Numpad 6",
+            "alternativeBinding": "Np 3",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Wave",
+            "defaultBinding": null,
+            "alternativeBinding": "Np 0",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Salute",
+            "defaultBinding": null,
+            "alternativeBinding": "L Alt+Np 0",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Dance",
+            "defaultBinding": null,
+            "alternativeBinding": "R Alt+Np 1",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 14
+    },
+    "Targeting & Combat": {
+      "description": "Targeting systems, weapon controls, and combat functions",
+      "subcategories": {
+        "Vehicles - Targeting": [
+          {
+            "name": "Auto Targeting - Toggle On / Off (Long Press)",
+            "defaultBinding": "T",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Auto Targeting - Toggle On (Short Press)",
+            "defaultBinding": null,
+            "alternativeBinding": "L Alt+T",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Auto Targeting - Toggle Off (Short Press)",
+            "defaultBinding": null,
+            "alternativeBinding": "R Alt+T",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Pin Index 1 - Lock/Unlock Pinned Target",
+            "defaultBinding": "1",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Pin Index 2 - Lock/Unlock Pinned Target",
+            "defaultBinding": "2",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Pin Index 3 - Lock/Unlock Pinned Target",
+            "defaultBinding": "3",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Remove All Pinned Targets",
+            "defaultBinding": "0",
+            "alternativeBinding": "0 DT",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Unlock Locked Target",
+            "defaultBinding": "Left Alt + T",
+            "alternativeBinding": "0",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Enable / Disable Look Ahead",
+            "defaultBinding": "Left Alt + L",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": "This can be set to a default in Game Settings",
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "Vehicles - Target Cycling": [
+          {
+            "name": "Cycle Lock - In View - Forward",
+            "defaultBinding": "T",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Lock - Attackers - Forward",
+            "defaultBinding": "4",
+            "alternativeBinding": "R Alt+4",
+            "altMineBinding": null,
+            "description": "If you get radar locked, pressing this will lock the contact that has violated you",
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Lock - Hostiles - Forward",
+            "defaultBinding": "5",
+            "alternativeBinding": "R Alt+5",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Lock - Friendlies - Forward",
+            "defaultBinding": "6",
+            "alternativeBinding": "R Alt+6",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Lock - All - Forward",
+            "defaultBinding": "7",
+            "alternativeBinding": "R Alt+7",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Lock - Sub Target - Forward",
+            "defaultBinding": "R",
+            "alternativeBinding": "R Alt+8",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Lock - Sub Target - Reset to Main Target",
+            "defaultBinding": "L Alt + R",
+            "alternativeBinding": "8",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 16
+    },
+    "Turret Controls": {
+      "description": "Remote turret operation and controls",
+      "subcategories": {
+        "Turret Movement": [
+          {
+            "name": "Pitch",
+            "defaultBinding": "Y-axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Yaw",
+            "defaultBinding": "X-axis (mouse)",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Toggle Turret Mouse Movement (VJoy, FPS Style)",
+            "defaultBinding": "Q",
+            "alternativeBinding": "R",
+            "altMineBinding": "R",
+            "description": "This is commonly cycled among turret gunners who use a mouse",
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Exit Remote Turret",
+            "defaultBinding": "Y",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Turret Gyro Stabilization (Toggle)",
+            "defaultBinding": "E",
+            "alternativeBinding": "G DT",
+            "altMineBinding": "S",
+            "description": "Gyro Mode (stabilization on) is highly recommended to use as a turret gunner",
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Next Remote Turret",
+            "defaultBinding": "D",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Previous Remote Turret",
+            "defaultBinding": "A",
+            "alternativeBinding": "NONE",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          }
+        ],
+        "Turret Adavnced": [
+          {
+            "name": "Turret E.S.P. Toggle On / Off",
+            "defaultBinding": null,
+            "alternativeBinding": "X DT",
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "toggle",
+            "activationMode": null
+          },
+          {
+            "name": "Recenter Turret (Hold)",
+            "defaultBinding": "C",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "hold",
+            "activationMode": "Hold"
+          },
+          {
+            "name": "Turret - Speed Limiter On / Off (Hold / Toggle)",
+            "defaultBinding": null,
+            "alternativeBinding": "S",
+            "altMineBinding": "Np x",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Turret - Speed Limiter (Rel)",
+            "defaultBinding": "L Alt + Mouse Wheel",
+            "alternativeBinding": null,
+            "altMineBinding": null,
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Cycle Fire Mode (Staggered / Combined)",
+            "defaultBinding": null,
+            "alternativeBinding": "\\ DT",
+            "altMineBinding": "\\",
+            "description": null,
+            "actionType": "press",
+            "activationMode": null
+          },
+          {
+            "name": "Turret Change Position",
+            "defaultBinding": "S",
+            "alternativeBinding": "M",
+            "altMineBinding": "M",
+            "description": "This is the binding that moves any turret that is on a track",
+            "actionType": "press",
+            "activationMode": null
+          }
+        ]
+      },
+      "totalCommands": 13
+    }
+  }
+}
