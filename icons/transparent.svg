@@ -1,0 +1,21 @@
+<svg viewBox="0 0 144 144" xmlns="http://www.w3.org/2000/svg">
+  <!-- Transparent/Empty slot icon with subtle border -->
+  
+  <!-- Very subtle background circle -->
+  <circle cx="72" cy="72" r="65" 
+          fill="none" 
+          stroke="#333333" 
+          stroke-width="1" 
+          opacity="0.1" 
+          stroke-dasharray="4,4"/>
+  
+  <!-- Optional: Very faint "empty" indicator -->
+  <circle cx="72" cy="72" r="8" 
+          fill="none" 
+          stroke="#666666" 
+          stroke-width="1" 
+          opacity="0.05"/>
+          
+  <!-- Completely transparent center -->
+  <rect width="144" height="144" fill="transparent" opacity="0"/>
+</svg>
