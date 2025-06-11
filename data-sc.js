@@ -1,6 +1,7 @@
 /**
- * @fileoverview Star Citizen 4.1.1 Complete Keybinds Profile for Stream Deck
- * VERSION CORRIGÉE - Tous les raccourcis ont des codes uniques et valides
+ * @fileoverview Star Citizen 4.1.1/4.1.2 Complete Keybinds Profile for Stream Deck
+ * VERSION OFFICIELLE - Basée sur les raccourcis par défaut officiels du jeu
+ * Mise à jour: Medgun maintenant sur touche 3 (4.1.1), préparé pour 4.1.2
  */
 
 const { hotkey, action, back, nextPage, previousPage } = require('./lib/actions');
@@ -97,7 +98,7 @@ const multiToolProfile = profile({
       scHotkey('Decrease\nPower', 46, false, false, false, 'minus') // Delete - 46
     ],
     [
-      scHotkey('Equip\nMulti-Tool', 53, false, false, false, 'tool'), // 5 - 53
+      scHotkey('Equip\nMedgun', 51, false, false, false, 'medical'), // 3 - 51 (4.1.1 change)
       scHotkey('Detach\nMode', 36, false, false, false, 'x'), // Home - 36
       scHotkey('Increase\nDistance', 35, false, false, false, 'arrow-up'), // End - 35
       scHotkey('Decrease\nDistance', 33, false, false, false, 'arrow-down'), // PageUp - 33
@@ -222,7 +223,7 @@ const cockpitProfile = profile({
       scHotkey('Request\nDocking', 100, false, false, false, 'dock') // Num4 - 100
     ],
     [
-      scHotkey('Landing\nGear', 101, false, false, false, 'landing-pad'), // Num5 - 101
+      scHotkey('Landing\nGear', 78, false, false, false, 'landing-pad'), // N - 78
       scHotkey('Invoke\nDocking', 102, false, false, false, 'link'), // Num6 - 102
       scHotkey('Headlights', 76, false, false, false, 'lightbulb'), // L - 76
       scHotkey('Docking\nCamera', 48, false, false, false, 'camera'), // 0 - 48
@@ -248,12 +249,12 @@ const flightMovementProfile = profile({
       scHotkey('Roll\nLeft', 81, false, false, false, 'rotate-ccw'), // Q - 81
       scHotkey('Roll\nRight', 69, false, false, false, 'rotate-cw'), // E - 69
       scHotkey('Lock Pitch\n& Yaw', 188, true, false, false, 'lock'), // Ctrl + Comma - 188
-      scHotkey('Boost', 32, false, false, true, 'zap') // Shift + Space - 32
+      scHotkey('Boost', 16, false, false, false, 'zap') // Left Shift - 16
     ],
     [
-      scHotkey('Strafe\nDown', 17, false, false, false, 'arrow-down'), // Ctrl seul - 17
+      scHotkey('Strafe\nDown', 17, false, false, false, 'arrow-down'), // Left Ctrl - 17
       scHotkey('Decouple\nToggle', 67, false, false, false, 'unlink'), // C - 67
-      scHotkey('Cruise\nToggle', 67, false, true, false, 'cruise'), // Alt + C - 67
+      scHotkey('Cruise\nControl', 67, false, false, false, 'cruise'), // C - 67
       scHotkey('Spacebreak', 88, false, false, false, 'brake-lights'), // X - 88
       null
     ]
@@ -274,13 +275,13 @@ const flightAdvancedProfile = profile({
     ],
     [
       scHotkey('Next Operator\nMode', 113, false, false, false, 'refresh'), // F2 - 113
-      scHotkey('Speed Limiter\nDown', 105, false, false, false, 'minus'), // Num9 - 105
+      scHotkey('Speed Lim\nDown', 189, false, false, false, 'minus'), // Minus - 189
       scHotkey('Accel Limiter\nUp', 37, false, false, false, 'arrow-up'), // Left Arrow - 37
       scHotkey('Accel Limiter\nDown', 38, false, false, false, 'arrow-down'), // Up Arrow - 38
       scHotkey('Hail\nTarget', 57, false, false, false, 'radio') // 9 - 57
     ],
     [
-      scHotkey('Speed Limiter\nUp', 39, false, false, false, 'plus'), // Right Arrow - 39
+      scHotkey('Speed Lim\nUp', 187, false, false, false, 'plus'), // Equals - 187
       scHotkey('Mining\nMode', 40, false, false, false, 'pickaxe'), // Down Arrow - 40
       scHotkey('Cycle\nConfig', 75, false, true, false, 'settings'), // Alt + K - 75
       scHotkey('Scan\nMode', 86, false, false, false, 'search'), // V - 86
@@ -484,23 +485,23 @@ const onFootMovementProfile = profile({
   actions: [
     [
       back(),
-      scHotkey('Move\nLeft', 65, true, false, false, 'arrow-left'), // Ctrl + A - 65
-      scHotkey('Move\nBackward', 83, true, false, false, 'arrow-down'), // Ctrl + S - 83
-      scHotkey('Move\nRight', 68, true, false, false, 'arrow-right'), // Ctrl + D - 68
-      scHotkey('Sprint', 32, false, true, false, 'zap') // Alt + Space - 32
+      scHotkey('Move\nLeft', 65, false, false, false, 'arrow-left'), // A - 65
+      scHotkey('Move\nBackward', 83, false, false, false, 'arrow-down'), // S - 83
+      scHotkey('Move\nRight', 68, false, false, false, 'arrow-right'), // D - 68
+      scHotkey('Sprint', 16, false, false, false, 'zap') // Left Shift - 16
     ],
     [
-      scHotkey('Move\nForward', 87, true, false, false, 'arrow-up'), // Ctrl + W - 87
-      scHotkey('Crouch', 67, true, false, false, 'down'), // Ctrl + C - 67
-      scHotkey('Prone', 67, false, false, true, 'minus'), // Shift + C - 67
+      scHotkey('Move\nForward', 87, false, false, false, 'arrow-up'), // W - 87
+      scHotkey('Crouch', 67, false, false, false, 'down'), // C - 67
+      scHotkey('Prone', 17, false, false, false, 'minus'), // Left Ctrl - 17
       scHotkey('Lean\nLeft', 81, true, false, false, 'lean-left'), // Ctrl + Q - 81
       scHotkey('Lean\nRight', 69, true, false, false, 'lean-right') // Ctrl + E - 69
     ],
     [
-      scHotkey('Jump', 32, true, false, false, 'jump'), // Ctrl + Space - 32
+      scHotkey('Jump', 32, false, false, false, 'jump'), // Space - 32
       scHotkey('Helmet\nToggle', 72, false, true, false, 'hard-hat'), // Alt + H - 72
       scHotkey('Wipe\nVisor', 88, false, true, false, 'droplets'), // Alt + X - 88
-      scHotkey('Suit\nLight', 84, true, false, false, 'flashlight'), // Ctrl + T - 84
+      scHotkey('Suit\nLight', 84, false, false, false, 'flashlight'), // T - 84
       null
     ]
   ]
@@ -513,14 +514,14 @@ const onFootWeaponsProfile = profile({
   actions: [
     [
       back(),
-      scHotkey('Secondary\nWeapon', 50, true, false, false, 'pistol'), // Ctrl + 2 - 50
-      scHotkey('Sidearm', 51, true, false, false, 'gun'), // Ctrl + 3 - 51
+      scHotkey('Secondary\nWeapon', 50, false, false, false, 'pistol'), // 2 - 50
+      scHotkey('Sidearm', 51, false, false, false, 'gun'), // 3 - 51
       scHotkey('Right Side\nTool', 86, true, false, false, 'pocket'), // Ctrl + V - 86
-      scHotkey('ADS', 219, false, false, false, 'crosshair') // Left Bracket - 219
+      scHotkey('ADS', 2, false, false, false, 'crosshair') // Right Mouse - 2
     ],
     [
-      scHotkey('Primary\nWeapon', 49, true, false, false, 'rifle'), // Ctrl + 1 - 49
-      scHotkey('Reload\nPrimary', 82, true, false, false, 'refresh'), // Ctrl + R - 82
+      scHotkey('Primary\nWeapon', 49, false, false, false, 'rifle'), // 1 - 49
+      scHotkey('Reload', 82, false, false, false, 'refresh'), // R - 82
       scHotkey('Reload\nSecondary', 66, false, true, false, 'refresh'), // Alt + B - 66
       scHotkey('Fire\nMode', 66, true, false, false, 'target'), // Ctrl + B - 66
       scHotkey('Customize\nWeapon', 74, true, false, false, 'settings') // Ctrl + J - 74
@@ -545,7 +546,7 @@ const onFootEquipmentProfile = profile({
       scHotkey('Gadget/Tool', 53, true, false, false, 'tool'), // Ctrl + 5 - 53
       scHotkey('Utility\nItem', 54, true, false, false, 'package'), // Ctrl + 6 - 54
       scHotkey('Throwable\nWheel', 71, true, false, false, 'bomb'), // Ctrl + G - 71
-      scHotkey('Personal\nInventory', 73, true, false, false, 'backpack') // Ctrl + I - 73
+      scHotkey('Inventory', 73, false, false, false, 'backpack') // I - 73
     ],
     [
       scHotkey('Med/Oxy\nPen', 52, true, false, false, 'syringe'), // Ctrl + 4 - 52
@@ -602,15 +603,15 @@ const vehicleProfile = profile({
   actions: [
     [
       back(),
-      scHotkey('Drive\nBackward', 83, false, true, false, 'arrow-down'), // Alt + S - 83
-      scHotkey('Turn\nLeft', 65, false, true, false, 'arrow-left'), // Alt + A - 65
-      scHotkey('Turn\nRight', 68, false, true, false, 'arrow-right'), // Alt + D - 68
-      scHotkey('Break', 88, true, false, false, 'brake-lights') // Ctrl + X - 88
+      scHotkey('Drive\nBackward', 83, false, false, false, 'arrow-down'), // S - 83
+      scHotkey('Turn\nLeft', 65, false, false, false, 'arrow-left'), // A - 65
+      scHotkey('Turn\nRight', 68, false, false, false, 'arrow-right'), // D - 68
+      scHotkey('Brake', 88, false, false, false, 'brake-lights') // X - 88
     ],
     [
-      scHotkey('Drive\nForward', 87, false, true, false, 'arrow-up'), // Alt + W - 87
+      scHotkey('Drive\nForward', 87, false, false, false, 'arrow-up'), // W - 87
       scHotkey('Vehicle\nLight', 76, true, false, false, 'lightbulb'), // Ctrl + L - 76
-      scHotkey('Vehicle\nBoost', 32, false, true, true, 'zap'), // Alt + Shift + Space - 32
+      scHotkey('Vehicle\nBoost', 16, false, false, false, 'zap'), // Left Shift - 16
       scHotkey('Toggle Break\nIdle', 67, false, true, false, 'brake-lights'), // Alt + C - 67
       scHotkey('Systems\nReady', 82, true, false, false, 'power') // Ctrl + R - 82
     ],
@@ -632,19 +633,19 @@ const evaProfile = profile({
     [
       back(),
       scHotkey('EVA\nBreak', 88, false, false, true, 'brake-lights'), // Shift + X - 88
-      scHotkey('Strafe\nUp', 32, false, false, true, 'arrow-up'), // Shift + Space - 32
-      scHotkey('Strafe\nDown', 17, true, false, false, 'arrow-down'), // Ctrl - 17
-      scHotkey('Strafe\nLeft', 65, false, true, true, 'arrow-left') // Alt + Shift + A - 65
+      scHotkey('Strafe\nUp', 32, false, false, false, 'arrow-up'), // Space - 32
+      scHotkey('Strafe\nDown', 17, false, false, false, 'arrow-down'), // Ctrl - 17
+      scHotkey('Strafe\nLeft', 65, false, false, false, 'arrow-left') // A - 65
     ],
     [
-      scHotkey('EVA\nBoost', 32, true, false, true, 'zap'), // Ctrl + Shift + Space - 32
-      scHotkey('Strafe\nForward', 87, false, true, true, 'arrow-up'), // Alt + Shift + W - 87
-      scHotkey('Strafe\nBackward', 83, false, true, true, 'arrow-down'), // Alt + Shift + S - 83
-      scHotkey('Roll\nLeft', 81, false, true, true, 'rotate-ccw'), // Alt + Shift + Q - 81
-      scHotkey('Roll\nRight', 69, false, true, true, 'rotate-cw') // Alt + Shift + E - 69
+      scHotkey('EVA\nBoost', 16, false, false, false, 'zap'), // Left Shift - 16
+      scHotkey('Strafe\nForward', 87, false, false, false, 'arrow-up'), // W - 87
+      scHotkey('Strafe\nBackward', 83, false, false, false, 'arrow-down'), // S - 83
+      scHotkey('Roll\nLeft', 81, false, false, false, 'rotate-ccw'), // Q - 81
+      scHotkey('Roll\nRight', 69, false, false, false, 'rotate-cw') // E - 69
     ],
     [
-      scHotkey('Strafe\nRight', 68, false, true, true, 'arrow-right'), // Alt + Shift + D - 68
+      scHotkey('Strafe\nRight', 68, false, false, false, 'arrow-right'), // D - 68
       scHotkey('Traversal\nLaunch', 32, true, false, false, 'rocket'), // Ctrl + Space - 32
       scHotkey('Traversal\nDetach', 89, true, false, false, 'unlink'), // Ctrl + Y - 89
       scHotkey('Freelook', 90, true, false, false, 'eye'), // Ctrl + Z - 90
@@ -662,9 +663,9 @@ const generalProfile = profile({
   actions: [
     [
       back(),
-      scHotkey('Mobiglas', 112, true, false, false, 'tablet'), // Ctrl + F1 - 112
-      scHotkey('Cycle\nCamera', 115, true, false, false, 'camera'), // Ctrl + F4 - 115
-      scHotkey('CommLink', 122, true, false, false, 'message-circle'), // Ctrl + F11 - 122
+      scHotkey('Mobiglas', 112, false, false, false, 'tablet'), // F1 - 112
+      scHotkey('Camera', 115, false, false, false, 'camera'), // F4 - 115
+      scHotkey('Contacts', 122, false, false, false, 'message-circle'), // F11 - 122
       scHotkey('Chat', 123, true, false, false, 'message-square') // Ctrl + F12 - 123
     ],
     [
@@ -675,11 +676,11 @@ const generalProfile = profile({
       scHotkey('Freelook', 90, false, true, false, 'eye') // Alt + Z - 90
     ],
     [
-      scHotkey('Chat\nCycle', 9, true, false, false, 'tab'), // Ctrl + TAB - 9
+      scHotkey('Interact', 70, false, false, false, 'hand'), // F - 70
       scHotkey('Self\nDestruct', 8, false, false, true, 'bomb'), // Shift + Backspace - 8
-      null,
-      null,
-      null
+      scHotkey('Map', 77, false, false, false, 'map'), // M - 77
+      scHotkey('Chat', 13, false, false, false, 'message-square'), // Enter - 13
+      scHotkey('Scoreboard', 9, false, false, false, 'list') // Tab - 9
     ]
   ]
 });

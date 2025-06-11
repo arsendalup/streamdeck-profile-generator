@@ -1,0 +1,23 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(12, 12)">
+    <\!-- Scoreboard background -->
+    <rect x="0" y="0" width="48" height="40" fill="#1a2836" stroke="#ffffff" stroke-width="2" rx="4"/>
+    <\!-- Header -->
+    <rect x="2" y="2" width="44" height="8" fill="#4a9eff"/>
+    <text x="24" y="8" text-anchor="middle" fill="#ffffff" font-size="6" font-weight="bold">SCOREBOARD</text>
+    <\!-- Player entries -->
+    <g fill="#ffffff" font-size="5">
+      <text x="4" y="18">Player 1</text>
+      <text x="38" y="18">1250</text>
+      <text x="4" y="26">Player 2</text>
+      <text x="38" y="26">1100</text>
+      <text x="4" y="34">Player 3</text>
+      <text x="38" y="34">950</text>
+    </g>
+    <\!-- Ranking bars -->
+    <rect x="4" y="20" width="30" height="2" fill="#44ff44"/>
+    <rect x="4" y="28" width="24" height="2" fill="#ffff44"/>
+    <rect x="4" y="36" width="18" height="2" fill="#ff8844"/>
+  </g>
+</svg>
