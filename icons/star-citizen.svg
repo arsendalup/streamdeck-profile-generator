@@ -1,0 +1,44 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(8, 8)">
+    <!-- Outer ring -->
+    <circle cx="28" cy="28" r="26" fill="none" stroke="#4a9eff" stroke-width="3"/>
+    
+    <!-- Inner ring with segments -->
+    <circle cx="28" cy="28" r="18" fill="none" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Star Citizen logo elements -->
+    <!-- Main star -->
+    <g transform="translate(28, 28)">
+      <path d="M0 -12 L3 -3 L12 0 L3 3 L0 12 L-3 3 L-12 0 L-3 -3 Z" fill="#44ff44"/>
+      <path d="M0 -8 L2 -2 L8 0 L2 2 L0 8 L-2 2 L-8 0 L-2 -2 Z" fill="#ffffff"/>
+    </g>
+    
+    <!-- Orbital elements -->
+    <circle cx="28" cy="10" r="2" fill="#4a9eff"/>
+    <circle cx="46" cy="28" r="2" fill="#4a9eff"/>
+    <circle cx="28" cy="46" r="2" fill="#4a9eff"/>
+    <circle cx="10" cy="28" r="2" fill="#4a9eff"/>
+    
+    <!-- Corner stars -->
+    <g transform="translate(16, 16)">
+      <path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#44ff44"/>
+    </g>
+    
+    <g transform="translate(40, 16)">
+      <path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#44ff44"/>
+    </g>
+    
+    <g transform="translate(16, 40)">
+      <path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#44ff44"/>
+    </g>
+    
+    <g transform="translate(40, 40)">
+      <path d="M0 -4 L1 -1 L4 0 L1 1 L0 4 L-1 1 L-4 0 L-1 -1 Z" fill="#44ff44"/>
+    </g>
+    
+    <!-- Citizen text representation -->
+    <rect x="20" y="52" width="16" height="2" fill="#4a9eff"/>
+    <text x="28" y="58" text-anchor="middle" fill="#4a9eff" font-size="6" font-weight="bold">SC</text>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(16, 8)">
+    <!-- Door frame -->
+    <rect x="0" y="0" width="20" height="40" fill="#2d4a5a" stroke="#ffffff" stroke-width="2" rx="2"/>
+    
+    <!-- Open door -->
+    <rect x="16" y="4" width="16" height="36" fill="#4a9eff" stroke="#ffffff" stroke-width="2" rx="2"/>
+    
+    <!-- Door handle -->
+    <circle cx="26" cy="22" r="2" fill="#ffffff"/>
+    
+    <!-- Door hinges -->
+    <rect x="18" y="6" width="2" height="4" fill="#ffffff"/>
+    <rect x="18" y="16" width="2" height="4" fill="#ffffff"/>
+    <rect x="18" y="24" width="2" height="4" fill="#ffffff"/>
+    <rect x="18" y="34" width="2" height="4" fill="#ffffff"/>
+    
+    <!-- Motion indicator -->
+    <path d="M34 15 Q38 18, 34 22 Q38 25, 34 28" stroke="#44ff44" stroke-width="2" fill="none"/>
+    
+    <!-- Status indicator -->
+    <circle cx="10" cy="8" r="2" fill="#44ff44"/>
+    <text x="10" y="50" text-anchor="middle" fill="#4a9eff" font-size="8">OPEN</text>
+    
+    <!-- Airlock indicator -->
+    <rect x="2" y="44" width="16" height="4" fill="#44ff44" opacity="0.7"/>
+  </g>
+</svg>

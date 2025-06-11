@@ -1,0 +1,39 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(16, 12)">
+    <!-- Lightning bolt -->
+    <path d="M20 8 L12 20 L16 20 L16 28 L24 16 L20 16 Z" fill="#44ff44" stroke="#ffffff" stroke-width="2"/>
+    
+    <!-- Power increase indicator -->
+    <rect x="8" y="34" width="16" height="4" fill="#44ff44" rx="2"/>
+    
+    <!-- Power level bars (increasing) -->
+    <rect x="4" y="46" width="2" height="2" fill="#44ff44"/>
+    <rect x="7" y="44" width="2" height="4" fill="#44ff44"/>
+    <rect x="10" y="42" width="2" height="6" fill="#44ff44"/>
+    <rect x="13" y="40" width="2" height="8" fill="#44ff44"/>
+    <rect x="16" y="38" width="2" height="10" fill="#44ff44"/>
+    <rect x="19" y="36" width="2" height="12" fill="#44ff44"/>
+    
+    <!-- Weapon power indicator -->
+    <circle cx="28" cy="20" r="6" fill="#2d4a5a" stroke="#ffffff" stroke-width="2"/>
+    <text x="28" y="24" text-anchor="middle" fill="#44ff44" font-size="8">W</text>
+    
+    <!-- Plus symbol overlay -->
+    <circle cx="32" cy="12" r="4" fill="#44ff44"/>
+    <rect x="29" y="11" width="6" height="2" fill="#ffffff"/>
+    <rect x="31" y="9" width="2" height="6" fill="#ffffff"/>
+    
+    <!-- Power boost effect -->
+    <g opacity="0.6">
+      <path d="M6 32 Q10 28, 14 32" stroke="#44ff44" stroke-width="2" fill="none"/>
+      <path d="M18 32 Q22 28, 26 32" stroke="#44ff44" stroke-width="2" fill="none"/>
+      <path d="M6 36 Q10 32, 14 36" stroke="#44ff44" stroke-width="2" fill="none"/>
+    </g>
+    
+    <!-- Energy particles -->
+    <circle cx="26" cy="8" r="1" fill="#44ff44" opacity="0.8"/>
+    <circle cx="22" cy="6" r="1" fill="#44ff44" opacity="0.6"/>
+    <circle cx="30" cy="10" r="1" fill="#44ff44" opacity="0.4"/>
+  </g>
+</svg>

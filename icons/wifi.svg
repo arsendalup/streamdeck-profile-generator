@@ -1,0 +1,37 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(16, 16)">
+    <!-- WiFi signal waves -->
+    <path d="M20 36 Q10 26, 0 36" stroke="#4a9eff" stroke-width="3" fill="none"/>
+    <path d="M20 36 Q14 30, 8 36" stroke="#4a9eff" stroke-width="3" fill="none"/>
+    <path d="M20 36 Q17 33, 14 36" stroke="#4a9eff" stroke-width="3" fill="none"/>
+    
+    <!-- Mirror waves on right side -->
+    <path d="M20 36 Q30 26, 40 36" stroke="#4a9eff" stroke-width="3" fill="none"/>
+    <path d="M20 36 Q26 30, 32 36" stroke="#4a9eff" stroke-width="3" fill="none"/>
+    <path d="M20 36 Q23 33, 26 36" stroke="#4a9eff" stroke-width="3" fill="none"/>
+    
+    <!-- Central ping source -->
+    <circle cx="20" cy="36" r="3" fill="#44ff44"/>
+    <circle cx="20" cy="36" r="1" fill="#ffffff"/>
+    
+    <!-- Scanning radar sweep -->
+    <path d="M20 20 Q28 24, 32 32" stroke="#44ff44" stroke-width="2" fill="none" opacity="0.8"/>
+    <path d="M20 20 Q24 16, 32 20" stroke="#44ff44" stroke-width="2" fill="none" opacity="0.6"/>
+    <path d="M20 20 Q16 16, 8 20" stroke="#44ff44" stroke-width="2" fill="none" opacity="0.4"/>
+    
+    <!-- Ping detection points -->
+    <circle cx="8" cy="28" r="2" fill="#ff4444"/>
+    <circle cx="32" cy="24" r="2" fill="#ff4444"/>
+    <circle cx="28" cy="8" r="2" fill="#ff4444"/>
+    <circle cx="12" cy="12" r="2" fill="#ff4444"/>
+    
+    <!-- Signal strength indicators -->
+    <rect x="2" y="32" width="2" height="4" fill="#4a9eff"/>
+    <rect x="5" y="30" width="2" height="6" fill="#4a9eff"/>
+    <rect x="8" y="28" width="2" height="8" fill="#4a9eff"/>
+    
+    <!-- Ping text -->
+    <text x="20" y="8" text-anchor="middle" fill="#44ff44" font-size="8">PING</text>
+  </g>
+</svg>

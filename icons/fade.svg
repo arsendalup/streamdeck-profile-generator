@@ -1,0 +1,37 @@
+<svg width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="72" height="72" fill="transparent"/>
+  <g transform="translate(12, 16)">
+    <!-- Fading circles demonstrating opacity -->
+    <circle cx="24" cy="20" r="16" fill="#4a9eff" opacity="0.2"/>
+    <circle cx="24" cy="20" r="12" fill="#4a9eff" opacity="0.4"/>
+    <circle cx="24" cy="20" r="8" fill="#4a9eff" opacity="0.6"/>
+    <circle cx="24" cy="20" r="4" fill="#4a9eff" opacity="0.8"/>
+    <circle cx="24" cy="20" r="2" fill="#4a9eff"/>
+    
+    <!-- PIP indicators with fading effect -->
+    <g opacity="1.0">
+      <circle cx="24" cy="8" r="2" fill="#44ff44"/>
+    </g>
+    <g opacity="0.7">
+      <circle cx="34" cy="14" r="2" fill="#44ff44"/>
+    </g>
+    <g opacity="0.5">
+      <circle cx="34" cy="26" r="2" fill="#44ff44"/>
+    </g>
+    <g opacity="0.3">
+      <circle cx="24" cy="32" r="2" fill="#44ff44"/>
+    </g>
+    <g opacity="0.2">
+      <circle cx="14" cy="26" r="2" fill="#44ff44"/>
+    </g>
+    <g opacity="0.1">
+      <circle cx="14" cy="14" r="2" fill="#44ff44"/>
+    </g>
+    
+    <!-- Fade direction indicator -->
+    <path d="M8 4 L40 4" stroke="#ffffff" stroke-width="2" opacity="1.0"/>
+    <path d="M8 8 L36 8" stroke="#ffffff" stroke-width="2" opacity="0.7"/>
+    <path d="M8 12 L32 12" stroke="#ffffff" stroke-width="2" opacity="0.4"/>
+    <path d="M8 16 L28 16" stroke="#ffffff" stroke-width="2" opacity="0.2"/>
+  </g>
+</svg>
