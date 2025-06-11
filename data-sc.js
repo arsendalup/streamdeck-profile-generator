@@ -127,7 +127,7 @@ const essentialFlightProfile = profile({
       scHotkey('Cycle\nCamera', 115, false, false, false, 'camera'), // f4
       scHotkey('Free\nLook', 90, false, false, false, 'eye'), // z
       scHotkey('Exit\nSeat', 89, false, false, false, 'log-out'), // y
-      nextPage()
+      null
     ]
   ]
 });
@@ -159,7 +159,7 @@ const combatWeaponsProfile = profile({
       scHotkey('Sub-target\nCycle', 82, false, false, false, 'focus'), // r
       scHotkey('Auto Target\nOn', 84, false, true, false, 'target'), // lalt+t
       scHotkey('Auto Target\nOff', 84, true, false, false, 'x-circle'), // ralt+t
-      nextPage()
+      null
     ]
   ]
 });
@@ -191,7 +191,7 @@ const onFootCombatProfile = profile({
       scHotkey('Crouch', 67, false, false, false, 'arrow-down'), // c
       scHotkey('Prone', 17, false, false, false, 'user'), // lctrl
       scHotkey('Jump', 32, false, false, false, 'arrow-up'), // space
-      nextPage()
+      null
     ]
   ]
 });
@@ -223,7 +223,7 @@ const evaGroundProfile = profile({
       scHotkey('Vehicle\nBoost', 16, false, false, false, 'fast-forward'), // lshift
       scHotkey('Mining\nLaser', 1000, false, false, false, 'pickaxe'), // mouse1
       scHotkey('Mining\nPower Up', 1003, false, false, false, 'plus'), // mousewheelup
-      nextPage()
+      null
     ]
   ]
 });
@@ -255,7 +255,7 @@ const socialInterfaceProfile = profile({
       scHotkey('Forward\nEmote', 101, false, false, false, 'hand-pointer'), // numpad5
       scHotkey('Yes\nEmote', 100, false, false, false, 'thumbs-up'), // numpad4
       scHotkey('No\nEmote', 102, false, false, false, 'hand'), // numpad6
-      nextPage()
+      null
     ]
   ]
 });
@@ -287,7 +287,7 @@ const advancedSpecialistProfile = profile({
       scHotkey('MFD Page\nBack', 81, false, true, false, 'chevron-left'), // lalt+q
       scHotkey('Advanced\nCamera', 115, false, false, false, 'camera'), // f4
       scHotkey('Force\nRespawn', 8, false, false, false, 'skull'), // backspace
-      previousPage()
+      null
     ]
   ]
 });
@@ -337,9 +337,3 @@ module.exports = () => ({
     advancedSpecialistProfile,
   ]
 });
-
-module.exports = {
-  name: 'Star Citizen 4.1.1/4.1.2 - Configuration Complète HTML',
-  profiles: [
-  ],
-};
