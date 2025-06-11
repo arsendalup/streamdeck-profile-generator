@@ -1,0 +1,8851 @@
+[
+  {
+    "name": "Electronic Access_Spectator",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Electronic Access - Spectator",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Spectator Camera Lock Target",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "1",
+        "parsed": {
+          "key": "1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Spectator Camera Lock Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Spectator Camera HUD_Toggle",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "B",
+        "parsed": {
+          "key": "B",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Spectator Camera HUD (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Spectator Camera Mode_Next",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F4",
+        "parsed": {
+          "key": "F4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Spectator Camera Mode (Next)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Advanced Camera Controls Modifier_Hold",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl",
+        "parsed": {
+          "key": "L CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F4",
+        "parsed": {
+          "key": "F4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Advanced Camera Controls Modifier (Hold)",
+    "activation_mode": "Hold",
+    "note": "Mine allows me to control the camera with one hand. And since it is a hold function, you can still use it as a Tap or DT in another function. Might conflict, depending on the function you choose."
+  },
+  {
+    "name": "Advanced Camera Controls Modifier_Hold",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Z",
+        "parsed": {
+          "key": "Z",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Advanced Camera Controls Modifier (Hold)",
+    "activation_mode": "Hold",
+    "note": "This doesn't seem to do the same as the above. Not sure it does anything for cameras."
+  },
+  {
+    "name": "Save View 1",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 1",
+        "parsed": {
+          "key": "NUMPAD 1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 1",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 2",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 2",
+        "parsed": {
+          "key": "NUMPAD 2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 2",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 3",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 3",
+        "parsed": {
+          "key": "NUMPAD 3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 3",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 4",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 4",
+        "parsed": {
+          "key": "NUMPAD 4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 4",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 5",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 5",
+        "parsed": {
+          "key": "NUMPAD 5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 5",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 6",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 6",
+        "parsed": {
+          "key": "NUMPAD 6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 6",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 7",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 7",
+        "parsed": {
+          "key": "NUMPAD 7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 7",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 8",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 8",
+        "parsed": {
+          "key": "NUMPAD 8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 8",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Save View 9",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 9",
+        "parsed": {
+          "key": "NUMPAD 9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Save View 9",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Load View 1",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 1",
+        "parsed": {
+          "key": "NUMPAD 1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 1",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 2",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 2",
+        "parsed": {
+          "key": "NUMPAD 2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 2",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 3",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 3",
+        "parsed": {
+          "key": "NUMPAD 3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 3",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 4",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 4",
+        "parsed": {
+          "key": "NUMPAD 4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 4",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 5",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 5",
+        "parsed": {
+          "key": "NUMPAD 5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 5",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 6",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 6",
+        "parsed": {
+          "key": "NUMPAD 6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 6",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 7",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 7",
+        "parsed": {
+          "key": "NUMPAD 7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 7",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 8",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 8",
+        "parsed": {
+          "key": "NUMPAD 8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 8",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Load View 9",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 9",
+        "parsed": {
+          "key": "NUMPAD 9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Load View 9",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Clear Saved View",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np Decimal",
+        "parsed": {
+          "key": "NP DECIMAL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad 0",
+        "parsed": {
+          "key": "NUMPAD 0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Clear Saved View",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "X Offset Positive",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Right Arrow",
+        "parsed": {
+          "key": "RIGHT ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "X Offset Positive",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "X Offset Negative",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Left Arrow",
+        "parsed": {
+          "key": "LEFT ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "X Offset Negative",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Y Offset Positive _ Spectator Freecam Focal Point Forward",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Up Arrow",
+        "parsed": {
+          "key": "UP ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Y Offset Positive / Spectator Freecam Focal Point Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Y Offset Negative _ Spectator Freecam Focal Point Backward",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Down Arrow",
+        "parsed": {
+          "key": "DOWN ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Y Offset Negative / Spectator Freecam Focal Point Backward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Z Offset Positive",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Page Up",
+        "parsed": {
+          "key": "PAGE UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Z Offset Positive",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Z Offset Negative",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Page Down",
+        "parsed": {
+          "key": "PAGE DOWN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Z Offset Negative",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Increase FoV",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad +",
+        "parsed": {
+          "key": "",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Increase FoV",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decrease FoV",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad -",
+        "parsed": {
+          "key": "NUMPAD -",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decrease FoV",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Increase DoF",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Home",
+        "parsed": {
+          "key": "HOME",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Increase DoF",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decrease DoF",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "End",
+        "parsed": {
+          "key": "END",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decrease DoF",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Reset Current View",
+    "category": "CAMERA",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 0",
+        "parsed": {
+          "key": "NP 0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad *",
+        "parsed": {
+          "key": "NUMPAD *",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Reset Current View",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Vehicles_Seats and Operator Modes",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Vehicles - Seats and Operator Modes",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Emergency Exit Seat",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Y",
+        "parsed": {
+          "key": "Y",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "U + Left Shift",
+        "parsed": {
+          "key": "LEFT SHIFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Emergency Exit Seat",
+    "activation_mode": "",
+    "note": "(R)ace out of your seat."
+  },
+  {
+    "name": "Eject",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Y",
+        "parsed": {
+          "key": "Y",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + Y",
+        "parsed": {
+          "key": "Y",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Eject",
+    "activation_mode": "Hold???",
+    "note": "(L)aunch out of your seat."
+  },
+  {
+    "name": "Look Behind",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Comma",
+        "parsed": {
+          "key": "COMMA",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Look Behind",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Mining Operator Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "M",
+        "parsed": {
+          "key": "M",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Mining Operator Mode",
+    "activation_mode": "",
+    "note": "3.24.2 Using M in various bindings in \"Mine\" is now conflicting with itself in many ways. IE: M now puts my Vulture and MPUVT in missile mode. Which shouldn't even be possible with either of them."
+  },
+  {
+    "name": "Toggle Salvage Operator Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "M",
+        "parsed": {
+          "key": "M",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Salvage Operator Mode",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Scanning Operator Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "\\",
+        "parsed": {
+          "key": "\\",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "\\",
+        "parsed": {
+          "key": "\\",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Scanning Operator Mode",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Missile Operator Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "M",
+        "parsed": {
+          "key": "M",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "M",
+        "parsed": {
+          "key": "M",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Missile Operator Mode",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Flight Operator Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Flight Operator Mode",
+    "activation_mode": "",
+    "note": "This will toggle between Nav Flight and Quantum."
+  },
+  {
+    "name": "Set Quantum Operator Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Quantum Operator Mode",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Flight Operator Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Flight Operator Mode",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Enter Remote Turret 1",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Up Arrow",
+        "parsed": {
+          "key": "UP ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Up Arrow",
+        "parsed": {
+          "key": "UP ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Enter Remote Turret 1",
+    "activation_mode": "",
+    "note": "These will put you in any remote turret from a seat/positon that has access to one."
+  },
+  {
+    "name": "Enter Remote Turret 2",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Arrow",
+        "parsed": {
+          "key": "L ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Arrow",
+        "parsed": {
+          "key": "L ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Enter Remote Turret 2",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Enter Remote Turret 3",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Arrow",
+        "parsed": {
+          "key": "R ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Arrow",
+        "parsed": {
+          "key": "R ARROW",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Enter Remote Turret 3",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Self Destruct",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Backspace",
+        "parsed": {
+          "key": "BACKSPACE",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Self Destruct",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Increase Cooler Rate",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Increase Cooler Rate",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decrease Cooler Rate",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decrease Cooler Rate",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Flight _ Systems Ready",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R DT",
+        "parsed": {
+          "key": "R DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 0",
+        "parsed": {
+          "key": "NP 0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Flight / Systems Ready",
+    "activation_mode": "",
+    "note": "I have found whatever binding you have here, can be used to reset many controls/settings, since your ship is already on."
+  },
+  {
+    "name": "Open_Close Doors_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "D DT",
+        "parsed": {
+          "key": "D DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Open/Close Doors (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Open All Doors",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Open All Doors",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Close All Doors",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Close All Doors",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Lock _ Unlock Doors_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Lock / Unlock Doors (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Lock All Doors",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Lock All Doors",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Salvage Toggle Fire Right. Salvage bindings have been redone to make more sense to me."
+  },
+  {
+    "name": "Unlock All Doors",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Unlock All Doors",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Salvage Focus Right Salvage Head."
+  },
+  {
+    "name": "Port Lock Toggle All",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "R Alt + K",
+        "parsed": {
+          "key": "K",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Port Lock Toggle All",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Port Lock All",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+K DT",
+        "parsed": {
+          "key": "K DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Port Lock All",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Port Unlock All",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+K DT",
+        "parsed": {
+          "key": "K DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Port Unlock All",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle camera view",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "???",
+        "parsed": {
+          "key": "???",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F4",
+        "parsed": {
+          "key": "F4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle camera view",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Freelook_Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Z",
+        "parsed": {
+          "key": "Z",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Freelook (Hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Dynamic Zoom Toggle_abs",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Z",
+        "parsed": {
+          "key": "Z",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Z",
+        "parsed": {
+          "key": "Z",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Dynamic Zoom Toggle (abs)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "@ui_v_ads_toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "8 DT",
+        "parsed": {
+          "key": "8 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "8 DT",
+        "parsed": {
+          "key": "8 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_v_ads_toggle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "@ui_v_ads_toggle_stable_max_zoom_hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "8",
+        "parsed": {
+          "key": "8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "8",
+        "parsed": {
+          "key": "8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_v_ads_toggle_stable_max_zoom_hold",
+    "activation_mode": "",
+    "note": "This is active as long as you hold it. Its quite impressive. Now if we could get this feature on our helmets."
+  },
+  {
+    "name": "@ui_v_ads_cycle_tracking",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_v_ads_cycle_tracking",
+    "activation_mode": "",
+    "note": "I'm trying to use R Ctrl for a lot of resetting options, but have to be cautious about what it may conflict with as a modifier too. So far so good."
+  },
+  {
+    "name": "Roll Left",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Roll Left",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Roll Right",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "E",
+        "parsed": {
+          "key": "E",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Roll Right",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Strafe Up_abs",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Spacebar",
+        "parsed": {
+          "key": "SPACEBAR",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Strafe Up (abs)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Strafe Down_abs",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Ctrl",
+        "parsed": {
+          "key": "L CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Strafe Down (abs)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Strafe Left_abs",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Strafe Left (abs)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Strafe Right_abs",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Strafe Right (abs)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throttle_Increase",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+S",
+        "parsed": {
+          "key": "S",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throttle - Increase",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throttle_Decrease",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+S",
+        "parsed": {
+          "key": "S",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throttle - Decrease",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throttle_Cruise Mode_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "C DT",
+        "parsed": {
+          "key": "C DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + C",
+        "parsed": {
+          "key": "C",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throttle - Cruise Mode - Toggle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throttle_Trim_Set To 100%_Short Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+C",
+        "parsed": {
+          "key": "C",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throttle - Trim - Set To 100% (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throttle_Trim_Set To 50%_Short Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+C",
+        "parsed": {
+          "key": "C",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throttle - Trim - Set To 50% (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throttle_Trim_Release_Long Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throttle - Trim - Release (Long Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throttle_Trim_Release_Short Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throttle - Trim - Release (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decouple Mode_Toggle Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "C",
+        "parsed": {
+          "key": "C",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decouple Mode (Toggle, Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Boost",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Shift",
+        "parsed": {
+          "key": "L SHIFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Boost",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Speed Limiter Enable_Disable",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Speed Limiter Enable/Disable",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Acceleration Limiter Step Up_tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Acceleration Limiter Step Up (tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Acceleration Limiter Step Down_tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Acceleration Limiter Step Down (tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Spacebrake",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Spacebrake",
+    "activation_mode": "",
+    "note": "There is a long standing issue applying this with an axis. The brake often remains engaged after releasing said axis. Tap X to disengage."
+  },
+  {
+    "name": "Lock Pitch_Yaw Movement_Toggle _ Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "R Shift",
+        "parsed": {
+          "key": "R SHIFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Lock Pitch/Yaw Movement (Toggle / Hold)",
+    "activation_mode": "",
+    "note": "WARNING! I don't know how this is useful, but I do know many have accidntally bumped this, and lost the ability to pitch and yaw. Might be good to remove it, and us that large button for something more desirable."
+  },
+  {
+    "name": "G-force safety On",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+G DT",
+        "parsed": {
+          "key": "G DT",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "G-force safety On",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "G-force safety Off",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+G DT",
+        "parsed": {
+          "key": "G DT",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "G-force safety Off",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "G-force safety On _ Off_Toggle _ Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "G DT",
+        "parsed": {
+          "key": "G DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "G DT",
+        "parsed": {
+          "key": "G DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "G-force safety On / Off (Toggle / Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "E.S.P Toggle On _ Off_Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "X DT",
+        "parsed": {
+          "key": "X DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "X DT",
+        "parsed": {
+          "key": "X DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "E.S.P Toggle On / Off (Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Landing System_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Landing System (Toggle)",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Lights. Change it to N for Night and L for Landing (so many asking for night vision, this might make more sense."
+  },
+  {
+    "name": "Landing System_Deploy",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+L",
+        "parsed": {
+          "key": "L",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Landing System (Deploy)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Landing System_Retract",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+L",
+        "parsed": {
+          "key": "L",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Landing System (Retract)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle VTOL",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "V DT",
+        "parsed": {
+          "key": "V DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "V DT",
+        "parsed": {
+          "key": "V DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "K",
+        "parsed": {
+          "key": "K",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle VTOL",
+    "activation_mode": "",
+    "note": "Alt Mine will conflict with default Lock Pitch/Yaw Movement (Toggle / Hold). But R Shift seems to be a nice key for something more important in a pinch."
+  },
+  {
+    "name": "Expand Configuration",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+K",
+        "parsed": {
+          "key": "K",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Expand Configuration",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Cycle Configuration."
+  },
+  {
+    "name": "Retract Configuration",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+K",
+        "parsed": {
+          "key": "K",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Retract Configuration",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Port Lock Toggle All."
+  },
+  {
+    "name": "Cycle Configuration",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "K",
+        "parsed": {
+          "key": "K",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "K",
+        "parsed": {
+          "key": "K",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + K",
+        "parsed": {
+          "key": "K",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Configuration",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Autoland",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Autoland",
+    "activation_mode": "Hold",
+    "note": "This only works when you are close enough to a pad, and only at places that have the advanced tech in lore for it. IE: Outposts may not work. Hearing this is not working in 3.23."
+  },
+  {
+    "name": "Request Landing",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "9 DT",
+        "parsed": {
+          "key": "9 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "9 DT",
+        "parsed": {
+          "key": "9 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Request Landing",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Request Cargo Loading",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Request Cargo Loading",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Master Mode_Short Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "E",
+        "parsed": {
+          "key": "E",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "E",
+        "parsed": {
+          "key": "E",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Master Mode (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Master Mode_Long Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "B",
+        "parsed": {
+          "key": "B",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Master Mode (Long Press)",
+    "activation_mode": "",
+    "note": "3.24.2 Mine is really conflicting with Mine various modes above."
+  },
+  {
+    "name": "Set Master Mode to Nav",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+M",
+        "parsed": {
+          "key": "M",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Master Mode to Nav",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Master Mode to SCM",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+M",
+        "parsed": {
+          "key": "M",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Master Mode to SCM",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Jump Drive_Request Jump",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "J",
+        "parsed": {
+          "key": "J",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "J",
+        "parsed": {
+          "key": "J",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Jump Drive - Request Jump",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Gravity Compensation_Enable",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+G",
+        "parsed": {
+          "key": "G",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Gravity Compensation - Enable",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Gravity Compensation_Disable",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+G",
+        "parsed": {
+          "key": "G",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Gravity Compensation - Disable",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Automatic Precision Mode_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Automatic Precision Mode - Toggle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Automatic Precision Mode_Enable",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Automatic Precision Mode - Enable",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Automatic Precision Mode_Disable",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Automatic Precision Mode - Disable",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Engage Quantum Drive_Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Engage Quantum Drive (Hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Toggle Docking Mode",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Docking Mode",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Invoke Docking",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Invoke Docking",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Toggle Docking Camera",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "0",
+        "parsed": {
+          "key": "0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Docking Camera",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Hail Target",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "9",
+        "parsed": {
+          "key": "9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Hail Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Activate Ping_Hold & Release",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "???",
+        "parsed": {
+          "key": "???",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "???",
+        "parsed": {
+          "key": "???",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Tab",
+        "parsed": {
+          "key": "TAB",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Activate Ping (Hold & Release)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Scanning Increase Radar Angle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "]",
+        "parsed": {
+          "key": "]",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "]",
+        "parsed": {
+          "key": "]",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Scanning Increase Radar Angle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Scanning Decrease Radar Angle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "[",
+        "parsed": {
+          "key": "[",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "[",
+        "parsed": {
+          "key": "[",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Scanning Decrease Radar Angle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Manual Gimbal Mode_Swap VJoy_Look Direction_Toggle_Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+G DT",
+        "parsed": {
+          "key": "G DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Left Alt + G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Manual Gimbal Mode - Swap VJoy/Look Direction (Toggle/Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Manual Gimbal Mode_Lock Aim Vector",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+G DT",
+        "parsed": {
+          "key": "G DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Right Alt + G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Manual Gimbal Mode - Lock Aim Vector",
+    "activation_mode": "",
+    "note": "3.23 Can't seem to get this to work. Removed in 3.24.2. Wouldn't mind seeing it return."
+  },
+  {
+    "name": "Cycle Gimbal Assist _ Standard Gimbal _ Gimbal Lock modes",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Gimbal Assist / Standard Gimbal / Gimbal Lock modes",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Fixed Gimbal Mode_Short Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Fixed Gimbal Mode (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Manual Gimbal Mode_Short Press",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Manual Gimbal Mode (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Fire Mode_Staggered _ Combined",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "\\ DT",
+        "parsed": {
+          "key": "\\ DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "\\ DT",
+        "parsed": {
+          "key": "\\ DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Fire Mode (Staggered / Combined)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Lag PIPs",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Lag PIPs",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Lead PIPs",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Lead PIPs",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "PIP Combination Type_Set One PIP Per Weapon",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "/",
+        "parsed": {
+          "key": "/",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "/",
+        "parsed": {
+          "key": "/",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "PIP Combination Type - Set One PIP Per Weapon",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "PIP Combination Type_Set One PIP Per Weapon Type",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "/ DT",
+        "parsed": {
+          "key": "/ DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "/ DT",
+        "parsed": {
+          "key": "/ DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "PIP Combination Type - Set One PIP Per Weapon Type",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "PIP Fading On",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Period",
+        "parsed": {
+          "key": "PERIOD",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Period",
+        "parsed": {
+          "key": "PERIOD",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "PIP Fading On",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "PIP Fading Off",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Comma",
+        "parsed": {
+          "key": "COMMA",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Comma",
+        "parsed": {
+          "key": "COMMA",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "PIP Fading Off",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Weapon Presets_Next",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapon Presets - Next",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Weapon Presets_Previous",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapon Presets - Previous",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Precision Targeting_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "8 DT",
+        "parsed": {
+          "key": "8 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "8 DT",
+        "parsed": {
+          "key": "8 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Precision Targeting - Toggle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Precision Targeting_Max Zoom_Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "8",
+        "parsed": {
+          "key": "8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "8",
+        "parsed": {
+          "key": "8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Precision Targeting - Max Zoom (Hold)",
+    "activation_mode": "",
+    "note": "This is active as long as you hold it. Its quite impressive. Now if we could get this feature on our helmets."
+  },
+  {
+    "name": "Precision Targeting_Toggle Camera Tracking",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Precision Targeting - Toggle Camera Tracking",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Next Missile Type",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Right",
+        "parsed": {
+          "key": "RIGHT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+RMB",
+        "parsed": {
+          "key": "RMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Next Missile Type",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Previous Missile Type",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Left",
+        "parsed": {
+          "key": "LEFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+LMB",
+        "parsed": {
+          "key": "LMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Previous Missile Type",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Increase Number Of Armed Missiles",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Up",
+        "parsed": {
+          "key": "UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+RMB",
+        "parsed": {
+          "key": "RMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Increase Number Of Armed Missiles",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decrease Number Of Armed Missiles",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Down",
+        "parsed": {
+          "key": "DOWN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+LMB",
+        "parsed": {
+          "key": "LMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decrease Number Of Armed Missiles",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Reset Number Of Armed Missiles",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+MMB",
+        "parsed": {
+          "key": "MMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Reset Number Of Armed Missiles",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Bombs_Toggle Desired Impact Point_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + B",
+        "parsed": {
+          "key": "B",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Bombs - Toggle Desired Impact Point (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Bombs_Increase HUD Range",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Up",
+        "parsed": {
+          "key": "UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+RMB",
+        "parsed": {
+          "key": "RMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Bombs - Increase HUD Range",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Bombs_Decrease HUD Range",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Down",
+        "parsed": {
+          "key": "DOWN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+LMB",
+        "parsed": {
+          "key": "LMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Bombs - Decrease HUD Range",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Bombs_Reset HUD Range",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+MMB",
+        "parsed": {
+          "key": "MMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Bombs - Reset HUD Range",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Enable Cinematic Camera_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl",
+        "parsed": {
+          "key": "L CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Enable Cinematic Camera (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decoy_Launch Burst_Tap Set And Launch Burst_Hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Semicolon",
+        "parsed": {
+          "key": "SEMICOLON",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "H",
+        "parsed": {
+          "key": "H",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decoy - Launch Burst (Tap) Set And Launch Burst (Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decoy_Increase Burst Size_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Semi",
+        "parsed": {
+          "key": "SEMI",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + H",
+        "parsed": {
+          "key": "H",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decoy - Increase Burst Size (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decoy_Decrease Burst Size_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Semi",
+        "parsed": {
+          "key": "SEMI",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + H",
+        "parsed": {
+          "key": "H",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decoy - Decrease Burst Size (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Noise_Deploy_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Apostraphe",
+        "parsed": {
+          "key": "APOSTRAPHE",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "J",
+        "parsed": {
+          "key": "J",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Noise - Deploy (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Shield Raise Level Front",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Numpad 8",
+        "parsed": {
+          "key": "NUMPAD 8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Home",
+        "parsed": {
+          "key": "HOME",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shield Raise Level Front",
+    "activation_mode": "",
+    "note": "These keys could be useful to some, by being less finicky than getting fat fingers into the number pad."
+  },
+  {
+    "name": "Shield Raise Level Back",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Numpad 5",
+        "parsed": {
+          "key": "NUMPAD 5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "End",
+        "parsed": {
+          "key": "END",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shield Raise Level Back",
+    "activation_mode": "",
+    "note": "Mine just made more sense to me. Also leaving me Numpad 1, 2, and 3 open for something else. Like pinning targets, or used for power bindings for example."
+  },
+  {
+    "name": "Shield Raise Level Left",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Numpad 4",
+        "parsed": {
+          "key": "NUMPAD 4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Delete",
+        "parsed": {
+          "key": "DELETE",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shield Raise Level Left",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Shield Raise Level Right",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Numpad 6",
+        "parsed": {
+          "key": "NUMPAD 6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Pg Dn",
+        "parsed": {
+          "key": "PG DN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shield Raise Level Right",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Shield Raise Level Top",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Numpad 8 DT",
+        "parsed": {
+          "key": "NUMPAD 8 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Insert",
+        "parsed": {
+          "key": "INSERT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shield Raise Level Top",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Shield Raise Level Bottom",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Numpad 5 DT",
+        "parsed": {
+          "key": "NUMPAD 5 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Pg Up",
+        "parsed": {
+          "key": "PG UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shield Raise Level Bottom",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Shield Reset Levels",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Numpad 0",
+        "parsed": {
+          "key": "NUMPAD 0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shield Reset Levels",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Power_All",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "alt_mine",
+        "binding": "Np Decimal",
+        "parsed": {
+          "key": "NP DECIMAL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "U",
+        "parsed": {
+          "key": "U",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Power - All",
+    "activation_mode": "",
+    "note": "(U)p and running"
+  },
+  {
+    "name": "Set Power On",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+U",
+        "parsed": {
+          "key": "U",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Power On",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Power Off",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+U",
+        "parsed": {
+          "key": "U",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Power Off",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Power_Thrusters",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "alt_mine",
+        "binding": "Np 1",
+        "parsed": {
+          "key": "NP 1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "I",
+        "parsed": {
+          "key": "I",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Power - Thrusters",
+    "activation_mode": "",
+    "note": "(I)gnition start"
+  },
+  {
+    "name": "Set Thrusters Power On",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+I",
+        "parsed": {
+          "key": "I",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Thrusters Power On",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Thrusters Power Off",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+I",
+        "parsed": {
+          "key": "I",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Thrusters Power Off",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Power_Shields",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "alt_mine",
+        "binding": "Np 2",
+        "parsed": {
+          "key": "NP 2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "O",
+        "parsed": {
+          "key": "O",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Power - Shields",
+    "activation_mode": "",
+    "note": "Looks like a bubble"
+  },
+  {
+    "name": "Set Shields Power On",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+O",
+        "parsed": {
+          "key": "O",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Shields Power On",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Shields Power Off",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+O",
+        "parsed": {
+          "key": "O",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Shields Power Off",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Power_Weapons",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "alt_mine",
+        "binding": "Np3",
+        "parsed": {
+          "key": "NP3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "P",
+        "parsed": {
+          "key": "P",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Power - Weapons",
+    "activation_mode": "",
+    "note": "(P)unch you in the face"
+  },
+  {
+    "name": "Set Weapons Power On",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+P",
+        "parsed": {
+          "key": "P",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Weapons Power On",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Set Weapons Power Off",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+P",
+        "parsed": {
+          "key": "P",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Set Weapons Power Off",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Decrease Throttle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F9",
+        "parsed": {
+          "key": "F9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decrease Throttle",
+    "activation_mode": "",
+    "note": "Caution: I tested these next four to see what they do, and they borked my ship to a point of nearly abandoning it. They definitely don't do what one might think."
+  },
+  {
+    "name": "Decrease Throttle To Min",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F9",
+        "parsed": {
+          "key": "F9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Decrease Throttle To Min",
+    "activation_mode": "Double Tap",
+    "note": ""
+  },
+  {
+    "name": "Increase Throttle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F10",
+        "parsed": {
+          "key": "F10",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Increase Throttle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Increase Throttle To Max",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F10",
+        "parsed": {
+          "key": "F10",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Increase Throttle To Max",
+    "activation_mode": "Double Tap",
+    "note": ""
+  },
+  {
+    "name": "Engines_Increase_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt + I",
+        "parsed": {
+          "key": "I",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 7",
+        "parsed": {
+          "key": "NP 7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F6",
+        "parsed": {
+          "key": "F6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Engines - Increase (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Engines_Decrease_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt + I",
+        "parsed": {
+          "key": "I",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 4",
+        "parsed": {
+          "key": "NP 4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F6 + L Alt",
+        "parsed": {
+          "key": "L ALT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Engines - Decrease (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Engines_Set To Max_hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt + I",
+        "parsed": {
+          "key": "I",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 7",
+        "parsed": {
+          "key": "NP 7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F6",
+        "parsed": {
+          "key": "F6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Engines - Set To Max (hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Engines_Set To Min_hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt + I",
+        "parsed": {
+          "key": "I",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 4",
+        "parsed": {
+          "key": "NP 4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F6 + L Alt",
+        "parsed": {
+          "key": "L ALT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Engines - Set To Min (hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Shields_Increase_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt + O",
+        "parsed": {
+          "key": "O",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 8",
+        "parsed": {
+          "key": "NP 8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F7",
+        "parsed": {
+          "key": "F7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shields - Increase (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Shields_Decrease_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt + O",
+        "parsed": {
+          "key": "O",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 5",
+        "parsed": {
+          "key": "NP 5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F7 + L Alt",
+        "parsed": {
+          "key": "L ALT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shields - Decrease (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Shields_Set To Max_hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt + O",
+        "parsed": {
+          "key": "O",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 8",
+        "parsed": {
+          "key": "NP 8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F7",
+        "parsed": {
+          "key": "F7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shields - Set To Max (hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Shields_Set To Min_hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt + O",
+        "parsed": {
+          "key": "O",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 5",
+        "parsed": {
+          "key": "NP 5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F7 + L Alt",
+        "parsed": {
+          "key": "L ALT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Shields - Set To Min (hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Weapons_Increase_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt + P",
+        "parsed": {
+          "key": "P",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 9",
+        "parsed": {
+          "key": "NP 9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F5",
+        "parsed": {
+          "key": "F5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapons - Increase (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Weapons_Decrease_Tap",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt + P",
+        "parsed": {
+          "key": "P",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 6",
+        "parsed": {
+          "key": "NP 6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F5 + L Alt",
+        "parsed": {
+          "key": "L ALT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapons - Decrease (Tap)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Weapons_Set To Max_hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt + P",
+        "parsed": {
+          "key": "P",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 9",
+        "parsed": {
+          "key": "NP 9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F5",
+        "parsed": {
+          "key": "F5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapons - Set To Max (hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Weapons_Set To Min_hold",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt + P",
+        "parsed": {
+          "key": "P",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 6",
+        "parsed": {
+          "key": "NP 6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F5 + L Alt",
+        "parsed": {
+          "key": "L ALT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapons - Set To Min (hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Reset Assingments",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R DT",
+        "parsed": {
+          "key": "R DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np 0",
+        "parsed": {
+          "key": "NP 0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "F8",
+        "parsed": {
+          "key": "F8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Reset Assingments",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "MobiGlass_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F1",
+        "parsed": {
+          "key": "F1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MobiGlass (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Scoreboard",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F1",
+        "parsed": {
+          "key": "F1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Scoreboard",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Map",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F2",
+        "parsed": {
+          "key": "F2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Map",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Wipe Helmet Visor",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Backspace",
+        "parsed": {
+          "key": "BACKSPACE",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "/",
+        "parsed": {
+          "key": "/",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Wipe Helmet Visor",
+    "activation_mode": "",
+    "note": "Alt Mine looks like a wiper to me. But I do keep changing this key. I like Backspace. If you accidently hit it, your hand is going to wave in front of your face as a warning. Destruct is a hold anyway."
+  },
+  {
+    "name": "Headlights_Toggle",
+    "category": "FLIGHT",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "N",
+        "parsed": {
+          "key": "N",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Headlights (Toggle)",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Landing System (Toggle). Changed it to L for Landing."
+  },
+  {
+    "name": "Ground Vehicle_General",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Ground Vehicle - General",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Horn",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Spacebar",
+        "parsed": {
+          "key": "SPACEBAR",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Horn",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Camera View",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F4",
+        "parsed": {
+          "key": "F4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Camera View",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Free Look_Hold",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Z",
+        "parsed": {
+          "key": "Z",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Free Look (Hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "MobiGlass_Toggle",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F1",
+        "parsed": {
+          "key": "F1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MobiGlass (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Flight _ Systems Ready",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R DT",
+        "parsed": {
+          "key": "R DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Flight / Systems Ready",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Open_Close Doors_Toggle",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Open/Close Doors (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Open All Doors",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Open All Doors",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Close All Doors",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Close All Doors",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Lock_Unlock Doors_Toggle",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Lock/Unlock Doors (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Lock All Doors",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Lock All Doors",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Unlock All Doors",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Unlock All Doors",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Port Lock Toggle All",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+K",
+        "parsed": {
+          "key": "K",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + K",
+        "parsed": {
+          "key": "K",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Port Lock Toggle All",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Port Lock All",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+K DT",
+        "parsed": {
+          "key": "K DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Port Lock All",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Port Unlock All",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+K DT",
+        "parsed": {
+          "key": "K DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Port Unlock All",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Map",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F2",
+        "parsed": {
+          "key": "F2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Map",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Wipe Helmet Visor",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Backspace",
+        "parsed": {
+          "key": "BACKSPACE",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "/",
+        "parsed": {
+          "key": "/",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Wipe Helmet Visor",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Drive Forward",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl+S",
+        "parsed": {
+          "key": "S",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Drive Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Drive Backward",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Ctrl+S",
+        "parsed": {
+          "key": "S",
+          "ctrl": true,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Drive Backward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Turn Left",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Turn Left",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Turn Right",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Turn Right",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Brake",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Brake",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Boost",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Shift",
+        "parsed": {
+          "key": "L SHIFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Boost",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Lock Pitch Yaw Movement_Toggle_Hold",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "R Shift",
+        "parsed": {
+          "key": "R SHIFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Lock Pitch Yaw Movement (Toggle/Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "@ui_CI_MGV_Toggle Break On Idle",
+    "category": "GROUND",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "C",
+        "parsed": {
+          "key": "C",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_CI_MGV_Toggle Break On Idle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Vehicles_Mining",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Vehicles - Mining",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Switch Mining Laser_Toggle",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Up",
+        "parsed": {
+          "key": "UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Up",
+        "parsed": {
+          "key": "UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Switch Mining Laser (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Increase Mining Laser Power",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "???",
+        "parsed": {
+          "key": "???",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Increase Mining Laser Power",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Activate Mining Consumable_Slot 1",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Left",
+        "parsed": {
+          "key": "LEFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Left",
+        "parsed": {
+          "key": "LEFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + 1",
+        "parsed": {
+          "key": "1",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Activate Mining Consumable (Slot 1)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Activate Mining Consumable_Slot 2",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Down",
+        "parsed": {
+          "key": "DOWN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Down",
+        "parsed": {
+          "key": "DOWN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + 2",
+        "parsed": {
+          "key": "2",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Activate Mining Consumable (Slot 2)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Activate Mining Consumable_Slot 3",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Right",
+        "parsed": {
+          "key": "RIGHT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Right",
+        "parsed": {
+          "key": "RIGHT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + 3",
+        "parsed": {
+          "key": "3",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Activate Mining Consumable (Slot 3)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Jettison Cargo",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "J DT",
+        "parsed": {
+          "key": "J DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + J",
+        "parsed": {
+          "key": "J",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Jettison Cargo",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Fire Focused",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "MMB",
+        "parsed": {
+          "key": "MMB",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "MMB",
+        "parsed": {
+          "key": "MMB",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Fire Focused",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Next Operator Mode."
+  },
+  {
+    "name": "Toggle Fire Left",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Left DT",
+        "parsed": {
+          "key": "LEFT DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "LMB",
+        "parsed": {
+          "key": "LMB",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Fire Left",
+    "activation_mode": "",
+    "note": "Alt Mine, I had these three set to respective mouse buttons, but they didn't seem to work out correctly. Both mouse button 1 and 2 would fire the right head. Maybe they will work for you."
+  },
+  {
+    "name": "Toggle Fire Right",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Right DT",
+        "parsed": {
+          "key": "RIGHT DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "RMB",
+        "parsed": {
+          "key": "RMB",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Fire Right",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Toggle Fire Fracture",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Up DT",
+        "parsed": {
+          "key": "UP DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Fire Fracture",
+    "activation_mode": "",
+    "note": "These two are not really needed, since MMB will fire it anyway, when in any of the structural modes."
+  },
+  {
+    "name": "Toggle Fire Disintegrate",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Down DT",
+        "parsed": {
+          "key": "DOWN DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R Alt + S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Fire Disintegrate",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Salvage Mode Gimbal_Toggle",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Salvage Mode Gimbal (Toggle)",
+    "activation_mode": "",
+    "note": "Using this may break Relative Beam Spacing."
+  },
+  {
+    "name": "Salvage Mode Gimbal Reset",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Salvage Mode Gimbal Reset",
+    "activation_mode": "",
+    "note": "Using this fixes broken Relative Beam Spacing."
+  },
+  {
+    "name": "Salvage Beam Axis_Toggle",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "X",
+        "parsed": {
+          "key": "X",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Salvage Beam Axis (Toggle)",
+    "activation_mode": "",
+    "note": "Mine will conflict with default Space Brake. But you shouldn't be moving much anyway."
+  },
+  {
+    "name": "Cycle Focused Salvage Modifiers",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "/ DT",
+        "parsed": {
+          "key": "/ DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+MMB",
+        "parsed": {
+          "key": "MMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Focused Salvage Modifiers",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Left Salvage Modifiers",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "<",
+        "parsed": {
+          "key": "<",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+LMB",
+        "parsed": {
+          "key": "LMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Left Salvage Modifiers",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Right Salvage Modifiers",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": ">",
+        "parsed": {
+          "key": ">",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "L Alt+RMB",
+        "parsed": {
+          "key": "RMB",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Right Salvage Modifiers",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Structural Salvage Modes",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "/",
+        "parsed": {
+          "key": "/",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Structural Salvage Modes",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Focus All Salvage Heads",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R Ctrl",
+        "parsed": {
+          "key": "R CTRL",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Focus All Salvage Heads",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Focus Left Salvage Head",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Left",
+        "parsed": {
+          "key": "LEFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Left",
+        "parsed": {
+          "key": "LEFT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Focus Left Salvage Head",
+    "activation_mode": "",
+    "note": "This really isn't needed if you can can cycle and fire each side individually using \"Alt Mine\" bindings."
+  },
+  {
+    "name": "Focus Right Salvage Head",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Right",
+        "parsed": {
+          "key": "RIGHT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Right",
+        "parsed": {
+          "key": "RIGHT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Focus Right Salvage Head",
+    "activation_mode": "",
+    "note": "This really isn't needed if you can can cycle and fire each side individually using \"Alt Mine\" bindings."
+  },
+  {
+    "name": "Focus Fracture Tool",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Up",
+        "parsed": {
+          "key": "UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Up",
+        "parsed": {
+          "key": "UP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Focus Fracture Tool",
+    "activation_mode": "",
+    "note": "\"Alt Mine\" fire with MMB"
+  },
+  {
+    "name": "Focus Disintegration Tool",
+    "category": "INDUSTRY",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Down",
+        "parsed": {
+          "key": "DOWN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Down",
+        "parsed": {
+          "key": "DOWN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Focus Disintegration Tool",
+    "activation_mode": "",
+    "note": "\"Alt Mine\" fire with MMB"
+  },
+  {
+    "name": "Vehicles_Multi Function Displays_MFDs",
+    "category": "MFD",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Vehicles - Multi Function Displays (MFDs)",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "MFD_Cycle Page_Forwards_short press",
+    "category": "MFD",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "L Alt + E",
+        "parsed": {
+          "key": "E",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MFD - Cycle Page - Forwards (short press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "MFD_Cycle Page_Backwards_short press",
+    "category": "MFD",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "L Alt + Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MFD - Cycle Page - Backwards (short press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "VOIP FOIP And Head Tracking",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "VOIP, FOIP, And Head Tracking",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Enable Head Tracking_Toggle",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Break",
+        "parsed": {
+          "key": "BREAK",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Break",
+        "parsed": {
+          "key": "BREAK",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad /",
+        "parsed": {
+          "key": "NUMPAD /",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Enable Head Tracking (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "VOIP Push To Talk",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad +",
+        "parsed": {
+          "key": "",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "VOIP Push To Talk",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "VOIP Push To Talk_Proximity Only",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "L Alt + Numpad +",
+        "parsed": {
+          "key": "",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "VOIP Push To Talk (Proximity Only)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "FOIP Selfie Cam",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "F3",
+        "parsed": {
+          "key": "F3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "F3",
+        "parsed": {
+          "key": "F3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad -",
+        "parsed": {
+          "key": "NUMPAD -",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "FOIP Selfie Cam",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "FOIP Recalibrate",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad *",
+        "parsed": {
+          "key": "NUMPAD *",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "FOIP Recalibrate",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Through Audio Channels",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad .",
+        "parsed": {
+          "key": "NUMPAD .",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Through Audio Channels",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Interaction Mode",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F",
+        "parsed": {
+          "key": "F",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Interaction Mode",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "MFD Left",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MFD Left",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "MFD Right",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MFD Right",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "MFD Up",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "W",
+        "parsed": {
+          "key": "W",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MFD Up",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "MFD Down",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "MFD Down",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Personal Inner Thought_PIT",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "L Alt + F",
+        "parsed": {
+          "key": "F",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Personal Inner Thought (PIT)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Exit",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Numpad 0",
+        "parsed": {
+          "key": "NUMPAD 0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Exit",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Personal Commodity Inventory_Toggle",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "I",
+        "parsed": {
+          "key": "I",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Personal Commodity Inventory (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Personal Commodity Inventory_Toggle",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "I",
+        "parsed": {
+          "key": "I",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Personal Commodity Inventory (Toggle)",
+    "activation_mode": "",
+    "note": "Likely a duplicate."
+  },
+  {
+    "name": "@ui_CIInteractionLootingToggleView",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Tab",
+        "parsed": {
+          "key": "TAB",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_CIInteractionLootingToggleView",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Looting_Toggle Weapon Attachments",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Looting - Toggle Weapon Attachments",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Mining Mode Actions_PIT Category",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "L Alt + M",
+        "parsed": {
+          "key": "M",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Mining Mode Actions - PIT Category",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Weapon Select Radial Menu",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "2",
+        "parsed": {
+          "key": "2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapon Select Radial Menu",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Weapon Select Radial Menu",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "1",
+        "parsed": {
+          "key": "1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapon Select Radial Menu",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Weapon Select Radial Menu",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "1",
+        "parsed": {
+          "key": "1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Weapon Select Radial Menu",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Throwable Select radial Menu",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "G",
+        "parsed": {
+          "key": "G",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Throwable Select radial Menu",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "@ui_Consumable_QuickSelectRadialMenu",
+    "category": "PERSONAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "V",
+        "parsed": {
+          "key": "V",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "4",
+        "parsed": {
+          "key": "4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_Consumable_QuickSelectRadialMenu",
+    "activation_mode": "Hold",
+    "note": "V for vitamins seems better to me. Used 4 for left leg mount."
+  },
+  {
+    "name": "Social_General",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Social - General",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Re-spawn",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F",
+        "parsed": {
+          "key": "F",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Re-spawn",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Exit Seat",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Y",
+        "parsed": {
+          "key": "Y",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Exit Seat",
+    "activation_mode": "Hold",
+    "note": "Tap or Hold can be changed in Game Settings"
+  },
+  {
+    "name": "@ui_CIUINotificationAccept",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "F9",
+        "parsed": {
+          "key": "F9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Left Bracket",
+        "parsed": {
+          "key": "LEFT BRACKET",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_CIUINotificationAccept",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "@ui_CIUINotificationDecline",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "F10",
+        "parsed": {
+          "key": "F10",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Right Bracket",
+        "parsed": {
+          "key": "RIGHT BRACKET",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_CIUINotificationDecline",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "CommLink App_Toggle",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F11",
+        "parsed": {
+          "key": "F11",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "CommLink App (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Chat Window_Toggle",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "F12",
+        "parsed": {
+          "key": "F12",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Chat Window (Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "@ui_CIUIChatCycleLobby",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Tab",
+        "parsed": {
+          "key": "TAB",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_CIUIChatCycleLobby",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Chat Window Focus",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Return",
+        "parsed": {
+          "key": "RETURN",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Chat Window Focus",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Accept Invite",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "F9",
+        "parsed": {
+          "key": "F9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Left Bracket",
+        "parsed": {
+          "key": "LEFT BRACKET",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Accept Invite",
+    "activation_mode": "Hold",
+    "note": "These Mine will conflict with default Decrease/Increase Throttle bindings. See changes under Power in the Flight page."
+  },
+  {
+    "name": "Reject Invite",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "F10",
+        "parsed": {
+          "key": "F10",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Right Bracket",
+        "parsed": {
+          "key": "RIGHT BRACKET",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Reject Invite",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Ignore Invite_Hold",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "F10",
+        "parsed": {
+          "key": "F10",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Right Bracket",
+        "parsed": {
+          "key": "RIGHT BRACKET",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Ignore Invite (Hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Forward",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 8",
+        "parsed": {
+          "key": "NP 8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad 5",
+        "parsed": {
+          "key": "NUMPAD 5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Left",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 4",
+        "parsed": {
+          "key": "NP 4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad 1",
+        "parsed": {
+          "key": "NUMPAD 1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Left",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Right",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 6",
+        "parsed": {
+          "key": "NP 6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad 3",
+        "parsed": {
+          "key": "NUMPAD 3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Right",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Stop",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 2",
+        "parsed": {
+          "key": "NP 2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad 2",
+        "parsed": {
+          "key": "NUMPAD 2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Stop",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Yes",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 1",
+        "parsed": {
+          "key": "NP 1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad 4",
+        "parsed": {
+          "key": "NUMPAD 4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Yes",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "No",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 3",
+        "parsed": {
+          "key": "NP 3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Numpad 6",
+        "parsed": {
+          "key": "NUMPAD 6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "No",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Agree",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 7",
+        "parsed": {
+          "key": "NP 7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Agree",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Angry",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 1 DT",
+        "parsed": {
+          "key": "NP 1 DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Angry",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "At Ease",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 3",
+        "parsed": {
+          "key": "NP 3",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "At Ease",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Attention",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 2",
+        "parsed": {
+          "key": "NP 2",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Attention",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Blah",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np Dec DT",
+        "parsed": {
+          "key": "NP DEC DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Blah",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Bow",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 4",
+        "parsed": {
+          "key": "NP 4",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Bow",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cheer",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 8",
+        "parsed": {
+          "key": "NP 8",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cheer",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Chicken",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 3",
+        "parsed": {
+          "key": "NP 3",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Chicken",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Clap",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 7",
+        "parsed": {
+          "key": "NP 7",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Clap",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Come",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 6",
+        "parsed": {
+          "key": "NP 6",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Come",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cry",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 5",
+        "parsed": {
+          "key": "NP 5",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cry",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Dance",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 1",
+        "parsed": {
+          "key": "NP 1",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Dance",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Disagree",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 9",
+        "parsed": {
+          "key": "NP 9",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Disagree",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Failure",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 9",
+        "parsed": {
+          "key": "NP 9",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Failure",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Flex",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 1",
+        "parsed": {
+          "key": "NP 1",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Flex",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Flirt",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np Dec DT",
+        "parsed": {
+          "key": "NP DEC DT",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Flirt",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Gloat",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 7",
+        "parsed": {
+          "key": "NP 7",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Gloat",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Greet",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 0",
+        "parsed": {
+          "key": "NP 0",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Greet",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Laugh",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 4",
+        "parsed": {
+          "key": "NP 4",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Laugh",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Confirm Launch",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 9",
+        "parsed": {
+          "key": "NP 9",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Confirm Launch",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Point",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np 5",
+        "parsed": {
+          "key": "NP 5",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Point",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Salute",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 0",
+        "parsed": {
+          "key": "NP 0",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Salute",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Sit",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np Dec",
+        "parsed": {
+          "key": "NP DEC",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Sit",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Sleep",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+Np Dec",
+        "parsed": {
+          "key": "NP DEC",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Sleep",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Smell",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 8",
+        "parsed": {
+          "key": "NP 8",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Smell",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Taunt",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 6",
+        "parsed": {
+          "key": "NP 6",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Taunt",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Threaten",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+Np 2",
+        "parsed": {
+          "key": "NP 2",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Threaten",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Wait",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 5",
+        "parsed": {
+          "key": "NP 5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Wait",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Wave",
+    "category": "SOCIAL",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "Np 0",
+        "parsed": {
+          "key": "NP 0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Wave",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Vehicles_Targeting",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Vehicles - Targeting",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Auto Targeting_Toggle On _ Off_Long Press",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Auto Targeting - Toggle On / Off (Long Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Auto Targeting_Toggle On_Short Press",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Auto Targeting - Toggle On (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Auto Targeting_Toggle Off_Short Press",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Auto Targeting - Toggle Off (Short Press)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 1_Lock_Unlock Pinned Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "1",
+        "parsed": {
+          "key": "1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 1 - Lock/Unlock Pinned Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 2_Lock_Unlock Pinned Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "2",
+        "parsed": {
+          "key": "2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 2 - Lock/Unlock Pinned Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 3_Lock_Unlock Pinned Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "3",
+        "parsed": {
+          "key": "3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 3 - Lock/Unlock Pinned Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 1_Pin_Unpin Selected Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Left Alt + 1",
+        "parsed": {
+          "key": "1",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 1 - Pin/Unpin Selected Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 2_Pin_Unpin Selected Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Left Alt + 2",
+        "parsed": {
+          "key": "2",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 2 - Pin/Unpin Selected Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 3_Pin_Unpin Selected Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Left Alt + 3",
+        "parsed": {
+          "key": "3",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 3 - Pin/Unpin Selected Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 1_Pin_Unpin Selected Target_Hold",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "1",
+        "parsed": {
+          "key": "1",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 1 - Pin/Unpin Selected Target (Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 2_Pin_Unpin Selected Target_Hold",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "2",
+        "parsed": {
+          "key": "2",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 2 - Pin/Unpin Selected Target (Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Pin Index 3_Pin_Unpin Selected Target_Hold",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "3",
+        "parsed": {
+          "key": "3",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Pin Index 3 - Pin/Unpin Selected Target (Hold)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Remove All Pinned Targets",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "0 DT",
+        "parsed": {
+          "key": "0 DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "0",
+        "parsed": {
+          "key": "0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Remove All Pinned Targets",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Unlock Locked Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "0",
+        "parsed": {
+          "key": "0",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Left Alt + T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Unlock Locked Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Enable _ Disable Look Ahead",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Left Alt + L",
+        "parsed": {
+          "key": "L",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Enable / Disable Look Ahead",
+    "activation_mode": "",
+    "note": "This can be set to a default in Game Settings"
+  },
+  {
+    "name": "Cycle Lock_In View_Forward",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - In View - Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_In View_Under Reticle",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "T",
+        "parsed": {
+          "key": "T",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - In View - Under Reticle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Attackers_Back",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+4",
+        "parsed": {
+          "key": "4",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Attackers - Back",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Attackers_Forward",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+4",
+        "parsed": {
+          "key": "4",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "4",
+        "parsed": {
+          "key": "4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Attackers - Forward",
+    "activation_mode": "",
+    "note": "If you get radar locked, pressing this will lock the contact that has violated you and your space. Pun intended."
+  },
+  {
+    "name": "Cycle Lock_Attackers_Reset to Closest",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "4",
+        "parsed": {
+          "key": "4",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Attackers - Reset to Closest",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Hostiles_Back",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+5",
+        "parsed": {
+          "key": "5",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Hostiles - Back",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Hostiles_Forward",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+5",
+        "parsed": {
+          "key": "5",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "5",
+        "parsed": {
+          "key": "5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Hostiles - Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Hostiles_Reset To Closest",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "5",
+        "parsed": {
+          "key": "5",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Hostiles - Reset To Closest",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Friendlies_Back",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+6",
+        "parsed": {
+          "key": "6",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Friendlies - Back",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Friendlies_Forward",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+6",
+        "parsed": {
+          "key": "6",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "6",
+        "parsed": {
+          "key": "6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Friendlies - Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Friendlies_Reset to Closest",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "6",
+        "parsed": {
+          "key": "6",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Friendlies - Reset to Closest",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_All_Back",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+7",
+        "parsed": {
+          "key": "7",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - All - Back",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_All_Forward",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+7",
+        "parsed": {
+          "key": "7",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "7",
+        "parsed": {
+          "key": "7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - All - Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_All_Reset To Closest",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "7",
+        "parsed": {
+          "key": "7",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - All - Reset To Closest",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Sub Target_Back",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "L Alt+8",
+        "parsed": {
+          "key": "8",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Sub Target - Back",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Sub Target_Forward",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R Alt+8",
+        "parsed": {
+          "key": "8",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Sub Target - Forward",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Lock_Sub Target_Reset to Main Target",
+    "category": "TARGETING",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "8",
+        "parsed": {
+          "key": "8",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "L Alt + R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": true,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Lock - Sub Target - Reset to Main Target",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Turret Movement",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "DT= Double Tap",
+        "parsed": {
+          "key": "DT= DOUBLE TAP",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Turret Movement",
+    "activation_mode": "",
+    "note": "I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+  },
+  {
+    "name": "Toggle Turret Mouse Movement_VJoy FPS Style",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Toggle Turret Mouse Movement (VJoy, FPS Style)",
+    "activation_mode": "",
+    "note": "This is commonly cycled among turret gunners who use a mouse. Test it for yourself"
+  },
+  {
+    "name": "@ui_turret_mouse_mode_cycle",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "R",
+        "parsed": {
+          "key": "R",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "Q",
+        "parsed": {
+          "key": "Q",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "@ui_turret_mouse_mode_cycle",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Exit Remote Turret",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "Y",
+        "parsed": {
+          "key": "Y",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Exit Remote Turret",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Turret Gyro Stabilization_Toggle",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "G DT",
+        "parsed": {
+          "key": "G DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "E",
+        "parsed": {
+          "key": "E",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Turret Gyro Stabilization (Toggle)",
+    "activation_mode": "",
+    "note": "Gyro Mode (stabilization on) is highly recommended to use as a turret gunner."
+  },
+  {
+    "name": "Next Remote Turret",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "D",
+        "parsed": {
+          "key": "D",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Next Remote Turret",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Previous Remote Turret",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "A",
+        "parsed": {
+          "key": "A",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Previous Remote Turret",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Turret E.S.P. Toggle On _ Off",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "X DT",
+        "parsed": {
+          "key": "X DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Turret E.S.P. Toggle On / Off",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Recenter Turret_Hold",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "default",
+        "binding": "C",
+        "parsed": {
+          "key": "C",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Recenter Turret (Hold)",
+    "activation_mode": "Hold",
+    "note": ""
+  },
+  {
+    "name": "Turret_Speed Limiter On _ Off_Hold _ Toggle",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "Np x",
+        "parsed": {
+          "key": "NP X",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Turret - Speed Limiter On / Off (Hold / Toggle)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Cycle Fire Mode_Staggered _ Combined",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "\\ DT",
+        "parsed": {
+          "key": "\\ DT",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "\\",
+        "parsed": {
+          "key": "\\",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Cycle Fire Mode (Staggered / Combined)",
+    "activation_mode": "",
+    "note": ""
+  },
+  {
+    "name": "Turret Change Position",
+    "category": "TURRETS",
+    "bindings": [
+      {
+        "type": "mine",
+        "binding": "M",
+        "parsed": {
+          "key": "M",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "alt_mine",
+        "binding": "M",
+        "parsed": {
+          "key": "M",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      },
+      {
+        "type": "default",
+        "binding": "S",
+        "parsed": {
+          "key": "S",
+          "ctrl": false,
+          "alt": false,
+          "shift": false
+        }
+      }
+    ],
+    "original": "Turret Change Position",
+    "activation_mode": "",
+    "note": "This is the binding that moves any turret that is on a track. IE: Scorpius and cargo TB's on select ships."
+  }
+]

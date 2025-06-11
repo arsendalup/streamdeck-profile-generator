@@ -1,0 +1,28 @@
+,Activation Mode,Default Binding,Mine,Alt Mine,Note
+Turret Movement,,,DT= Double Tap,,"I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+Pitch Up,,,,,
+Pitch Down,,,,,
+Pitch,,Y-axis (mouse),,,
+Yaw Left,,,,,
+Yaw Right,,,,,
+Yaw,,X-axis (mouse),,,
+"Toggle Turret Mouse Movement (VJoy, FPS Style)",,Q,R,R,This is commonly cycled among turret gunners who use a mouse. Test it for yourself
+@ui_turret_mouse_mode_cycle,,Q,R,,
+@ui_turret_mouse_mode_set_vjoy,,,,,
+@ui_turret_mouse_mode_set_1to1,,,,,
+@ui_turret_mouse_mode_set_pointer,,,,,
+Exit Remote Turret,,Y,,,
+Turret Gyro Stabilization (Toggle),,E,G DT,S,Gyro Mode (stabilization on) is highly recommended to use as a turret gunner.
+Next Remote Turret,,D,NONE,,
+Previous Remote Turret,,A,NONE,,
+Turret Adavnced,,,,,
+Turret E.S.P. Toggle On / Off,,,X DT,,
+Turret E.S.P. Enable Temporarily (Hold),Hold,,,,
+Recenter Turret (Hold),Hold,C,,,
+Turret - Speed Limiter On / Off (Hold / Toggle),,,S,Np x,
+Turret - Speed Limiter (Rel),,L Alt + Mouse Wheel,,,
+Turret - Speed - Limiter Increase (Rel),,,,,
+Turret - Speed - Limiter Decrease (Rel),,,,,
+Turret - Speed - Limiter (Abs),,,,,
+Cycle Fire Mode (Staggered / Combined),,,\ DT,\,
+Turret Change Position,,S,M,M,This is the binding that moves any turret that is on a track. IE: Scorpius and cargo TB's on select ships.

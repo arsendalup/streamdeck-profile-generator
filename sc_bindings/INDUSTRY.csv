@@ -1,0 +1,43 @@
+,Activation Mode,Default Binding,Mine,Alt Mine,Note
+Vehicles - Mining,,,DT= Double Tap,,"I tend to think of L/R Modifiers as in Left/Right, Lower/Raise, Lock/Release. It just seems easier for me to remember."
+Fire Mining Laser (Toggle),,Button 1 (mouse),,,
+Switch Mining Laser (Toggle),,L Alt + Button 1 (mouse),Up,Up,
+Increase Mining Laser Power,,Mouse Wheel,???,,
+Decrease Mining Laser Power,,,,,
+Increase /Decrease Mining Laser Power,,,,,This does not show in KB/M settings. Though would make sense if it did. And show the proper keybinding of L Alt + MW.
+Activate Mining Consumable (Slot 1),,L Alt + 1,Left,Left,
+Activate Mining Consumable (Slot 2),,L Alt + 2,Down,Down,
+Activate Mining Consumable (Slot 3),,L Alt + 3,Right,Right,
+Jettison Cargo,,L Alt + J,J DT,,
+Vehicles - Salvage,,,,,Mine offers something I believe is a little easier to remember. I did however run into an issue changing these bindings and saving them...
+Tractor Beam Vehicle- Increase Distance,,Mouse Wheel Up,,,See Spectrum post here for an explanation and fix https://robertsspaceindustries.com/spectrum/community/SC/forum/4/thread/broken-controls-remapping.
+Tractor Beam Vehicle- Decrease Distance,,Mouse Wheel Dn,,,
+Toggle Fire Focused,,Button 1 (mouse),MMB,MMB,Mine will conflict with default Next Operator Mode.
+Toggle Fire Left,,R Alt + A,Left DT,LMB,"Alt Mine, I had these three set to respective mouse buttons, but they didn't seem to work out correctly. Both mouse button 1 and 2 would fire the right head. Maybe they will work for you."
+Toggle Fire Right,,R Alt + D,Right DT,RMB,
+Toggle Fire Fracture,,R Alt + W,Up DT,NONE,"These two are not really needed, since MMB will fire it anyway, when in any of the structural modes."
+Toggle Fire Disintegrate,,R Alt + S,Down DT,NONE,
+Salvage Mode Gimbal (Toggle),,G,,,Using this may break Relative Beam Spacing.
+Salvage Mode Gimbal Reset,,L Alt + G,R,R,Using this fixes broken Relative Beam Spacing.
+Increase Beam Spacing,,,,,
+Decrease Beam Spacing,,,,,
+Relative Beam Spacing,,Mouse Wheel,,,
+Absolute Beam Spacing,,,,,
+Salvage Beam Axis (Toggle),,L Alt + Button 2 (mouse),X,X,Mine will conflict with default Space Brake. But you shouldn't be moving much anyway.
+Cycle Focused Salvage Modifiers,,Button 2 (mouse),/ DT,L Alt+MMB,
+Cycle Left Salvage Modifiers,,,<,L Alt+LMB,
+Cycle Right Salvage Modifiers,,,>,L Alt+RMB,
+Cycle Structural Salvage Modes,,,/,,
+Focus All Salvage Heads,,L Alt + S,R Ctrl,R Ctrl,
+Focus Left Salvage Head,,L Alt + A,Left,Left,"This really isn't needed if you can can cycle and fire each side individually using ""Alt Mine"" bindings."
+Focus Right Salvage Head,,L Alt + D,Right,Right,"This really isn't needed if you can can cycle and fire each side individually using ""Alt Mine"" bindings."
+Focus Fracture Tool,,L Alt + W,Up,Up,"""Alt Mine"" fire with MMB"
+Focus Disintegration Tool,,,Down,Down,"""Alt Mine"" fire with MMB"
+Nudge Left Salvage Tool Up,,,,,"For these, you could use respective L/R modifiers with Arrow keys. There is also a slider in game settings to adjust how fast objects move."
+Nudge Left Salvage Tool Down,,,,,
+Nudge Left Salvage Tool Left,,,,,
+Nudge Left Salvage Tool Right,,,,,
+Nudge Right Salvage Tool Up,,,,,
+Nudge Right Salvage Tool Down,,,,,
+Nudge Right Salvage Tool Left,,,,,
+Nudge Right Salvage Tool Right,,,,,
